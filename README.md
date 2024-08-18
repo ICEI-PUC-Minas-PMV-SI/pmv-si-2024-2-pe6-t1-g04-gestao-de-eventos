@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# GESTÃO DE EVENTOS - PUC MINAS BETIM
 
 `CURSO: Sistemas de Informação`
 
