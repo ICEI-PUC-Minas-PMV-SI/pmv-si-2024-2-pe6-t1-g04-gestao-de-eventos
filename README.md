@@ -6,7 +6,7 @@
 
 `SEMESTRE: 6º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A proposta deste projeto é desenvolver uma aplicação web e mobile com foco na criação de uma página para gerenciar os eventos da PUC Minas Betim, que servirá como modelo para as demais unidades da Universidade. A página será projetada com princípios de design responsivo, garantindo um funcionamento eficaz tanto em desktops quanto em dispositivos móveis.
 
 ## Integrantes
 
