@@ -4,10 +4,20 @@ A proposta deste projeto é desenvolver uma aplicação web e mobile com foco na
 
 
 ## Problema
+
 Atualmente, a PUC Minas Betim utiliza um documento em Word intitulado "CHECK LIST Eventos" para a solicitação de eventos, o qual pode ser preenchido por professores, funcionários e alunos e enviado ao Setor de Eventos para aprovação e organização. No entanto, esse processo é ultrapassado e resulta em dados desorganizados e incompletos. A unidade oferece 9 cursos de graduação, incluindo o curso de Medicina, que gera um número elevado de solicitações de eventos. Devido à forma como o processo é conduzido, frequentemente ocorrem erros, tornando a organização dos mesmos um desafio.
 Após o envio da solicitação do evento ao setor, o documento: "CHECK LIST Eventos"  é encaminhado para aprovação da Coordenação do curso e/ou da Diretoria de Graduação. Eventos realizados dentro da Unidade precisam apenas do parecer da Coordenação, enquanto eventos fora da Unidade requerem a aprovação tanto da Coordenação quanto da Diretoria de Graduação. O Setor de Eventos, ao receber o parecer, seja ele favorável ou contrário, comunica a decisão ao solicitante.
 Quando aprovado, o evento é cadastrado no Sistema de Gestão Acadêmica (SGA) para que os alunos possam se inscrever, desde que o responsável marque essa opção. Além disso, são enviados os detalhes para a infraestrutura, como reserva de espaço, necessidade de café, água e outros requisitos. No caso de eventos online, a solicitação é encaminhada ao setor técnico (CRC), e, se necessário, à Assessoria de Comunicação para divulgação.
 O Setor de Eventos enfrenta desafios significativos devido à falta de uma plataforma centralizada e eficiente. A ausência de uma solução integrada dificulta a organização, divulgação e acompanhamento dos eventos, tornando o processo menos ágil e mais propenso a erros. Portanto, a implementação de uma plataforma dedicada é crucial para melhorar a eficiência para o gerenciamento dos eventos acadêmicos e administrativos da PUC Minas Betim.
+
+1. Falta de Adesão aos Prazos: Muitos solicitantes não seguem o prazo específico para cada tipo de evento, o que causa transtornos significativos para os 
+   funcionários responsáveis pela organização. Esse problema é ainda mais grave quando o evento, embora solicitado em Betim, é realizado em outra unidade, 
+   exigindo uma coordenação mais complexa.
+2. Inadequação das Demandas de Infraestrutura: Frequentemente, as demandas de infraestrutura não são especificadas de forma clara no momento da solicitação. Isso 
+   resulta em pedidos emergenciais de itens específicos durante o evento, colocando o setor responsável em uma situação difícil e comprometendo a qualidade da 
+   gestão.
+3. Informações Incompletas ou Ausentes: Solicitantes frequentemente deixam de preencher informações essenciais para a organização do evento. Como resultado, o 
+   Setor de Eventos se vê obrigado a buscar esses dados de última hora, o que atrasa e complica o processo de preparação.
 
 
 > **Links Úteis**:
@@ -17,17 +27,16 @@ O Setor de Eventos enfrenta desafios significativos devido à falta de uma plata
 
 ## Objetivos
 
-O principal objetivo desta proposta é desenvolver uma solução centralizada e eficiente para o gerenciamento de eventos na PUC Minas Betim, que possa ser expandida para outras unidades da universidade. A proposta visa criar uma plataforma web e mobile que permita a organização e acompanhamento de eventos de maneira integrada e simplificada. Com isso, busca-se:
-- Otimizar o Processo de Solicitação: Automatizar e padronizar a solicitação de eventos, garantindo que todos os requisitos sejam atendidos dentro dos prazos estabelecidos, evitando assim os transtornos causados por pedidos tardios ou incompletos.
-- Facilitar a Gestão de Infraestrutura: Permitir a especificação clara e antecipada das demandas de infraestrutura, reduzindo as solicitações emergenciais e melhorando a coordenação entre os setores envolvidos.
-- Melhorar a Comunicação e Transparência: Centralizar a comunicação entre solicitantes e o Setor de Eventos, proporcionando um fluxo de informações mais claro e acessível, o que facilitará o acompanhamento de aprovações, ajustes e necessidades específicas.
-- Aumentar a Eficiência Organizacional: Reduzir a sobrecarga de trabalho do Setor de Eventos e demais áreas envolvidas, permitindo que os eventos sejam organizados de forma mais eficiente e com menos margem para erros.
+O principal objetivo desta proposta é desenvolver uma solução centralizada e eficiente para o gerenciamento de eventos na PUC Minas Betim, que possa ser expandida para outras unidades da universidade.
 
-## Justificativa:
-Atualmente, a PUC Minas Betim utiliza um documento em Word intitulado "CHECK LIST Eventos" para a solicitação de eventos, o qual pode ser preenchido por professores, funcionários e alunos e enviado ao Setor de Eventos para aprovação e organização. No entanto, esse processo é ultrapassado e resulta em dados desorganizados e incompletos. A unidade oferece 9 cursos de graduação, incluindo o curso de Medicina, que gera um número elevado de solicitações de eventos. Devido à forma como o processo é conduzido, frequentemente ocorrem erros, tornando a organização dos mesmos um desafio.
-Após o envio da solicitação do evento ao setor, o documento: "CHECK LIST Eventos"  é encaminhado para aprovação da Coordenação do curso e/ou da Diretoria de Graduação. Eventos realizados dentro da Unidade precisam apenas do parecer da Coordenação, enquanto eventos fora da Unidade requerem a aprovação tanto da Coordenação quanto da Diretoria de Graduação. O Setor de Eventos, ao receber o parecer, seja ele favorável ou contrário, comunica a decisão ao solicitante.
-Quando aprovado, o evento é cadastrado no Sistema de Gestão Acadêmica (SGA) para que os alunos possam se inscrever, desde que o responsável marque essa opção. Além disso, são enviados os detalhes para a infraestrutura, como reserva de espaço, necessidade de café, água e outros requisitos. No caso de eventos online, a solicitação é encaminhada ao setor técnico (CRC), e, se necessário, à Assessoria de Comunicação para divulgação.
-O Setor de Eventos enfrenta desafios significativos devido à falta de uma plataforma centralizada e eficiente. A ausência de uma solução integrada dificulta a organização, divulgação e acompanhamento dos eventos, tornando o processo menos ágil e mais propenso a erros. Portanto, a implementação de uma plataforma dedicada é crucial para melhorar a eficiência para o gerenciamento dos eventos acadêmicos e administrativos da PUC Minas Betim.
+## Justificativa
+
+A proposta visa criar uma plataforma web e mobile que permita a organização e acompanhamento de eventos de maneira integrada e simplificada. Com isso, busca-se:
+
+1. Otimizar o Processo de Solicitação: Automatizar e padronizar a solicitação de eventos, garantindo que todos os requisitos sejam atendidos dentro dos prazos estabelecidos, evitando assim os transtornos causados por pedidos tardios ou incompletos.
+2. Facilitar a Gestão de Infraestrutura: Permitir a especificação clara e antecipada das demandas de infraestrutura, reduzindo as solicitações emergenciais e melhorando a coordenação entre os setores envolvidos.
+3. Melhorar a Comunicação e Transparência: Centralizar a comunicação entre solicitantes e o Setor de Eventos, proporcionando um fluxo de informações mais claro e acessível, o que facilitará o acompanhamento de aprovações, ajustes e necessidades específicas.
+4. Aumentar a Eficiência Organizacional: Reduzir a sobrecarga de trabalho do Setor de Eventos e demais áreas envolvidas, permitindo que os eventos sejam organizados de forma mais eficiente e com menos margem para erros.
 
 
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
@@ -116,9 +125,9 @@ est007 - como [afiliado da PUC Minas] quero encaminhar informações adicionais 
 
 est008 - como [analista/secretaria] quero encaminhar uma solicitação viável para a aprovação e assinatura do documento
 
-· est009 - como [analista/secretaria] quero encaminhar a solicitação aprovada para o solicitante afiliado da PUC Minas para que ele possa iniciar os preparativos do evento
+est009 - como [analista/secretaria] quero encaminhar a solicitação aprovada para o solicitante afiliado da PUC Minas para que ele possa iniciar os preparativos do evento
 
-· est010 - como [analista/secretaria] quero encaminhar a solicitação aprovada para o setores envolvidos PUC Minas para ciência e deferimento do documento
+est010 - como [analista/secretaria] quero encaminhar a solicitação aprovada para o setores envolvidos PUC Minas para ciência e deferimento do documento
 
 est011 - como [afiliado da PUC Minas] quero poder verificar o status da solicitação para conseguir acompanhar o andamento do meu pedido
 
@@ -136,7 +145,7 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 > - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
-# Especificações do Projeto
+## Especificações do Projeto
 
 ## Requisitos
 
@@ -219,7 +228,7 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
-# Catálogo de Serviços
+## Catálogo de Serviços
 
 1. Cadastro de Solicitações de Eventos:
    Criação, edição e exclusão de solicitações de eventos.
@@ -238,7 +247,7 @@ Lembretes de prazos e atualizações de eventos.
    Diferentes níveis de acesso para administradores, professores, funcionários e alunos.
 
 
-# Arquitetura da Solução
+## Arquitetura da Solução
 
 1. Frontend:
    Web Application: Desenvolvida com React.js para a interface web.
