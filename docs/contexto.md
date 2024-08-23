@@ -6,8 +6,11 @@ A proposta deste projeto é desenvolver uma aplicação web e mobile com foco na
 ## Problema
 
 Atualmente, a PUC Minas Betim utiliza um documento em Word intitulado "CHECK LIST Eventos" para a solicitação de eventos, o qual pode ser preenchido por professores, funcionários e alunos e enviado ao Setor de Eventos para aprovação e organização. No entanto, esse processo é ultrapassado e resulta em dados desorganizados e incompletos. A unidade oferece 9 cursos de graduação, incluindo o curso de Medicina, que gera um número elevado de solicitações de eventos. Devido à forma como o processo é conduzido, frequentemente ocorrem erros, tornando a organização dos mesmos um desafio.
+
 Após o envio da solicitação do evento ao setor, o documento: "CHECK LIST Eventos"  é encaminhado para aprovação da Coordenação do curso e/ou da Diretoria de Graduação. Eventos realizados dentro da Unidade precisam apenas do parecer da Coordenação, enquanto eventos fora da Unidade requerem a aprovação tanto da Coordenação quanto da Diretoria de Graduação. O Setor de Eventos, ao receber o parecer, seja ele favorável ou contrário, comunica a decisão ao solicitante.
+
 Quando aprovado, o evento é cadastrado no Sistema de Gestão Acadêmica (SGA) para que os alunos possam se inscrever, desde que o responsável marque essa opção. Além disso, são enviados os detalhes para a infraestrutura, como reserva de espaço, necessidade de café, água e outros requisitos. No caso de eventos online, a solicitação é encaminhada ao setor técnico (CRC), e, se necessário, à Assessoria de Comunicação para divulgação.
+
 O Setor de Eventos enfrenta desafios significativos devido à falta de uma plataforma centralizada e eficiente. A ausência de uma solução integrada dificulta a organização, divulgação e acompanhamento dos eventos, tornando o processo menos ágil e mais propenso a erros. Portanto, a implementação de uma plataforma dedicada é crucial para melhorar a eficiência para o gerenciamento dos eventos acadêmicos e administrativos da PUC Minas Betim.
 
 1. Falta de Adesão aos Prazos: Muitos solicitantes não seguem o prazo específico para cada tipo de evento, o que causa transtornos significativos para os 
@@ -34,8 +37,11 @@ O principal objetivo desta proposta é desenvolver uma solução centralizada e 
 A proposta visa criar uma plataforma web e mobile que permita a organização e acompanhamento de eventos de maneira integrada e simplificada. Com isso, busca-se:
 
 1. Otimizar o Processo de Solicitação: Automatizar e padronizar a solicitação de eventos, garantindo que todos os requisitos sejam atendidos dentro dos prazos estabelecidos, evitando assim os transtornos causados por pedidos tardios ou incompletos.
+   
 2. Facilitar a Gestão de Infraestrutura: Permitir a especificação clara e antecipada das demandas de infraestrutura, reduzindo as solicitações emergenciais e melhorando a coordenação entre os setores envolvidos.
+   
 3. Melhorar a Comunicação e Transparência: Centralizar a comunicação entre solicitantes e o Setor de Eventos, proporcionando um fluxo de informações mais claro e acessível, o que facilitará o acompanhamento de aprovações, ajustes e necessidades específicas.
+   
 4. Aumentar a Eficiência Organizacional: Reduzir a sobrecarga de trabalho do Setor de Eventos e demais áreas envolvidas, permitindo que os eventos sejam organizados de forma mais eficiente e com menos margem para erros.
 
 
@@ -49,8 +55,11 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 ## Justificativa
 
 A proposta de um sistema centralizado para o gerenciamento de eventos surge como resposta aos problemas recorrentes que têm tornado o processo atual moroso e desorganizado. Os erros constantes, como a demanda de última hora e o fornecimento de informações incompletas, têm prejudicado a organização dos eventos e causado sérios transtornos ao Setor de Eventos e aos funcionários envolvidos.
+
 A ausência de uma ferramenta eficaz dificulta o controle das solicitações, resultando em uma falta de organização e supervisão adequada. Isso leva a uma sobrecarga de trabalho para os funcionários, que se veem obrigados a lidar com demandas urgentes, revisões de última hora e correções constantes, comprometendo a qualidade do trabalho e gerando estresse desnecessário.
+
 Com a implementação de um sistema automatizado, será possível gerenciar os pedidos de eventos de maneira eficaz, com prazos estabelecidos e regras claras. A obrigatoriedade de confirmar a leitura e o entendimento das diretrizes antes do envio da solicitação garantirá que todos os envolvidos sigam um processo padronizado, reduzindo significativamente os erros e garantindo que os eventos sejam organizados conforme planejado.
+
 Essa proposta visa, portanto, não apenas melhorar a eficiência e a organização do Setor de Eventos, mas também proporcionar um ambiente de trabalho mais tranquilo e controlado, onde as solicitações são tratadas com a devida atenção e dentro dos parâmetros estabelecidos.
 
 
@@ -233,16 +242,21 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 1. Cadastro de Solicitações de Eventos:
    Criação, edição e exclusão de solicitações de eventos.
    Aprovação e acompanhamento das solicitações.
+
 2. Notificações Automáticas:
-Notificações sobre o status das solicitações (deferido, indeferido, em análise).
-Lembretes de prazos e atualizações de eventos.
+   Notificações sobre o status das solicitações (deferido, indeferido, em análise).
+   Lembretes de prazos e atualizações de eventos.
+
 3. Cadastro de Solicitação de Infraestrutura:
    Solicitação de espaços físicos e equipamentos.
    Coordenação com setores de infraestrutura e técnico.
+   
 4. Integração com Calendário:
    Sincronização dos eventos com o calendário institucional.
+   
 5. Acompanhamento de solicitações de eventos:
    Lista de eventos com detalhes e opções de filtro.
+   
 6. Autenticação e Níveis de Acesso:
    Diferentes níveis de acesso para administradores, professores, funcionários e alunos.
 
@@ -252,14 +266,18 @@ Lembretes de prazos e atualizações de eventos.
 1. Frontend:
    Web Application: Desenvolvida com React.js para a interface web.
    Mobile Application: Desenvolvida com React Native ou Flutter para garantir a responsividade em dispositivos móveis.
+   
 2. Backend:
    API RESTful: Desenvolvida em Go para fornecer os serviços da aplicação.
-Banco de Dados: MySQL para armazenar os dados dos eventos e usuários.
+   Banco de Dados: MySQL para armazenar os dados dos eventos e usuários.
+   
 3. Integrações:
    Integração com calendário.
+   
 4. Hospedagem:
    Hospedagem na nuvem utilizando serviços como AWS.
-Uso de Docker para containerização das aplicações.
+   Uso de Docker para containerização das aplicações.
+   
 5. Segurança:
    Implementação de HTTPS para comunicação segura.
 
