@@ -72,76 +72,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
-Alunos, Professores e Funcionários da PUC Minas Betim.
-
-# Definição de personas
-Persona 1: Administrador de Eventos
-Nome: João da Silva
-Idade: 45 anos
-Ocupação: Funcionário do setor de Eventos da PUC Minas Betim.
-Objetivos:
-Gerenciar a solicitação de eventos presenciais e virtuais;
-Gerenciar uso de espaços físicos;
-Gerenciar Certificado de Palestrantes;
-Solicitação de equipamentos e Coffee Break (enviar solicitação para a Infra estrutura);
-Solicitação de transmissão ao vivo (enviar solicitação para a CRC);
-Monitorar deferimento de eventos (entre a Coordenação e Diretoria de Graduação);
-Divulgação dos Eventos (enviar solicitação para Assessoria de Comunicação).
-Desafios:
-Necessidade de uma interface intuitiva para gerenciar múltiplos eventos.
-Garantir que a solicitação seja completa para que não surjam contratempos no decorrer do evento.
-Tecnologia: Utiliza tanto desktop quanto dispositivos móveis para acessar a aplicação.
-
-Persona 2: Estudante Participante
-Nome: Maria Eduarda
-Idade: 21 anos
-Ocupação: Estudante de Direito da PUC Minas Betim.
-Objetivos:
-Solicitar eventos acadêmicos e serviços necessários.
-Receber o parecer do setor de eventos.
-Desafios:
-Necessidade de uma plataforma que facilite a comunicação com os participantes (alunos, setor de eventos, Coordenação e Diretoria de Graduação). 	
-Garantir que os eventos sejam bem organizados.
-Tecnologia: Principalmente dispositivos móveis, mas também acessa via desktop.
-
-Persona 3: Professor Palestrante
-Nome: Dr. Carlos Henrique
-Idade: 48 anos
-Ocupação: Professor da PUC Minas Betim e palestrante.
-Objetivos:
-Solicitar eventos acadêmicos e serviços necessários.
-Receber o parecer do setor de eventos.
-Desafios:
-Necessidade de uma plataforma que facilite a comunicação com os participantes (setor de eventos, professores). 	
-Garantir que os eventos sejam bem organizados.
-Tecnologia: Utiliza tanto desktop quanto dispositivos móveis.
-
-# Histórias de usuário
-
- est001 - como [afiliado da PUC Minas] eu quero poder abrir uma solicitação para realizar um evento nas dependências da universidade
-
-est002 - como [analista/secretaria] quero receber solicitações de eventos padronizadas para facilitar a conferência de viabilidade
-
-est003 - como [analista/secretaria] quero ter uma lista das solicitações  de eventos em aberto para realizar a análise
-
-est004 - como [analista/secretaria] quero verificar a viabilidade de cada solicitação para classificar em viável ou não viável
-
-est005 - como [analista/secretaria] quero listar todas as solicitações em aberto para acompanhar o andamento de cada uma
-
-est006 - como [analista/secretaria] quero poder pedir mais informações para o solicitante para eventual análise de dados faltantes
-
-est007 - como [afiliado da PUC Minas] quero encaminhar informações adicionais para atender a solicitação de uma análise
-
-est008 - como [analista/secretaria] quero encaminhar uma solicitação viável para a aprovação e assinatura do documento
-
-est009 - como [analista/secretaria] quero encaminhar a solicitação aprovada para o solicitante afiliado da PUC Minas para que ele possa iniciar os preparativos do evento
-
-est010 - como [analista/secretaria] quero encaminhar a solicitação aprovada para o setores envolvidos PUC Minas para ciência e deferimento do documento
-
-est011 - como [afiliado da PUC Minas] quero poder verificar o status da solicitação para conseguir acompanhar o andamento do meu pedido
-
-est012 - como [afiliado da PUC Minas] quero receber notificação sobre o status da solicitação para ficar atualizado sobre o andamento do meu pedido
-
+Alunos, Professores e Funcionários da PUC Minas Betim. Pessoas com idade entre 17 e 70 anos, com pouco, médio e alto conhecimento de computadores e tecnologia de comunicação.
 
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
