@@ -30,7 +30,7 @@ O Setor de Eventos enfrenta desafios significativos devido à falta de uma plata
 
 ## Objetivos
 
-O principal objetivo desta proposta é desenvolver uma solução centralizada e eficiente para o gerenciamento de eventos na PUC Minas Betim, que possa ser expandida para outras unidades da universidade.
+O principal objetivo deste projeto é desenvolver uma aplicação descentralizada para o gerenciamento de eventos na PUC Minas Betim, projetada para suportar até 50 usuários simultâneos e com uma arquitetura escalável para até 100 usuários simultâneos que permita sua adaptação e expansão para as demais unidades da universidade.
 
 ## Justificativa
 
@@ -72,18 +72,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
-Alunos, Professores e Funcionários da PUC Minas Betim. Pessoas com idade entre 17 e 70 anos, com pouco, médio e alto conhecimento de computadores e tecnologia de comunicação.
-
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+O público-alvo desta aplicação inclui alunos, professores e funcionários da PUC Minas Betim, abrangendo indivíduos com idades entre 17 e 70 anos. Este grupo é composto por usuários com diferentes níveis de familiaridade com tecnologia, desde aqueles com conhecimentos básicos até avançados em informática.
 
 ## Especificações do Projeto
 
