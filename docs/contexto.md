@@ -112,32 +112,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Não Funcionais
 
-| Identificador | Requisitos                                                                 | Classificação  | Prioridade |
+| Identificador | Requisitos                                                                | Classificação  | Prioridade |
 |---------------|---------------------------------------------------------------------------|----------------|------------|
-| RNF01         | A aplicação deve carregar rapidamente e ser responsiva, mesmo com um grande número de usuários simultâneos. | Desempenho     | Alta       |
+| RNF01         | A aplicação deve ser responsiva, mesmo com 50 usuários simultâneos. | Desempenho     | Alta       |
 | RNF02         | Garantir a proteção dos dados dos usuários e a integridade das informações dos eventos. | Segurança      | Alta       |
-| RNF03         | A interface deve ser intuitiva e fácil de usar, com um design responsivo que funcione bem em diferentes dispositivos. | Usabilidade    | Média      |
-| RNF04         | A aplicação deve ser capaz de crescer e suportar um aumento no número de eventos e usuários sem perda de desempenho. | Escalabilidade | Média      |
-| RNF05         | Deve funcionar em diversos navegadores e sistemas operacionais, tanto em desktops quanto em dispositivos móveis. | Compatibilidade | Média      |
+| RNF03         | O sistema deve ser funcional em diferentes dispositivos. | Usabilidade    | Média      |
+| RNF04         | A aplicação deve responder bem até 50 usuários simultâneos e suportar um aumento de até 100 usuários simultâneos sem perda de desempenho. | Escalabilidade | Média      |
+| RNF05         | Deve funcionar em diversos navegadores e sistemas operacionais, tanto em web client e mobile. | Compatibilidade | Média      |
 | RNF06         | O código deve ser bem documentado e estruturado para facilitar futuras manutenções e atualizações. | Manutenibilidade | Média      |
 | RNF07         | A aplicação deve estar disponível e acessível 24/7, com um tempo de inatividade mínimo. | Disponibilidade | Alta       |
-
-
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
