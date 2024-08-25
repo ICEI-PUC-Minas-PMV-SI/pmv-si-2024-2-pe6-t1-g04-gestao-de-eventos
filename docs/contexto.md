@@ -1,78 +1,40 @@
 # Introdução
 
-A proposta deste projeto é desenvolver uma aplicação web e mobile com foco na criação de uma página para gerenciar os eventos da PUC Minas Betim, que servirá como modelo para as demais unidades da Universidade. A página será projetada com princípios de design responsivo, garantindo um funcionamento eficaz tanto em desktops quanto em dispositivos móveis. O projeto incluirá a definição de personas, histórias de usuários, requisitos funcionais e não funcionais, bem como a documentação da arquitetura distribuída e do catálogo de serviços, além da análise de custos.
+A proposta deste projeto é desenvolver uma aplicação web e mobile para gerenciar os eventos da PUC Minas Betim, localizada na cidade de Betim, Minas Gerais, que integra a Região Metropolitana de Belo Horizonte. A PUC Minas conta com seu campus principal no Coração Eucarístico e nove unidades adicionais: Barreiro, Betim, Contagem, Lourdes, Poços de Caldas, Virtual e São Gabriel. O desenvolvimento será realizado por um grupo de alunos do 6º período do curso de Sistemas de Informação da PUC Minas Virtual, utilizando a unidade Betim como exemplo.
 
+Atualmente, a PUC Minas Betim utiliza um documento em Word, denominado "CHECK LIST Eventos", para a solicitação de eventos. Este documento pode ser preenchido por professores, funcionários e alunos, e enviado ao Setor de Eventos para aprovação e organização. Com uma média de 20 solicitações de eventos por mês, esse processo é antiquado, resultando em dados desorganizados e incompletos. A forma como os eventos são solicitados frequentemente gera erros, tornando a organização dos mesmos um desafio significativo.
 
-## Problema
+Além disso, o processo atual enfrenta diversos problemas, como a falta de adesão aos prazos por parte dos solicitantes, o que gera transtornos na organização. Muitas vezes, as demandas de infraestrutura não são especificadas claramente, resultando em pedidos emergenciais durante os eventos. Informações essenciais para a organização também são frequentemente omitidas, obrigando o Setor de Eventos a buscar esses dados de última hora, complicando ainda mais o processo de preparação.
 
-Atualmente, a PUC Minas Betim utiliza um documento em Word intitulado "CHECK LIST Eventos" para a solicitação de eventos, o qual pode ser preenchido por professores, funcionários e alunos e enviado ao Setor de Eventos para aprovação e organização. No entanto, esse processo é ultrapassado e resulta em dados desorganizados e incompletos. A unidade oferece 9 cursos de graduação, incluindo o curso de Medicina, que gera um número elevado de solicitações de eventos. Devido à forma como o processo é conduzido, frequentemente ocorrem erros, tornando a organização dos mesmos um desafio.
-
-Após o envio da solicitação do evento ao setor, o documento: "CHECK LIST Eventos"  é encaminhado para aprovação da Coordenação do curso e/ou da Diretoria de Graduação. Eventos realizados dentro da Unidade precisam apenas do parecer da Coordenação, enquanto eventos fora da Unidade requerem a aprovação tanto da Coordenação quanto da Diretoria de Graduação. O Setor de Eventos, ao receber o parecer, seja ele favorável ou contrário, comunica a decisão ao solicitante.
-
-Quando aprovado, o evento é cadastrado no Sistema de Gestão Acadêmica (SGA) para que os alunos possam se inscrever, desde que o responsável marque essa opção. Além disso, são enviados os detalhes para a infraestrutura, como reserva de espaço, necessidade de café, água e outros requisitos. No caso de eventos online, a solicitação é encaminhada ao setor técnico (CRC), e, se necessário, à Assessoria de Comunicação para divulgação.
-
-O Setor de Eventos enfrenta desafios significativos devido à falta de uma plataforma centralizada e eficiente. A ausência de uma solução integrada dificulta a organização, divulgação e acompanhamento dos eventos, tornando o processo menos ágil e mais propenso a erros. Portanto, a implementação de uma plataforma dedicada é crucial para melhorar a eficiência para o gerenciamento dos eventos acadêmicos e administrativos da PUC Minas Betim.
-
-1. Falta de Adesão aos Prazos: Muitos solicitantes não seguem o prazo específico para cada tipo de evento, o que causa transtornos significativos para os 
-   funcionários responsáveis pela organização. Esse problema é ainda mais grave quando o evento, embora solicitado em Betim, é realizado em outra unidade, 
-   exigindo uma coordenação mais complexa.
-2. Inadequação das Demandas de Infraestrutura: Frequentemente, as demandas de infraestrutura não são especificadas de forma clara no momento da solicitação. Isso 
-   resulta em pedidos emergenciais de itens específicos durante o evento, colocando o setor responsável em uma situação difícil e comprometendo a qualidade da 
-   gestão.
-3. Informações Incompletas ou Ausentes: Solicitantes frequentemente deixam de preencher informações essenciais para a organização do evento. Como resultado, o 
-   Setor de Eventos se vê obrigado a buscar esses dados de última hora, o que atrasa e complica o processo de preparação.
-
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Esses desafios tornam evidente a necessidade de uma plataforma para o gerenciamento dos eventos acadêmicos e administrativos da PUC Minas Betim. A nova aplicação será projetada com princípios de design responsivo, buscando um funcionamento adequado tanto em página web quanto em dispositivos móveis. O projeto inclui requisitos funcionais e não funcionais, além da documentação da arquitetura distribuída, catálogo de serviços e análise de custos.
 
 ## Objetivos
 
-O principal objetivo deste projeto é desenvolver uma aplicação descentralizada para o gerenciamento de eventos na PUC Minas Betim, projetada para suportar até 50 usuários simultâneos e com uma arquitetura escalável para até 100 usuários simultâneos que permita sua adaptação e expansão para as demais unidades da universidade.
+OO principal objetivo deste projeto é desenvolver uma aplicação distribuída para o gerenciamento de eventos na PUC Minas Betim, projetada para suportar até 50 usuários simultâneos e com uma arquitetura escalável para até 100 usuários simultâneos que permita sua adaptação e expansão para as demais unidades da universidade.
+
+## Objetivos específicos:
+
+Preparar a Aplicação para Escalabilidade: Projetar a arquitetura da aplicação com a capacidade de escalonamento horizontal e vertical, permitindo que a aplicação seja facilmente expandida para suportar até 100 usuários simultâneos, conforme necessário.
+
+Desenvolver Mecanismos de Controle de Acesso: Implementar um sistema de autenticação e autorização que assegure que diferentes níveis de acesso sejam atribuídos de acordo com os perfis de usuários (alunos, professores, funcionários).
+
+Facilitar a Expansão para Outras Unidades: Estruturar o sistema de forma modular, com configurações e dados que possam ser personalizados para atender às necessidades específicas de diferentes unidades da PUC Minas, permitindo uma implementação ágil em novas localidades.
+
+Integrar Ferramentas de Monitoramento e Relatórios: Desenvolver funcionalidades que permitam o monitoramento em tempo real da utilização da aplicação e a geração de relatórios sobre eventos, participação e recursos, para apoiar a tomada de decisões administrativas.
+
+Conduzir Testes de Usabilidade e Ajustes Finais: Realizar testes de usabilidade com usuários reais para identificar e corrigir problemas, garantindo que a aplicação atenda às expectativas de funcionalidade e facilidade de uso.
 
 ## Justificativa
 
-A proposta visa criar uma plataforma web e mobile que permita a organização e acompanhamento de eventos de maneira integrada e simplificada. Com isso, busca-se:
+A proposta de um sistema distribuído para o gerenciamento de eventos surge como resposta aos problemas recorrentes que têm tornado o processo atual moroso e desorganizado. Os erros constantes, como a demanda de última hora e o fornecimento de informações incompletas, têm prejudicado a organização dos eventos e causado sérios transtornos ao Setor de Eventos e também aos outros setores envolvidos.
 
-1. Otimizar o Processo de Solicitação: Automatizar e padronizar a solicitação de eventos, garantindo que todos os requisitos sejam atendidos dentro dos prazos estabelecidos, evitando assim os transtornos causados por pedidos tardios ou incompletos.
-   
-2. Facilitar a Gestão de Infraestrutura: Permitir a especificação clara e antecipada das demandas de infraestrutura, reduzindo as solicitações emergenciais e melhorando a coordenação entre os setores envolvidos.
-   
-3. Melhorar a Comunicação e Transparência: Centralizar a comunicação entre solicitantes e o Setor de Eventos, proporcionando um fluxo de informações mais claro e acessível, o que facilitará o acompanhamento de aprovações, ajustes e necessidades específicas.
-   
-4. Aumentar a Eficiência Organizacional: Reduzir a sobrecarga de trabalho do Setor de Eventos e demais áreas envolvidas, permitindo que os eventos sejam organizados de forma mais eficiente e com menos margem para erros.
+Com a implementação desse sistema, será possível gerenciar os pedidos de eventos de maneira mais organizada, com prazos estabelecidos e regras claras, evitando surpresas e contratempos.
 
-
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
-## Justificativa
-
-A proposta de um sistema centralizado para o gerenciamento de eventos surge como resposta aos problemas recorrentes que têm tornado o processo atual moroso e desorganizado. Os erros constantes, como a demanda de última hora e o fornecimento de informações incompletas, têm prejudicado a organização dos eventos e causado sérios transtornos ao Setor de Eventos e aos funcionários envolvidos.
-
-A ausência de uma ferramenta eficaz dificulta o controle das solicitações, resultando em uma falta de organização e supervisão adequada. Isso leva a uma sobrecarga de trabalho para os funcionários, que se veem obrigados a lidar com demandas urgentes, revisões de última hora e correções constantes, comprometendo a qualidade do trabalho e gerando estresse desnecessário.
-
-Com a implementação de um sistema automatizado, será possível gerenciar os pedidos de eventos de maneira eficaz, com prazos estabelecidos e regras claras. A obrigatoriedade de confirmar a leitura e o entendimento das diretrizes antes do envio da solicitação garantirá que todos os envolvidos sigam um processo padronizado, reduzindo significativamente os erros e garantindo que os eventos sejam organizados conforme planejado.
-
-Essa proposta visa, portanto, não apenas melhorar a eficiência e a organização do Setor de Eventos, mas também proporcionar um ambiente de trabalho mais tranquilo e controlado, onde as solicitações são tratadas com a devida atenção e dentro dos parâmetros estabelecidos.
-
-
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Essa proposta, portanto, não visa apenas aprimorar a organização do Setor de Eventos, mas também proporcionar um ambiente de trabalho mais tranquilo e controlado, onde as solicitações são tratadas com a devida atenção e dentro dos parâmetros estabelecidos.
 
 ## Público-Alvo
 
-O público-alvo desta aplicação inclui alunos, professores e funcionários da PUC Minas Betim, abrangendo indivíduos com idades entre 17 e 70 anos. Este grupo é composto por usuários com diferentes níveis de familiaridade com tecnologia, desde aqueles com conhecimentos básicos até avançados em informática.
+O público-alvo desta aplicação inclui alunos, professores e funcionários da PUC Minas Betim, abrangendo indivíduos com idades entre 17 e 70 anos. Este grupo é composto por usuários com diferentes níveis de familiaridade com tecnologia, desde aqueles com conhecimentos básicos até avançados em informática. Além disso, inclui o gestor do sistema, que atuará como administrador, gerenciando o sistema, emitindo relatórios e encaminhando as solicitações para avaliação pela coordenação, Diretoria de Graduação e setores envolvidos.
 
 ## Especificações do Projeto
 
@@ -84,29 +46,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | Identificador | Requisitos                                                                                  | Classificação        | Prioridade |
 |---------------|----------------------------------------------------------------------------|----------------------------|------------|
-| RF01          | Permitir que os usuários possam criar eventos online com prazo de 5 dias úteis de antecedência. | Criação de Eventos         | Alta       |
-| RF02          | Permitir que os usuários possam criar eventos para sala de aula campus Betim com prazo de 10 dias úteis de antecedência no máximo 60 pessoas. | Criação de Eventos         | Alta       |
-| RF03          | Permitir que os usuários possam criar eventos para Auditório campus Betim com prazo de 15 dias úteis de antecedência e mínimo de 100 pessoas. | Criação de Eventos         | Alta       |
-| RF04          | Permitir que os usuários possam criar eventos para Multimeios campus Betim com prazo de 15 dias úteis de antecedência e mínimo 70 pessoas. | Criação de Eventos         | Alta       |
-| RF05          | Permitir que os usuários possam criar eventos para Laboratórios campus Betim com prazo de 15 dias úteis de antecedência. | Criação de Eventos         | Alta       |
-| RF06          | Permitir que os usuários possam criar eventos para Hall campus Betim com prazo de 15 dias úteis de antecedência. | Criação de Eventos         | Alta       |
-| RF07          | Permitir que os usuários possam criar eventos para outra unidade, campus ou outros locais solicitação deve ser feita com prazo de 20 dias úteis de antecedência. | Criação de Eventos         | Média      |
-| RF08          | Permitir que os usuários possam editar eventos, antes de enviar a solicitação. | Edição e Exclusão de Eventos | Alta       |
-| RF09          | Permitir que os usuários possam excluir eventos, antes de enviar a solicitação. | Edição e Exclusão de Eventos | Alta       |
-| RF10          | Permitir que o usuário realize a descrição do Evento para análise da Coordenação e/ou Diretoria de Graduação. | Descrição do Evento        | Alta       |
-| RF11          | Permitir que a Coordenação defira ou indefira a solicitação de eventos realizados na Unidade Betim. | Aprovação de Eventos       | Alta       |
-| RF12          | Permitir que a Coordenação e a Diretoria de Graduação defiram ou indefiram a solicitação do Evento solicitados em outros locais fora da Unidade Betim. | Aprovação de Eventos       | Alta       |
-| RF13          | Enviar notificações ao solicitante sobre deferimento ou indeferimento do evento. | Notificações               | Alta       |
-| RF14          | Enviar notificações aos solicitantes sobre alterações do evento. | Notificações               | Média      |
-| RF15          | Permitir encaminhar ao solicitante mais informações sobre o evento. | Notificações               | Média      |
-| RF16          | Permitir o solicitante retornar alterações sobre o evento. | Notificações               | Média      |
-| RF17          | Implementar login e registro de usuários, com diferentes níveis de acesso (administradores e participantes). | Login e Registro de Usuários | Alta       |
-| RF18          | Sincronizar eventos com calendários da PUC Minas. | Sincronização com Calendários | Média      |
-| RF19          | Oferecer funcionalidades de busca do evento por data, curso, setor ou funcionário, com filtros para encontrar eventos específicos. (setor) | Funcionalidades de Busca   | Alta       |
-| RF20          | Oferecer funcionalidades de busca dos eventos em andamento, finalizados e indeferidos. (setor) | Funcionalidades de Busca   | Alta       |
-| RF21          | Implementar as opções de serviços necessários para encaminhamento ao setor de Infraestrutura, visando a organização do evento. | Serviços de Infraestrutura | Alta       |
-| RF22          | Implementar as opções de serviços necessários para encaminhamento ao setor de Laboratórios, visando a organização do evento. | Serviços de Laboratórios   | Alta       |
-| RF23          | Permitir que o sistema emita um resumo do evento em formatos como PDF e DOCX. | Emissão de Resumo do Evento | Média      |
+| RF01          | O sistema deve permitir o cadastro de locais físicos, especificando prazos mínimos de antecedência para as reservas. Além disso, deve oferecer funcionalidades para editar, visualizar e excluir esses cadastros conforme necessário. | Gestão do evento         | Alta       |
+| RF02          | O sistema deve permitir o cadastro de outras unidades, especificando prazos mínimos de antecedência para as reservas. Além disso, deve oferecer funcionalidades para editar, visualizar e excluir esses cadastros conforme necessário. | Gestão das unidades         | Alta       |
+| RF03          | Permitir a criação de eventos, validando a data de início e fim do evento, informando o usuário caso a data escolhida não atenda ao prazo mínimo de antecedência. | Gestão de Eventos         | Alta       |
+| RF04          | Permitir a criação de eventos fora do prazo mínimo de antecedência em casos excepcionais. | Gestão de eventos         | Alta       |
+| RF05          | Permitir que o sistema envie uma notificação para a Coordenação e/ou a Diretoria de Graduação visualizar a solicitação do evento para ser deferido ou indeferido com prazo pré estabelecido. | Ciclo de eventos         | Alta       |
+| RF06          | Permitir que o sistema envie notificações ao solicitante sobre deferimento ou indeferimento do evento. | Ciclo de eventos         | Alta       |
+| RF07          | Permitir que o sistema envie notificações aos solicitantes caso o local do evento seja alterado ou esteja indisponível na data solicitada. | Ciclo de eventos         | Média      |
+| RF08          | Permitir que o solicitante envie alterações sobre o evento dentro do prazo estabelecido. | Ciclo de eventos | Alta       |
+| RF09          | Implementar login e registro de usuários, com diferentes níveis de acesso (administradores e participantes). | Gestão do usuário | Alta       |
+| RF10          | Oferecer funcionalidades de busca do evento por data, curso, setor ou funcionário, com filtros para encontrar eventos específicos. (setor) | Gestão de eventos        | Alta       |
+| RF11          | Permitir que o sistema emita um resumo do evento em formatos como PDF e DOCX. | Relatório final       | Média       |
+
 
 
 
