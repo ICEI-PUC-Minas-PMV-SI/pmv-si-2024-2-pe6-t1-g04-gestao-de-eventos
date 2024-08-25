@@ -52,7 +52,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF04          | Permitir a criação de eventos fora do prazo mínimo de antecedência em casos excepcionais. | Gestão de eventos         | Alta       |
 | RF05          | Permitir que o sistema envie uma notificação para a Coordenação e/ou a Diretoria de Graduação visualizar a solicitação do evento para ser deferido ou indeferido com prazo pré estabelecido. | Ciclo de eventos         | Alta       |
 | RF06          | Permitir que o sistema envie notificações ao solicitante sobre deferimento ou indeferimento do evento. | Ciclo de eventos         | Alta       |
-| RF07          | Permitir que o sistema envie notificações aos solicitantes caso o local do evento seja alterado ou esteja indisponível na data solicitada. | Ciclo de eventos         | Média      |
+| RF07          | Permitir que o sistema envie notificações aos solicitantes caso o local do evento seja alterado ou esteja indisponível na data solicitada. | Ciclo de eventos         | Alta      |
 | RF08          | Permitir que o solicitante envie alterações sobre o evento dentro do prazo estabelecido. | Ciclo de eventos | Alta       |
 | RF09          | Implementar login e registro de usuários, com diferentes níveis de acesso (administradores e participantes). | Gestão do usuário | Alta       |
 | RF10          | Oferecer funcionalidades de busca do evento por data, curso, setor ou funcionário, com filtros para encontrar eventos específicos. (setor) | Gestão de eventos        | Alta       |
