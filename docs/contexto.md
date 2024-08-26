@@ -75,7 +75,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ## Restrições
 
-A princício, foram identificadas duas restrições, que estão descritas abaixo:
+A princício, foram identificadas duas restrições as quais estão descritas abaixo:
 
 1. Orçamento Limitado: Como é um projeto acadêmico, o orçamento pode ser restrito, limitando as escolhas tecnológicas e de hospedagem;
 2. Prazo de Entrega: O sistema deve estar finalizado até dezembro, exigindo uma gestão eficiente do tempo.
@@ -107,16 +107,23 @@ Abaixo, enumeramos os principais serviços que serão oferecidos em nossa aplica
 A aplicação web/mobile foi idealizada em sua arquitetura como sendo cliente-servidor. Tal arquitetura se dá como uma rede em que um programa de computador (cliente), solicita um serviço ou recurso de outro programa de computador (servidor), recebendo uma resposta com as informações solicitadas por meio de protocolos de rede em infraestruturas de TI.
 A API se dará em estrutura monolítica, onde todos os componentes são integrados em uma única aplicação.
 
+![DALL·E 2024-08-26 18 40 45 - An illustration depicting a client-server architecture for a web_mobile application](https://github.com/user-attachments/assets/273eabd5-78f4-4e60-a875-f98a14fab042)
+
 ## Tecnologias Utilizadas
 
-1. Frontend: React native
-2. Backend: Dot Net
-3. Banco de Dados: MySQL
-4. Hospedagem: AWS
+1. Frontend: Para o desenvolvimento da interface de usuário, utilizamos o React Native, uma poderosa framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript. Isso proporciona uma experiência de usuário fluida e um desenvolvimento eficiente;
+
+2. Backend: A camada de servidor foi implementada em .NET, uma plataforma robusta e versátil da Microsoft, que oferece suporte para a construção de APIs seguras, escaláveis e de alto desempenho. Essa escolha garante a estabilidade e a manutenção simplificada do backend;
+
+3. Banco de Dados: Os dados da aplicação são armazenados no MySQL, um sistema de gerenciamento de banco de dados relacional amplamente utilizado e confiável. O MySQL é conhecido por sua performance, escalabilidade e suporte a operações complexas de consulta e transação;
+
+4. Hospedagem: A aplicação está hospedada na AWS (Amazon Web Services), a plataforma líder em serviços de computação em nuvem. A AWS oferece uma infraestrutura altamente escalável, segura e de alta disponibilidade, o que garante que a aplicação esteja sempre acessível e capaz de lidar com grandes volumes de tráfego;
+
+Inserir figura aqui
 
 ## Hospedagem
 
-1. Ambiente de Desenvolvimento: Local com uso de Docker para garantir a consistência entre ambientes.
-2. Ambiente de Produção: Hospedagem na nuvem, com AWS utilizando instâncias EC2, banco de dados gerenciado (RDS), e armazenamento de arquivos no S3.
+1. Ambiente de Desenvolvimento: Local com uso de Docker para garantir a consistência entre ambientes;
+2. Ambiente de Produção: Hospedagem na nuvem, com AWS utilizando instâncias EC2, banco de dados gerenciado (RDS), e armazenamento de arquivos no S3;
 3. Monitoramento e Logs: Ferramentas como AWS CloudWatch para monitorar a performance e logs da aplicação.
 
