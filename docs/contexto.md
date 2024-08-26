@@ -75,23 +75,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ## Restrições
 
-1. Orçamento Limitado: Como é um projeto acadêmico, o orçamento pode ser restrito, limitando as escolhas tecnológicas e de hospedagem.
+A princício, foram identificadas duas restrições, que estão descritas abaixo:
+
+1. Orçamento Limitado: Como é um projeto acadêmico, o orçamento pode ser restrito, limitando as escolhas tecnológicas e de hospedagem;
 2. Prazo de Entrega: O sistema deve estar finalizado até dezembro, exigindo uma gestão eficiente do tempo.
-3. Complexidade da Integração: A integração com sistemas já existentes, como o Sistema de Gestão Acadêmica (SGA), pode ser desafiadora.
-4. Escalabilidade: Embora o foco inicial seja na unidade Betim, o sistema precisa ser escalável para outras unidades da PUC Minas.
-5. Segurança de Dados: A proteção de informações pessoais e sensíveis dos usuários é crucial.
-6. Conformidade com Políticas Institucionais: O sistema deve seguir as políticas de TI e governança da PUC Minas.
-7. Acessibilidade: A aplicação deve ser acessível para pessoas com diferentes necessidades.
-8. Complexidade com calendário acadêmico da PUC Minas: Apresentar no software datas em que a PUC segue mediante feriados e férias.
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Catálogo de Serviços
+
+Abaixo, enumeramos os principais serviços que serão oferecidos em nossa aplicação web/mobile:
 
 1. Cadastro de Solicitações de Eventos:
    Criação, edição e exclusão de solicitações de eventos.
@@ -105,53 +96,23 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
    Solicitação de espaços físicos e equipamentos.
    Coordenação com setores de infraestrutura e técnico.
    
-4. Integração com Calendário:
-   Sincronização dos eventos com o calendário institucional.
-   
-5. Acompanhamento de solicitações de eventos:
+4. Acompanhamento de solicitações de eventos:
    Lista de eventos com detalhes e opções de filtro.
    
-6. Autenticação e Níveis de Acesso:
+5. Autenticação e Níveis de Acesso:
    Diferentes níveis de acesso para administradores, professores, funcionários e alunos.
-
 
 ## Arquitetura da Solução
 
-1. Frontend:
-   Web Application: Desenvolvida com React.js para a interface web.
-   Mobile Application: Desenvolvida com React Native ou Flutter para garantir a responsividade em dispositivos móveis.
-   
-2. Backend:
-   API RESTful: Desenvolvida em Go para fornecer os serviços da aplicação.
-   Banco de Dados: MySQL para armazenar os dados dos eventos e usuários.
-   
-3. Integrações:
-   Integração com calendário.
-   
-4. Hospedagem:
-   Hospedagem na nuvem utilizando serviços como AWS.
-   Uso de Docker para containerização das aplicações.
-   
-5. Segurança:
-   Implementação de HTTPS para comunicação segura.
-
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
-
+A aplicação web/mobile foi idealizada em sua arquitetura como sendo cliente-servidor. Tal arquitetura se dá como uma rede em que um programa de computador (cliente), solicita um serviço ou recurso de outro programa de computador (servidor), recebendo uma resposta com as informações solicitadas por meio de protocolos de rede em infraestruturas de TI.
+A API se dará em estrutura monolítica, onde todos os componentes são integrados em uma única aplicação.
 
 ## Tecnologias Utilizadas
 
-1. Frontend: React.js
-2. Backend: Go
+1. Frontend: React native
+2. Backend: Dot Net
 3. Banco de Dados: MySQL
 4. Hospedagem: AWS
-
-
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 ## Hospedagem
 
@@ -159,12 +120,3 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 2. Ambiente de Produção: Hospedagem na nuvem, com AWS utilizando instâncias EC2, banco de dados gerenciado (RDS), e armazenamento de arquivos no S3.
 3. Monitoramento e Logs: Ferramentas como AWS CloudWatch para monitorar a performance e logs da aplicação.
 
-
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
