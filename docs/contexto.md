@@ -100,7 +100,7 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 <p align="justify">  Em relação às tecnologias que iremos aplicar, optamos por utilizar tecnologias modernas e robustas que suportam tanto o desenvolvimento quanto a operação contínua da solução. A seguir, detalhamos as principais tecnologias empregadas em cada camada da arquitetura: </p>
 
 <p align="justify">
-  <strong>- Frontend:</strong> Para o desenvolvimento da interface de usuário, utilizaremos o React Native, um framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript e React, um framework para desenvolvimento de frontend de aplicações Web.
+  <strong>• Frontend:</strong> Para o desenvolvimento da interface de usuário, utilizaremos o React Native, um framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript e React, um framework para desenvolvimento de frontend de aplicações Web.
 </p>
 
 <p align="justify"> <strong>Frontend:</strong> Para o desenvolvimento da interface de usuário, utilizaremos o React Native, um framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript e React, um framework para desenvolvimento de frontend de aplicações Web; 
