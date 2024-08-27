@@ -97,16 +97,15 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 
 ## Tecnologias Utilizadas
 
-<p align="justify">  Para garantir que a aplicação ofereça alto desempenho, segurança e escalabilidade, optamos por utilizar tecnologias modernas e robustas que suportam tanto o desenvolvimento quanto a operação contínua da solução. A seguir, detalhamos as principais tecnologias empregadas em cada camada da arquitetura: </p>
+<p align="justify">  Em relação às tecnologias que iremos aplicar, optamos por utilizar tecnologias modernas e robustas que suportam tanto o desenvolvimento quanto a operação contínua da solução. A seguir, detalhamos as principais tecnologias empregadas em cada camada da arquitetura: </p>
 
-- **Frontend:** Para o desenvolvimento da interface de usuário, utilizaremos o React Native, uma poderosa framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript. Isso proporciona uma experiência de usuário fluida e um desenvolvimento eficiente;
+- **Frontend:** Para o desenvolvimento da interface de usuário, utilizaremos o React Native, um framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript e React, um framework para desenvolvimento de frontend de aplicações Web;
 
-- **Backend:** A camada de servidor será implementada em .NET, uma plataforma robusta e versátil da Microsoft, que oferece suporte para a construção de APIs seguras, escaláveis e de alto desempenho. Essa escolha garante a estabilidade e a manutenção simplificada do backend;
+- **Backend:** A camada de servidor será implementada em .NET, uma plataforma da Microsoft, que oferece suporte para a construção de APIs seguras, escaláveis e de alto desempenho. Essa escolha garante a manutenção simplificada do backend;
 
-- **Banco de Dados:** Os dados da aplicação serão armazenados no MySQL, um sistema de gerenciamento de banco de dados relacional amplamente utilizado e confiável. O MySQL é conhecido por sua performance, escalabilidade e suporte a operações complexas de consulta e transação;
+- **Banco de Dados:** Os dados da aplicação serão armazenados no MySQL, um sistema de gerenciamento de banco de dados relacional;
 
-- **Hospedagem:** A aplicação estará hospedada na AWS (Amazon Web Services), a plataforma líder em serviços de computação em nuvem. A AWS oferece uma infraestrutura altamente escalável, segura e de alta disponibilidade, o que garante que a aplicação esteja sempre acessível e capaz de lidar com grandes volumes de tráfego.
-
+- **Hospedagem:** A aplicação estará hospedada na AWS (Amazon Web Services), que oferece uma infraestrutura escalável, segura e de alta disponibilidade.
 
 ![DALL·E 2024-08-27 07 35 57 - A modern software architecture for a web_mobile application  The illustration includes four labeled components_ 'Frontend,' 'Backend,' 'Banco de Dados](https://github.com/user-attachments/assets/5d0dc966-a272-4cbe-ac5f-9af2c4717733)
 
@@ -114,10 +113,5 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 
 ## Hospedagem
 
-<p align="justify">  No que tange a hospedagem da aplicação, optamos por uma estratégia bem estruturada, dividida entre ambientes de desenvolvimento e produção. Cada ambiente será configurado para atender às necessidades específicas do projeto, garantindo que a aplicação funcione de maneira consistente e confiável em todas as fases do desenvolvimento. Abaixo, detalhamos as abordagens de hospedagem adotadas: </p>
-
-- **Ambiente de Desenvolvimento:** Local com uso de Docker para garantir a consistência entre ambientes;
-- **Ambiente de Produção:** Hospedagem na nuvem, com AWS utilizando instâncias EC2, banco de dados gerenciado (RDS), e armazenamento de arquivos no S3;
-- **Monitoramento e Logs:** Ferramentas como AWS CloudWatch para monitorar a performance e logs da aplicação.
-
+<p align="justify">  No que tange a hospedagem da aplicação, optamos por uma estratégia bem estruturada em ambiente de produção. A aplicação será hospedada em instâncias EC2 na AWS e utilizaremos para banco de dados o RDS, também oferecido pelo menos serviço de nuvem. </p>
 
