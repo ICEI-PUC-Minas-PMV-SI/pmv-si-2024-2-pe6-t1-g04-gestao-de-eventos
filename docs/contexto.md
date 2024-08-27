@@ -101,15 +101,17 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 
 <p align="justify">
   <strong>• Frontend:</strong> Para o desenvolvimento da interface de usuário, utilizaremos o React Native, um framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript e React, um framework para desenvolvimento de frontend de aplicações Web.
+</p> 
+
+<p align="justify"> 
+  <strong>• Backend:</strong> A camada de servidor será implementada em .NET, uma plataforma da Microsoft, que oferece suporte para a construção de APIs seguras, escaláveis e de alto desempenho. Essa escolha garante a manutenção simplificada do backend;
 </p>
 
-<p align="justify"> <strong>Frontend:</strong> Para o desenvolvimento da interface de usuário, utilizaremos o React Native, um framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript e React, um framework para desenvolvimento de frontend de aplicações Web; 
+<p align="justify"> 
+  <strong>• Banco de Dados:</strong> Os dados da aplicação serão armazenados no MySQL, um sistema de gerenciamento de banco de dados relacional;</p>
 
-<p align="justify"> <strong>Backend:</strong> A camada de servidor será implementada em .NET, uma plataforma da Microsoft, que oferece suporte para a construção de APIs seguras, escaláveis e de alto desempenho. Essa escolha garante a manutenção simplificada do backend;
-
-<p align="justify"> <strong>Banco de Dados:</strong> Os dados da aplicação serão armazenados no MySQL, um sistema de gerenciamento de banco de dados relacional;
-
-<p align="justify"> <strong>Hospedagem:</strong> A aplicação estará hospedada na AWS (Amazon Web Services), que oferece uma infraestrutura escalável, segura e de alta disponibilidade.
+<p align="justify"> 
+  <strong>• Hospedagem:</strong> A aplicação estará hospedada na AWS (Amazon Web Services), que oferece uma infraestrutura escalável, segura e de alta disponibilidade.</p>
 
 ![DALL·E 2024-08-27 07 35 57 - A modern software architecture for a web_mobile application  The illustration includes four labeled components_ 'Frontend,' 'Backend,' 'Banco de Dados](https://github.com/user-attachments/assets/5d0dc966-a272-4cbe-ac5f-9af2c4717733)
 
