@@ -88,7 +88,7 @@
 
 ## Arquitetura da Solução
 
-<p align="justify"> A aplicação web/mobile foi idealizada em sua arquitetura como sendo cliente-servidor. Tal arquitetura se dá como uma rede em que um programa de computador (cliente), solicita um serviço ou recurso de outro programa de computador (servidor), recebendo uma resposta com as informações solicitadas por meio de protocolos de rede em infraestruturas de TI.
+<p align="justify"> A aplicação web/mobile foi idealizada em sua arquitetura como sendo cliente-servidor. Tal arquitetura se dá como uma rede em que um programa de computador (cliente), solicita um serviço ou recurso de outro programa de computador (servidor), recebendo uma resposta com as informações solicitadas por meio de protocolos de rede em infraestruturas de TI.</p>
 A API se dará em estrutura monolítica, onde todos os componentes são integrados em uma única aplicação.
 
 ![DALL·E 2024-08-26 18 40 45 - An illustration depicting a client-server architecture for a web_mobile application](https://github.com/user-attachments/assets/273eabd5-78f4-4e60-a875-f98a14fab042)
@@ -99,7 +99,7 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 
 <p align="justify">  Em relação às tecnologias que iremos aplicar, optamos por utilizar tecnologias modernas e robustas que suportam tanto o desenvolvimento quanto a operação contínua da solução. A seguir, detalhamos as principais tecnologias empregadas em cada camada da arquitetura: </p>
 
-<p align="justify"> - **Frontend:** Para o desenvolvimento da interface de usuário, utilizaremos o React Native, um framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript e React, um framework para desenvolvimento de frontend de aplicações Web; </p>
+<p align="justify"> <strong>Frontend:</strong>  Para o desenvolvimento da interface de usuário, utilizaremos o React Native, um framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript e React, um framework para desenvolvimento de frontend de aplicações Web; 
 
 - **Backend:** A camada de servidor será implementada em .NET, uma plataforma da Microsoft, que oferece suporte para a construção de APIs seguras, escaláveis e de alto desempenho. Essa escolha garante a manutenção simplificada do backend;
 
