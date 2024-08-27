@@ -4,7 +4,7 @@
 
 ## Objetivos
 
-<p align="justify"> O principal objetivo deste projeto é desenvolver uma aplicação distribuída para o gerenciamento de eventos na PUC Minas Betim, projetada para suportar até 50 usuários simultâneos e com uma arquitetura escalável para até 100 usuários simultâneos que permita sua adaptação e expansão para as demais unidades da universidade. </p>
+<p align="justify"> O principal objetivo deste projeto é desenvolver uma aplicação distribuída para o gerenciamento de eventos na PUC Minas Betim, projetada para suportar até 50 usuários simultâneos e com uma arquitetura escalável para até 100 usuários simultâneos e que permita sua adaptação e expansão para as demais unidades da universidade. </p>
 
 ## Objetivos específicos:
 
