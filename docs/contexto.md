@@ -1,46 +1,28 @@
 # Introdução
 
-A proposta deste projeto é desenvolver uma aplicação web e mobile para gerenciar os eventos da PUC Minas Betim, localizada na cidade de Betim, Minas Gerais, que integra a Região Metropolitana de Belo Horizonte. A PUC Minas conta com seu campus principal no Coração Eucarístico e nove unidades adicionais: Barreiro, Betim, Contagem, Lourdes, Poços de Caldas, Virtual e São Gabriel. O desenvolvimento será realizado por um grupo de alunos do 6º período do curso de Sistemas de Informação da PUC Minas Virtual, utilizando a unidade Betim como exemplo.
-
-Atualmente, a PUC Minas Betim utiliza um documento em Word, denominado "CHECK LIST Eventos", para a solicitação de eventos. Este documento pode ser preenchido por professores, funcionários e alunos, e enviado ao Setor de Eventos para aprovação e organização. Com uma média de 20 solicitações de eventos por mês, esse processo é antiquado, resultando em dados desorganizados e incompletos. A forma como os eventos são solicitados frequentemente gera erros, tornando a organização dos mesmos um desafio significativo.
-
-Além disso, o processo atual enfrenta diversos problemas, como a falta de adesão aos prazos por parte dos solicitantes, o que gera transtornos na organização. Muitas vezes, as demandas de infraestrutura não são especificadas claramente, resultando em pedidos emergenciais durante os eventos. Informações essenciais para a organização também são frequentemente omitidas, obrigando o Setor de Eventos a buscar esses dados de última hora, complicando ainda mais o processo de preparação.
-
-Esses desafios tornam evidente a necessidade de uma plataforma para o gerenciamento dos eventos acadêmicos e administrativos da PUC Minas Betim. A nova aplicação será projetada com princípios de design responsivo, buscando um funcionamento adequado tanto em página web quanto em dispositivos móveis. O projeto inclui requisitos funcionais e não funcionais, além da documentação da arquitetura distribuída, catálogo de serviços e análise de custos.
+<p align="justify"> A proposta deste projeto é desenvolver uma aplicação web e mobile para gerenciar os eventos da PUC Minas Betim, localizada na cidade de Betim, Minas Gerais, que integra a Região Metropolitana de Belo Horizonte. A PUC Minas conta com seu campus principal no Coração Eucarístico e nove unidades adicionais: Barreiro, Betim, Contagem, Lourdes, Poços de Caldas, Virtual e São Gabriel. O desenvolvimento será realizado por um grupo de alunos do 6º período do curso de Sistemas de Informação da PUC Minas Virtual, utilizando a unidade Betim como exemplo. </p> <p align="justify"> Atualmente, a PUC Minas Betim utiliza um documento em Word, denominado "CHECK LIST Eventos", para a solicitação de eventos. Este documento pode ser preenchido por professores, funcionários e alunos, e enviado ao Setor de Eventos para aprovação e organização. Com uma média de 20 solicitações de eventos por mês, esse processo é antiquado, resultando em dados desorganizados e incompletos. A forma como os eventos são solicitados frequentemente gera erros, tornando a organização dos mesmos um desafio significativo. </p> <p align="justify"> Além disso, o processo atual enfrenta diversos problemas, como a falta de adesão aos prazos por parte dos solicitantes, o que gera transtornos na organização. Muitas vezes, as demandas de infraestrutura não são especificadas claramente, resultando em pedidos emergenciais durante os eventos. Informações essenciais para a organização também são frequentemente omitidas, obrigando o Setor de Eventos a buscar esses dados de última hora, complicando ainda mais o processo de preparação. </p> <p align="justify"> Esses desafios tornam evidente a necessidade de uma plataforma para o gerenciamento dos eventos acadêmicos e administrativos da PUC Minas Betim. A nova aplicação será projetada com princípios de design responsivo, buscando um funcionamento adequado tanto em página web quanto em dispositivos móveis. O projeto inclui requisitos funcionais e não funcionais, além da documentação da arquitetura distribuída, catálogo de serviços e análise de custos. </p>
 
 ## Objetivos
 
-O principal objetivo deste projeto é desenvolver uma aplicação distribuída para o gerenciamento de eventos na PUC Minas Betim, projetada para suportar até 50 usuários simultâneos e com uma arquitetura escalável para até 100 usuários simultâneos que permita sua adaptação e expansão para as demais unidades da universidade.
+<p align="justify"> O principal objetivo deste projeto é desenvolver uma aplicação distribuída para o gerenciamento de eventos na PUC Minas Betim, projetada para suportar até 50 usuários simultâneos e com uma arquitetura escalável para até 100 usuários simultâneos que permita sua adaptação e expansão para as demais unidades da universidade. </p>
 
 ## Objetivos específicos:
 
-Preparar a Aplicação para Escalabilidade: Projetar a arquitetura da aplicação com a capacidade de escalonamento horizontal e vertical, permitindo que a aplicação seja facilmente expandida para suportar até 100 usuários simultâneos, conforme necessário.
-
-Desenvolver Mecanismos de Controle de Acesso: Implementar um sistema de autenticação e autorização que assegure que diferentes níveis de acesso sejam atribuídos de acordo com os perfis de usuários (alunos, professores, funcionários).
-
-Facilitar a Expansão para Outras Unidades: Estruturar o sistema de forma modular, com configurações e dados que possam ser personalizados para atender às necessidades específicas de diferentes unidades da PUC Minas, permitindo uma implementação ágil em novas localidades.
-
-Integrar Ferramentas de Monitoramento e Relatórios: Desenvolver funcionalidades que permitam o monitoramento em tempo real da utilização da aplicação e a geração de relatórios sobre eventos, participação e recursos, para apoiar a tomada de decisões administrativas.
-
-Conduzir Testes de Usabilidade e Ajustes Finais: Realizar testes de usabilidade com usuários reais para identificar e corrigir problemas, garantindo que a aplicação atenda às expectativas de funcionalidade e facilidade de uso.
+<p align="justify"> <strong>Preparar a Aplicação para Escalabilidade:</strong> Projetar a arquitetura da aplicação com a capacidade de escalonamento horizontal e vertical, permitindo que a aplicação seja facilmente expandida para suportar até 100 usuários simultâneos, conforme necessário. </p> <p align="justify"> <strong>Desenvolver Mecanismos de Controle de Acesso:</strong> Implementar um sistema de autenticação e autorização que assegure que diferentes níveis de acesso sejam atribuídos de acordo com os perfis de usuários (alunos, professores, funcionários). </p> <p align="justify"> <strong>Facilitar a Expansão para Outras Unidades:</strong> Estruturar o sistema de forma modular, com configurações e dados que possam ser personalizados para atender às necessidades específicas de diferentes unidades da PUC Minas, permitindo uma implementação ágil em novas localidades. </p> <p align="justify"> <strong>Integrar Ferramentas de Monitoramento e Relatórios:</strong> Desenvolver funcionalidades que permitam o monitoramento em tempo real da utilização da aplicação e a geração de relatórios sobre eventos, participação e recursos, para apoiar a tomada de decisões administrativas. </p> <p align="justify"> <strong>Conduzir Testes de Usabilidade e Ajustes Finais:</strong> Realizar testes de usabilidade com usuários reais para identificar e corrigir problemas, garantindo que a aplicação atenda às expectativas de funcionalidade e facilidade de uso. </p>
 
 ## Justificativa
 
-A proposta de um sistema distribuído para o gerenciamento de eventos surge como resposta aos problemas recorrentes que têm tornado o processo atual moroso e desorganizado. Os erros constantes, como a demanda de última hora e o fornecimento de informações incompletas, têm prejudicado a organização dos eventos e causado sérios transtornos ao Setor de Eventos e também aos outros setores envolvidos.
-
-Com a implementação desse sistema, será possível gerenciar os pedidos de eventos de maneira mais organizada, com prazos estabelecidos e regras claras, evitando surpresas e contratempos.
-
-Essa proposta, portanto, não visa apenas aprimorar a organização do Setor de Eventos, mas também proporcionar um ambiente de trabalho mais tranquilo e controlado, onde as solicitações são tratadas com a devida atenção e dentro dos parâmetros estabelecidos.
+<p align="justify"> A proposta de um sistema distribuído para o gerenciamento de eventos surge como resposta aos problemas recorrentes que têm tornado o processo atual moroso e desorganizado. Os erros constantes, como a demanda de última hora e o fornecimento de informações incompletas, têm prejudicado a organização dos eventos e causado sérios transtornos ao Setor de Eventos e também aos outros setores envolvidos. </p> <p align="justify"> Com a implementação desse sistema, será possível gerenciar os pedidos de eventos de maneira mais organizada, com prazos estabelecidos e regras claras, evitando surpresas e contratempos. </p> <p align="justify"> Essa proposta, portanto, não visa apenas aprimorar a organização do Setor de Eventos, mas também proporcionar um ambiente de trabalho mais tranquilo e controlado, onde as solicitações são tratadas com a devida atenção e dentro dos parâmetros estabelecidos. </p>
 
 ## Público-Alvo
 
-O público-alvo desta aplicação inclui alunos, professores e funcionários da PUC Minas Betim, abrangendo indivíduos com idades entre 17 e 70 anos. Este grupo é composto por usuários com diferentes níveis de familiaridade com tecnologia, desde aqueles com conhecimentos básicos até avançados em informática. Além disso, inclui o gestor do sistema, que atuará como administrador, gerenciando o sistema, emitindo relatórios e encaminhando as solicitações para avaliação pela coordenação, Diretoria de Graduação e setores envolvidos.
+<p align="justify"> O público-alvo desta aplicação inclui alunos, professores e funcionários da PUC Minas Betim, abrangendo indivíduos com idades entre 17 e 70 anos. Este grupo é composto por usuários com diferentes níveis de familiaridade com tecnologia, desde aqueles com conhecimentos básicos até avançados em informática. Além disso, inclui o gestor do sistema, que atuará como administrador, gerenciando o sistema, emitindo relatórios e encaminhando as solicitações para avaliação pela coordenação, Diretoria de Graduação e setores envolvidos. </p>
 
 ## Especificações do Projeto
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+<p align="justify"> As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada. </p>
 
 ### Requisitos Funcionais
 
@@ -75,7 +57,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ## Restrições
 
-Embora o projeto apresente um grande potencial para inovação e desenvolvimento, é essencial considerar algumas restrições que podem impactar as decisões e o andamento do trabalho. Essas restrições precisam ser gerenciadas com cuidado para garantir que o projeto seja concluído com sucesso e dentro dos parâmetros estabelecidos:
+<p align="justify"> Embora o projeto apresente um grande potencial para inovação e desenvolvimento, é essencial considerar algumas restrições que podem impactar as decisões e o andamento do trabalho. Essas restrições precisam ser gerenciadas com cuidado para garantir que o projeto seja concluído com sucesso e dentro dos parâmetros estabelecidos: </p>
 
 - **Orçamento Limitado:**
   Como é um projeto acadêmico, o orçamento pode ser restrito, limitando as escolhas tecnológicas e de hospedagem;
@@ -84,7 +66,7 @@ Embora o projeto apresente um grande potencial para inovação e desenvolvimento
 
 ## Catálogo de Serviços
 
-O sistema foi projetado para oferecer uma ampla gama de serviços que facilitam a gestão e o acompanhamento de eventos e infraestrutura dentro da instituição. Esses serviços foram cuidadosamente selecionados para atender às necessidades de diferentes usuários, garantindo uma experiência eficiente e integrada. Abaixo estão listados os principais serviços oferecidos pelo sistema:
+<p align="justify"> O sistema foi projetado para oferecer uma ampla gama de serviços que facilitam a gestão e o acompanhamento de eventos e infraestrutura dentro da instituição. Esses serviços foram cuidadosamente selecionados para atender às necessidades de diferentes usuários, garantindo uma experiência eficiente e integrada. Abaixo estão listados os principais serviços oferecidos pelo sistema: </p>
 
 - **Cadastro de Solicitações de Eventos:**
   Criação, edição e exclusão de solicitações de eventos.
@@ -106,7 +88,7 @@ O sistema foi projetado para oferecer uma ampla gama de serviços que facilitam 
 
 ## Arquitetura da Solução
 
-A aplicação web/mobile foi idealizada em sua arquitetura como sendo cliente-servidor. Tal arquitetura se dá como uma rede em que um programa de computador (cliente), solicita um serviço ou recurso de outro programa de computador (servidor), recebendo uma resposta com as informações solicitadas por meio de protocolos de rede em infraestruturas de TI.
+<p align="justify"> A aplicação web/mobile foi idealizada em sua arquitetura como sendo cliente-servidor. Tal arquitetura se dá como uma rede em que um programa de computador (cliente), solicita um serviço ou recurso de outro programa de computador (servidor), recebendo uma resposta com as informações solicitadas por meio de protocolos de rede em infraestruturas de TI.
 A API se dará em estrutura monolítica, onde todos os componentes são integrados em uma única aplicação.
 
 ![DALL·E 2024-08-26 18 40 45 - An illustration depicting a client-server architecture for a web_mobile application](https://github.com/user-attachments/assets/273eabd5-78f4-4e60-a875-f98a14fab042)
@@ -115,7 +97,7 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 
 ## Tecnologias Utilizadas
 
-Para garantir que a aplicação ofereça alto desempenho, segurança e escalabilidade, optamos por utilizar tecnologias modernas e robustas que suportam tanto o desenvolvimento quanto a operação contínua da solução. A seguir, detalhamos as principais tecnologias empregadas em cada camada da arquitetura:
+<p align="justify">  Para garantir que a aplicação ofereça alto desempenho, segurança e escalabilidade, optamos por utilizar tecnologias modernas e robustas que suportam tanto o desenvolvimento quanto a operação contínua da solução. A seguir, detalhamos as principais tecnologias empregadas em cada camada da arquitetura: </p>
 
 - **Frontend:** Para o desenvolvimento da interface de usuário, utilizaremos o React Native, uma poderosa framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript. Isso proporciona uma experiência de usuário fluida e um desenvolvimento eficiente;
 
@@ -132,7 +114,7 @@ Para garantir que a aplicação ofereça alto desempenho, segurança e escalabil
 
 ## Hospedagem
 
-No que tange a hospedagem da aplicação, optamos por uma estratégia bem estruturada, dividida entre ambientes de desenvolvimento e produção. Cada ambiente será configurado para atender às necessidades específicas do projeto, garantindo que a aplicação funcione de maneira consistente e confiável em todas as fases do desenvolvimento. Abaixo, detalhamos as abordagens de hospedagem adotadas:
+<p align="justify">  No que tange a hospedagem da aplicação, optamos por uma estratégia bem estruturada, dividida entre ambientes de desenvolvimento e produção. Cada ambiente será configurado para atender às necessidades específicas do projeto, garantindo que a aplicação funcione de maneira consistente e confiável em todas as fases do desenvolvimento. Abaixo, detalhamos as abordagens de hospedagem adotadas: </p>
 
 - **Ambiente de Desenvolvimento:** Local com uso de Docker para garantir a consistência entre ambientes;
 - **Ambiente de Produção:** Hospedagem na nuvem, com AWS utilizando instâncias EC2, banco de dados gerenciado (RDS), e armazenamento de arquivos no S3;
