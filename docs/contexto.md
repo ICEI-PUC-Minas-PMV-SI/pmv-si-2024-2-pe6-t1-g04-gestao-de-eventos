@@ -75,32 +75,34 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ## Restrições
 
-A princício, foram identificadas duas restrições as quais estão descritas abaixo:
+Embora o projeto apresente um grande potencial para inovação e desenvolvimento, é essencial considerar algumas restrições que podem impactar as decisões e o andamento do trabalho. Essas restrições precisam ser gerenciadas com cuidado para garantir que o projeto seja concluído com sucesso e dentro dos parâmetros estabelecidos:
 
-1. Orçamento Limitado: Como é um projeto acadêmico, o orçamento pode ser restrito, limitando as escolhas tecnológicas e de hospedagem;
-2. Prazo de Entrega: O sistema deve estar finalizado até dezembro, exigindo uma gestão eficiente do tempo.
+- **Orçamento Limitado:**
+  Como é um projeto acadêmico, o orçamento pode ser restrito, limitando as escolhas tecnológicas e de hospedagem;
+- **Prazo de Entrega:**
+  O sistema deve estar finalizado até dezembro, exigindo uma gestão eficiente do tempo.
 
 ## Catálogo de Serviços
 
-Abaixo, enumeramos os principais serviços que serão oferecidos em nossa aplicação web/mobile:
+O sistema foi projetado para oferecer uma ampla gama de serviços que facilitam a gestão e o acompanhamento de eventos e infraestrutura dentro da instituição. Esses serviços foram cuidadosamente selecionados para atender às necessidades de diferentes usuários, garantindo uma experiência eficiente e integrada. Abaixo estão listados os principais serviços oferecidos pelo sistema:
 
-1. Cadastro de Solicitações de Eventos:
-   Criação, edição e exclusão de solicitações de eventos.
-   Aprovação e acompanhamento das solicitações.
+- **Cadastro de Solicitações de Eventos:**
+  Criação, edição e exclusão de solicitações de eventos.
+  Aprovação e acompanhamento das solicitações.
 
-2. Notificações Automáticas:
-   Notificações sobre o status das solicitações (deferido, indeferido, em análise).
-   Lembretes de prazos e atualizações de eventos.
+- **Notificações Automáticas:**
+  Notificações sobre o status das solicitações (deferido, indeferido, em análise).
+  Lembretes de prazos e atualizações de eventos.
 
-3. Cadastro de Solicitação de Infraestrutura:
-   Solicitação de espaços físicos e equipamentos.
-   Coordenação com setores de infraestrutura e técnico.
-   
-4. Acompanhamento de solicitações de eventos:
-   Lista de eventos com detalhes e opções de filtro.
-   
-5. Autenticação e Níveis de Acesso:
-   Diferentes níveis de acesso para administradores, professores, funcionários e alunos.
+- **Cadastro de Solicitação de Infraestrutura:**
+  Solicitação de espaços físicos e equipamentos.
+  Coordenação com setores de infraestrutura e técnico.
+
+- **Acompanhamento de Solicitações de Eventos:**
+  Lista de eventos com detalhes e opções de filtro.
+
+- **Autenticação e Níveis de Acesso:**
+  Diferentes níveis de acesso para administradores, professores, funcionários e alunos.
 
 ## Arquitetura da Solução
 
@@ -109,21 +111,31 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 
 ![DALL·E 2024-08-26 18 40 45 - An illustration depicting a client-server architecture for a web_mobile application](https://github.com/user-attachments/assets/273eabd5-78f4-4e60-a875-f98a14fab042)
 
+<p align="center">Figura 1 - Arquitetura distribuída cliente-servidor</p>
+
 ## Tecnologias Utilizadas
 
-1. Frontend: Para o desenvolvimento da interface de usuário, utilizamos o React Native, uma poderosa framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript. Isso proporciona uma experiência de usuário fluida e um desenvolvimento eficiente;
+Para garantir que a aplicação ofereça alto desempenho, segurança e escalabilidade, optamos por utilizar tecnologias modernas e robustas que suportam tanto o desenvolvimento quanto a operação contínua da solução. A seguir, detalhamos as principais tecnologias empregadas em cada camada da arquitetura:
 
-2. Backend: A camada de servidor foi implementada em .NET, uma plataforma robusta e versátil da Microsoft, que oferece suporte para a construção de APIs seguras, escaláveis e de alto desempenho. Essa escolha garante a estabilidade e a manutenção simplificada do backend;
+- **Frontend:** Para o desenvolvimento da interface de usuário, utilizaremos o React Native, uma poderosa framework que permite a criação de aplicativos móveis nativos para iOS e Android a partir de uma única base de código em JavaScript. Isso proporciona uma experiência de usuário fluida e um desenvolvimento eficiente;
 
-3. Banco de Dados: Os dados da aplicação são armazenados no MySQL, um sistema de gerenciamento de banco de dados relacional amplamente utilizado e confiável. O MySQL é conhecido por sua performance, escalabilidade e suporte a operações complexas de consulta e transação;
+- **Backend:** A camada de servidor será implementada em .NET, uma plataforma robusta e versátil da Microsoft, que oferece suporte para a construção de APIs seguras, escaláveis e de alto desempenho. Essa escolha garante a estabilidade e a manutenção simplificada do backend;
 
-4. Hospedagem: A aplicação está hospedada na AWS (Amazon Web Services), a plataforma líder em serviços de computação em nuvem. A AWS oferece uma infraestrutura altamente escalável, segura e de alta disponibilidade, o que garante que a aplicação esteja sempre acessível e capaz de lidar com grandes volumes de tráfego;
+- **Banco de Dados:** Os dados da aplicação serão armazenados no MySQL, um sistema de gerenciamento de banco de dados relacional amplamente utilizado e confiável. O MySQL é conhecido por sua performance, escalabilidade e suporte a operações complexas de consulta e transação;
 
-Inserir figura aqui
+- **Hospedagem:** A aplicação estará hospedada na AWS (Amazon Web Services), a plataforma líder em serviços de computação em nuvem. A AWS oferece uma infraestrutura altamente escalável, segura e de alta disponibilidade, o que garante que a aplicação esteja sempre acessível e capaz de lidar com grandes volumes de tráfego.
+
+
+![DALL·E 2024-08-27 07 35 57 - A modern software architecture for a web_mobile application  The illustration includes four labeled components_ 'Frontend,' 'Backend,' 'Banco de Dados](https://github.com/user-attachments/assets/5d0dc966-a272-4cbe-ac5f-9af2c4717733)
+
+<p align="center">Figura 2 - Aplicação WEB</p>
 
 ## Hospedagem
 
-1. Ambiente de Desenvolvimento: Local com uso de Docker para garantir a consistência entre ambientes;
-2. Ambiente de Produção: Hospedagem na nuvem, com AWS utilizando instâncias EC2, banco de dados gerenciado (RDS), e armazenamento de arquivos no S3;
-3. Monitoramento e Logs: Ferramentas como AWS CloudWatch para monitorar a performance e logs da aplicação.
+No que tange a hospedagem da aplicação, optamos por uma estratégia bem estruturada, dividida entre ambientes de desenvolvimento e produção. Cada ambiente será configurado para atender às necessidades específicas do projeto, garantindo que a aplicação funcione de maneira consistente e confiável em todas as fases do desenvolvimento. Abaixo, detalhamos as abordagens de hospedagem adotadas:
+
+- **Ambiente de Desenvolvimento:** Local com uso de Docker para garantir a consistência entre ambientes;
+- **Ambiente de Produção:** Hospedagem na nuvem, com AWS utilizando instâncias EC2, banco de dados gerenciado (RDS), e armazenamento de arquivos no S3;
+- **Monitoramento e Logs:** Ferramentas como AWS CloudWatch para monitorar a performance e logs da aplicação.
+
 
