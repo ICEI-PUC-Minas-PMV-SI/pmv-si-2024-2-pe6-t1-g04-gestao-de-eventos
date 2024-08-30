@@ -91,10 +91,6 @@
 <p align="justify"> A aplicação web/mobile foi idealizada em sua arquitetura como sendo cliente-servidor. Tal arquitetura se dá como uma rede em que um programa de computador (cliente), solicita um serviço ou recurso de outro programa de computador (servidor), recebendo uma resposta com as informações solicitadas por meio de protocolos de rede em infraestruturas de TI.</p>
 A API se dará em estrutura monolítica, onde todos os componentes são integrados em uma única aplicação.
 
-![DALL·E 2024-08-26 18 40 45 - An illustration depicting a client-server architecture for a web_mobile application](https://github.com/user-attachments/assets/273eabd5-78f4-4e60-a875-f98a14fab042)
-
-<p align="center">Figura 1 - Arquitetura distribuída cliente-servidor</p>
-
 ## Tecnologias Utilizadas
 
 <p align="justify">  Em relação às tecnologias que iremos aplicar, optamos por utilizar tecnologias modernas e robustas que suportam tanto o desenvolvimento quanto a operação contínua da solução. A seguir, detalhamos as principais tecnologias empregadas em cada camada da arquitetura: </p>
@@ -113,9 +109,11 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 <p align="justify"> 
   <strong>• Hospedagem:</strong> A aplicação estará hospedada na AWS (Amazon Web Services), que oferece uma infraestrutura escalável, segura e de alta disponibilidade.</p>
 
-![DALL·E 2024-08-27 07 35 57 - A modern software architecture for a web_mobile application  The illustration includes four labeled components_ 'Frontend,' 'Backend,' 'Banco de Dados](https://github.com/user-attachments/assets/5d0dc966-a272-4cbe-ac5f-9af2c4717733)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df323da8-81b0-4b00-a5e1-43de1f36a07f" alt="Diagrama sem nome drawio">
+</p>
 
-<p align="center">Figura 2 - Aplicação WEB</p>
+<p align="center">Figura 1 - Aplicação WEB</p>
 
 ## Hospedagem
 
