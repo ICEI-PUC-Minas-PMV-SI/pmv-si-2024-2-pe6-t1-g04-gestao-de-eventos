@@ -64,10 +64,14 @@
   Aprovação e acompanhamento das solicitações.
 
 - **Notificações Automáticas:**
-  Enviar notificações aos setores envolvidos sobre os eventos cadastrados.
-  Enviar notificações aos solicitantes sobre deferimento, indeferimento ou correção do evento.
-  Enviar notificações aos solicitantes caso o local do evento seja alterado ou esteja indisponível na data solicitada. 
-  Lembretes de prazos e atualizações de eventos.
+  <p align="justify">
+  <strong>• Enviar notificações aos setores envolvidos sobre os eventos cadastrados.</p>
+   <p align="justify">
+  <strong>• Enviar notificações aos solicitantes sobre deferimento, indeferimento ou correção do evento.</p>
+   <p align="justify">
+  <strong>• Enviar notificações aos solicitantes caso o local do evento seja alterado ou esteja indisponível na data solicitada.</p> 
+   <p align="justify">
+  <strong>• Lembretes de prazos e atualizações de eventos.</p> 
 
 
 - **Cadastro de Solicitação de Infraestrutura:**
