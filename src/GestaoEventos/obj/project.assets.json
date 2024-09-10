@@ -428,24 +428,27 @@
     ]
   },
   "packageFolders": {
-    "/home/strigi/.nuget/packages/": {}
+    "C:\\Users\\gina_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/strigi/personal/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/src/GestaoEventos/GestaoEventos.csproj",
+      "projectUniqueName": "C:\\Users\\gina_\\OneDrive\\Área de Trabalho\\PUC\\AULAS 6 SEMESTRE\\pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos\\src\\GestaoEventos\\GestaoEventos.csproj",
       "projectName": "GestaoEventos",
-      "projectPath": "/home/strigi/personal/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/src/GestaoEventos/GestaoEventos.csproj",
-      "packagesPath": "/home/strigi/.nuget/packages/",
-      "outputPath": "/home/strigi/personal/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/src/GestaoEventos/obj/",
+      "projectPath": "C:\\Users\\gina_\\OneDrive\\Área de Trabalho\\PUC\\AULAS 6 SEMESTRE\\pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos\\src\\GestaoEventos\\GestaoEventos.csproj",
+      "packagesPath": "C:\\Users\\gina_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gina_\\OneDrive\\Área de Trabalho\\PUC\\AULAS 6 SEMESTRE\\pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos\\src\\GestaoEventos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/strigi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\gina_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -458,6 +461,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -488,7 +496,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
