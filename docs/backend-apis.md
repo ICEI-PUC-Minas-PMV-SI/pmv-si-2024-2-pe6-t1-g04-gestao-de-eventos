@@ -2,6 +2,7 @@
 
 <p align="justify"> Este projeto visa desenvolver um sistema web para gerenciar eventos realizados na PUC Minas Betim, utilizando uma arquitetura de microsserviços e o banco de dados PostgreSQL. Cada funcionalidade do sistema como cadastro de usuários, reserva de espaços, escolha de cursos responsáveis, solicitação de infraestrutura e outros será implementada como um serviço separado. Essa abordagem permite que cada microserviço seja escalado de forma autônoma e se comunique com os demais por meio de APIs.</p>
 
+***
 
 ### Objetivos da API
 
