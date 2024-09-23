@@ -5,49 +5,49 @@
 
 ### Objetivos da API
 
-### API Cadastro de Evento
+## API Cadastro de Evento
 **Objetivo:** Fornecer funcionalidades para o cadastro de eventos, destinado ao público interno da PUC Minas Betim.  
-### Recursos esperados:
+# Recursos esperados:
 - **Cadastro de Eventos por Curso:**
   - Inclusão, alteração e exclusão do nome do evento, descrição, prazos, curso responsável, público-alvo, e informações sobre o local.
 - **Cadastro de Eventos Institucionais:**
   - Inclusão, alteração e exclusão do nome do evento, descrição, prazos, setor responsável, público-alvo, e informações sobre o local.
 
-### API Usuário
+## API Usuário
 **Objetivo:** Fornecer funcionalidades para a gestão do cadastro de usuários, destinado ao uso interno da PUC Minas.  
-### Recursos esperados:
+# Recursos esperados:
 - **Inclusão de Usuários:**
   - Possibilitar o cadastro de usuários internos da PUC Minas, incluindo nome e e-mail com os domínios `@pucminas.br` e `@sga.pucminas.br`.
 
-### API de Login
+## API de Login
 **Objetivo:** Realizar a autenticação e autorização de usuários do sistema.  
-### Recursos esperados:
+# Recursos esperados:
 - **Autenticação de Usuários:**
   - Verificar as credenciais de login (usuário/senha).
 - **Autorização de Acesso:**
   - Controlar o acesso a recursos específicos com base nas permissões atribuídas aos usuários (alunos, funcionários, professores e administradores).
 
-### API de Infraestrutura do Evento
+## API de Infraestrutura do Evento
 **Objetivo:** Fornecer funcionalidades para solicitação de infraestrutura necessária para eventos.  
-### Recursos esperados:
+# Recursos esperados:
 - **Solicitação de Infraestrutura:**
   - Inclusão de opções para solicitação de itens como café, água, forro, copos, mesas, cestos, estacionamento, entre outros.
 
-### API de Setores
+## API de Setores
 **Objetivo:** Fornecer funcionalidades para o cadastro do setor responsável pelo evento.  
-### Recursos esperados:
+# Recursos esperados:
 - **Cadastro de Setores:**
   - Inclusão de opções dos setores da PUC Minas Betim para a seleção do setor responsável pelo evento.
 
-### API de Cursos
+## API de Cursos
 **Objetivo:** Fornecer funcionalidades para o cadastro do curso responsável pelo evento.  
-### Recursos esperados:
+# Recursos esperados:
 - **Cadastro de Cursos:**
   - Inclusão de opções dos cursos da PUC Minas Betim para a seleção do curso responsável pelo evento.
 
-### API de Palestras
+## API de Palestras
 **Objetivo:** Fornecer funcionalidades para o cadastro de palestras em eventos.  
-### Recursos esperados:
+# Recursos esperados:
 - **Cadastro de Palestras:**
   - Inclusão de campos como título, horário, local e número de vagas disponíveis para a palestra.
 
