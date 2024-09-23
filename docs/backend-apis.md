@@ -13,9 +13,9 @@
 - **Cadastro de Eventos Institucionais:**
   - Inclusão, alteração e exclusão do nome do evento, descrição, prazos, setor responsável, público-alvo, e informações sobre o local.
 
----
+--
 
-# API Usuário
+### API Usuário
 **Objetivo:** Fornecer funcionalidades para a gestão do cadastro de usuários, destinado ao uso interno da PUC Minas.  
 ### Recursos esperados:
 - **Inclusão de Usuários:**
@@ -23,7 +23,7 @@
 
 ---
 
-# API de Login
+### API de Login
 **Objetivo:** Realizar a autenticação e autorização de usuários do sistema.  
 ### Recursos esperados:
 - **Autenticação de Usuários:**
@@ -33,7 +33,7 @@
 
 ---
 
-# API de Infraestrutura do Evento
+### API de Infraestrutura do Evento
 **Objetivo:** Fornecer funcionalidades para solicitação de infraestrutura necessária para eventos.  
 ### Recursos esperados:
 - **Solicitação de Infraestrutura:**
@@ -41,7 +41,7 @@
 
 ---
 
-# API de Setores
+### API de Setores
 **Objetivo:** Fornecer funcionalidades para o cadastro do setor responsável pelo evento.  
 ### Recursos esperados:
 - **Cadastro de Setores:**
@@ -49,7 +49,7 @@
 
 ---
 
-# API de Cursos
+### API de Cursos
 **Objetivo:** Fornecer funcionalidades para o cadastro do curso responsável pelo evento.  
 ### Recursos esperados:
 - **Cadastro de Cursos:**
@@ -57,7 +57,7 @@
 
 ---
 
-# API de Palestras
+### API de Palestras
 **Objetivo:** Fornecer funcionalidades para o cadastro de palestras em eventos.  
 ### Recursos esperados:
 - **Cadastro de Palestras:**
