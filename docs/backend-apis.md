@@ -52,7 +52,7 @@
 
 ## Arquitetura
 
-<p align="justify"> A Api é caracterizada por utilizar uma arquitetura distribuída baseada em serviços. Nesse estilo há três componentes fundamentais: interface com o usuário, serviços e um banco de dados. Os serviços são acessados por meio de uma API (Interface de Programação de aplicações), do tipo REST (Representational State Transfer). O banco de dados é único e compartilhado com todos os serviços criados. Os dados são acessados através de transações com propriedades ACID (Atomicidade,Consistência, Durabilidade e isolamento).</p>
+<p align="justify"> </p>
 
 [Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
 
