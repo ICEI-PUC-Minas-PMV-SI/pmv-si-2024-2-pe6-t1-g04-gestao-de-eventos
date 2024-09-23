@@ -36,13 +36,15 @@ Administradores - permitir cadastro, alteração, exclusão, pesquisa e visualiz
 
 ## Tecnologias Utilizadas
 
-Linguagem de Programação: C# (.NET)
-Framework: .NET 8/9
-Banco de Dados: PostgreSQL
-API: ASP.NET Core Web API
-Documentação de API: Swagger para documentação automática e interface de teste de APIs.
-IDE de Desenvolvimento: Visual Studio 2022
-Ferramentas de Versionamento: Git, usando GitHub
+## Tecnologias e Aplicações
+
+- **Linguagem de Programação**: C# (.NET)
+- **Framework**: .NET 8/9
+- **Banco de Dados**: PostgreSQL
+- **API**: ASP.NET Core Web API
+- **Documentação de API**: Swagger para documentação automática e interface de teste de APIs
+- **IDE de Desenvolvimento**: Visual Studio 2022
+- **Ferramentas de Versionamento**: Git, usando GitHub
 
 
 ## API Endpoints
