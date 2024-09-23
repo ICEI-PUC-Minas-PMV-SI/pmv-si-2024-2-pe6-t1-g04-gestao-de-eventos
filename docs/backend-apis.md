@@ -1,16 +1,17 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
+Este projeto visa desenvolver um sistema web para gerenciar eventos realizados na PUC Minas Betim, utilizando uma arquitetura de microsserviços e o banco de dados PostgreSQL. Cada funcionalidade do sistema como cadastro de usuários, reserva de espaços, escolha de cursos responsáveis, solicitação de infraestrutura e outros será implementada como um serviço separado. Essa abordagem permite que cada microserviço seja escalado de forma autônoma e se comunique com os demais por meio de APIs.
 
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
+Possibilitar a troca de informações e funcionalidades entre as aplicações Web, Mobile com o Banco de Dados para a gestão de eventos da PUC Minas Betim; 
 
-[Inclua os objetivos da sua api.]
+Utilização por usuários que podem ser administradores ou professores, alunos e funcionários; 
+
+Usuários (alunos, professores, funcionários e administradores) - permitir cadastro, alteração, exclusão de dados para utilização e acesso aos sistemas; 
+
+Administradores - permitir cadastro, alteração, exclusão, pesquisa e visualização de dados. 
 
 
 ## Arquitetura
