@@ -20,7 +20,8 @@ Administradores - permitir cadastro, alteração, exclusão, pesquisa e visualiz
 
 ## Modelagem da Aplicação
 
-<img src="[URL_da_Imagem](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&layers=1&nav=1#G1V12PWVCQfJjKf-l-ue9lXOHDuKVF1rDJ)">
+<img src="![image](https://github.com/user-attachments/assets/e1426077-d542-4648-9f86-812d5e67ac55)
+">
 
 
 ## Fluxo de Dados
