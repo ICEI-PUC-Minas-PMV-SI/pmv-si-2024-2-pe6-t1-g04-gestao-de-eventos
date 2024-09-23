@@ -36,9 +36,14 @@ Administradores - permitir cadastro, alteração, exclusão, pesquisa e visualiz
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+Linguagem de Programação: C# (.NET)
+Framework: .NET 8/9
+Banco de Dados: PostgreSQL
+API: ASP.NET Core Web API
+Documentação de API: Swagger para documentação automática e interface de teste de APIs.
+IDE de Desenvolvimento: Visual Studio 2022
+Ferramentas de Versionamento: Git, usando GitHub
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
 
 ## API Endpoints
 
