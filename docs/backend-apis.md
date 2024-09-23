@@ -5,7 +5,7 @@
 
 ## Objetivos da API
 
-# API Cadastro de Evento
+### API Cadastro de Evento
 **Objetivo:** Fornecer funcionalidades para o cadastro de eventos, destinado ao público interno da PUC Minas Betim.  
 ### Recursos esperados:
 - **Cadastro de Eventos por Curso:**
