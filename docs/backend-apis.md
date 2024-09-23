@@ -7,9 +7,9 @@
 ### API Cadastro de Evento
 **Objetivo:** Fornecer funcionalidades para o cadastro de eventos, destinado ao público interno da PUC Minas Betim. 
 #### Recursos esperados:
-**Cadastro de Eventos por Curso:**
+- **Cadastro de Eventos por Curso:**
   Inclusão, alteração e exclusão do nome do evento, descrição, prazos, curso responsável, público-alvo, e informações sobre o local.
-**Cadastro de Eventos Institucionais:**
+- **Cadastro de Eventos Institucionais:**
   Inclusão, alteração e exclusão do nome do evento, descrição, prazos, setor responsável, público-alvo, e informações sobre o local.
 
 ### API Usuário
