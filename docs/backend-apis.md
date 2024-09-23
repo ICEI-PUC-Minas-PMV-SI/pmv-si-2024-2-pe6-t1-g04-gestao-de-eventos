@@ -19,7 +19,8 @@ Administradores - permitir cadastro, alteração, exclusão, pesquisa e visualiz
 [Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
+<img src="[URL_da_Imagem](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&layers=1&nav=1#G1V12PWVCQfJjKf-l-ue9lXOHDuKVF1rDJ)">
 
 
 ## Fluxo de Dados
