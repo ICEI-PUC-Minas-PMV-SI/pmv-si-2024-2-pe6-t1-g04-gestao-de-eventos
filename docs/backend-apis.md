@@ -36,8 +36,6 @@ Administradores - permitir cadastro, alteração, exclusão, pesquisa e visualiz
 
 ## Tecnologias Utilizadas
 
-## Tecnologias e Aplicações
-
 - **Linguagem de Programação**: C# (.NET)
 - **Framework**: .NET 8/9
 - **Banco de Dados**: PostgreSQL
