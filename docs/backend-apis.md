@@ -20,7 +20,7 @@ Administradores - permitir cadastro, alteração, exclusão, pesquisa e visualiz
 
 ## Modelagem da Aplicação
 
-<img src="[URL_da_Imagem" alt="Diagrama Entidade de Relacionamento](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/Gest%C3%A3o%20de%20eventos.drawio.png)">
+<img src="[URL_da_Imagem" alt="Diagrama Entidade de Relacionamento](docs/img/Gestão de eventos.drawio.png)">
 
 
 ## Fluxo de Dados
