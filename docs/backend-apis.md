@@ -52,7 +52,7 @@
 
 ## Arquitetura
 
-<p align="justify"> A arquitetura de microsserviços do sistema de Gestão de Eventos da PUC Minas Betim permite que cada funcionalidade, como o cadastro de usuários, reserva de espaços, escolha de cursos responsáveis e solicitação de infraestrutura, seja implementada como um serviço independente. Esses serviços são escaláveis de forma autônoma e se comunicam entre si por meio de APIs REST, garantindo que cada componente possa evoluir e ser mantido individualmente. Essa abordagem promove maior flexibilidade, facilidade de manutenção e escalabilidade do sistema, além de garantir que novos serviços possam ser integrados sem impacto significativo nos já existentes. </p>
+<p align="justify"> A arquitetura de microsserviços do sistema de Gestão de Eventos da PUC Minas Betim permite que cada funcionalidade, como o cadastro de usuários, reserva de espaços, escolha de cursos responsáveis e solicitação de infraestrutura, seja implementada como um serviço independente. Esses serviços são escaláveis de forma autônoma e se comunicam entre si por meio de APIs REST, para que cada componente possa evoluir e ser mantido individualmente. Essa abordagem promove maior flexibilidade, facilidade de manutenção e escalabilidade do sistema, além de garantir que novos serviços possam ser integrados sem impacto significativo nos já existentes. </p>
 
 [Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
 
