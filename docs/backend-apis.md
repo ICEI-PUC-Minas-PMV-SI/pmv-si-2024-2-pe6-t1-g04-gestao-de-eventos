@@ -68,9 +68,9 @@
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
-## Requisitos Funcionais
+## Requisitos Funcionais do Setor de Eventos
 
-# Requisitos Funcionais do Setor de Eventos
+
 
 | ID     | Descrição do Requisito                                                                                  | Prioridade |
 |--------|---------------------------------------------------------------------------------------------------------|------------|
