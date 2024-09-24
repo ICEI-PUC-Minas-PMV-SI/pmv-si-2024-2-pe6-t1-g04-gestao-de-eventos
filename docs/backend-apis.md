@@ -54,7 +54,11 @@
 
 <p align="justify"> A arquitetura de microsserviços do sistema de Gestão de Eventos da PUC Minas Betim permite que cada funcionalidade, como o cadastro de usuários, reserva de espaços, escolha de cursos responsáveis e solicitação de infraestrutura, seja implementada como um serviço independente. Esses serviços são escaláveis de forma autônoma e se comunicam entre si por meio de APIs REST, para que cada componente possa evoluir e ser mantido individualmente. Essa abordagem promove maior flexibilidade, facilidade de manutenção e escalabilidade do sistema, além de novos serviços possam ser integrados sem impacto significativo nos já existentes. </p>
 
-[Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
+<p align="center">
+  <img src="" alt="Arquitetura da API">
+</p>
+
+<p align="center">Figura 1 - Arquitetura da API </p>
 
 ### Modelagem da Aplicação
 
@@ -62,7 +66,7 @@
   <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/Gest%C3%A3o%20de%20eventos.drawio.png" alt="Diagrama de Entidade de Relacionamento">
 </p>
 
-<p align="center">Figura 1 - Diagrama de Entidade de Relacionamento </p>
+<p align="center">Figura 2 - Diagrama de Entidade de Relacionamento </p>
 
 ## Fluxo de Dados
 
