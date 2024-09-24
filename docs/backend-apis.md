@@ -70,6 +70,20 @@
 
 ## Requisitos Funcionais
 
+# Requisitos Funcionais do Setor de Eventos
+
+| ID     | Descrição do Requisito                                                                                  | Prioridade |
+|--------|---------------------------------------------------------------------------------------------------------|------------|
+| RF-01  | Permitir que o usuário faça login utilizando um e-mail com domínio `@pucminas.br`.                       | Alta       |
+| RF-02  | Permitir que o usuário registre seus dados pessoais, incluindo: Nome, Código de pessoa, E-mail, Telefone. | Alta       |
+| RF-03  | Permitir que o usuário cadastre eventos institucionais, inserindo: Nome do evento, Descrição do evento.   | Alta       |
+| RF-04  | Permitir que o usuário cadastre eventos de graduação, inserindo: Nome do evento, Descrição do evento.     | Alta       |
+| RF-05  | Permitir que o usuário registre palestras relacionadas aos eventos.                                       | Alta       |
+| RF-06  | Permitir que o usuário solicite materiais e recursos de infraestrutura para os eventos.                   | Alta       |
+| RF-07  | Permitir que o usuário edite as informações da solicitação do evento previamente cadastradas.             | Alta       |
+| RF-08  | Exibir notificações detalhadas sobre o status e atualizações do evento.                                   | Média      |
+
+
 [Liste os principais requisitos funcionais da aplicação.]
 
 ## Requisitos Não Funcionais
