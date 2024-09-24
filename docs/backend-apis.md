@@ -110,6 +110,8 @@
 - **Documentação de API**: Swagger para documentação automática e interface de teste de APIs
 - **IDE de Desenvolvimento**: Visual Studio 2022
 - **Ferramentas de Versionamento**: Git, usando GitHub
+- **Deploy/ hospedagem da API**: AWS
+- **Ferramentas de Teste**: Insomnia
 
 
 ## API Endpoints
