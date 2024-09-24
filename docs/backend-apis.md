@@ -70,8 +70,6 @@
 
 ## Requisitos Funcionais do Setor de Eventos
 
-
-
 | ID     | Descrição do Requisito                                                                                  | Prioridade |
 |--------|---------------------------------------------------------------------------------------------------------|------------|
 | RF-01  | Permitir que o usuário faça login utilizando um e-mail com domínio `@pucminas.br`.                       | Alta       |
@@ -87,6 +85,15 @@
 [Liste os principais requisitos funcionais da aplicação.]
 
 ## Requisitos Não Funcionais
+
+| Identificador | Requisitos                                                                | Classificação  | Prioridade |
+|---------------|---------------------------------------------------------------------------|----------------|------------|
+| RNF01         | A aplicação deve ser escalável, mesmo com 50 usuários simultâneos. | Desempenho     | Alta       |
+| RNF02         | Garantir a proteção dos dados dos usuários e a integridade das informações dos eventos. | Segurança      | Alta       |
+| RNF03         | O sistema deve ser responsivo e funcional em diferentes dispositivos e sistemas operacionais. | Usabilidade    | Média      |
+| RNF04         | A aplicação deve responder bem até 50 usuários simultâneos e suportar um aumento de até 100 usuários simultâneos sem perda de desempenho. | Escalabilidade | Média      |
+| RNF05         | O código deve ser bem documentado e estruturado para facilitar futuras manutenções e atualizações. | Manutenibilidade | Média      |
+| RNF06         | A aplicação deve estar disponível e acessível 24/7, com um tempo de inatividade mínimo. | Disponibilidade | Alta       |
 
 [Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
 
