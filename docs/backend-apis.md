@@ -1,58 +1,28 @@
 ## APIs e Web Services
 
-<p align="justify"> Este projeto visa desenvolver um sistema web para gerenciar eventos realizados na PUC Minas Betim, utilizando uma arquitetura monolítica e o banco de dados PostgreSQL. Cada funcionalidade do sistema como cadastro de usuários, reserva de espaços, escolha de cursos responsáveis, solicitação de infraestrutura e outros será implementada como um serviço. </p>
+<p align="justify"> Este projeto visa desenvolver um sistema web para gerenciar eventos realizados na PUC Minas Betim, utilizando uma arquitetura monolítica e o banco de dados PostgreSQL. Cada funcionalidade do sistema como cadastro de usuários, reserva de espaços, escolha de cursos, solicitação de infraestrutura e outros será implementada como um serviço. </p>
 
 ## Objetivos da API
 
-#### API Cadastro de Evento:
-**Objetivo:** Fornecer funcionalidades para o cadastro de eventos, destinado ao público interno da PUC Minas Betim. 
-#### Recursos esperados:
-- **Cadastro de Eventos por Curso:**
-  Inclusão, alteração e exclusão do nome do evento, descrição, prazos, curso responsável, público-alvo, e informações sobre o local.
-- **Cadastro de Eventos Institucionais:**
-  Inclusão, alteração e exclusão do nome do evento, descrição, prazos, setor responsável, público-alvo, e informações sobre o local.
+#### API Gestão de Eventos:
+**Objetivo:** Prover funcionalidades para gerenciar eventos, voltado ao público interno da PUC Minas Betim. 
 
-#### API Usuário:
-**Objetivo:** Fornecer funcionalidades para a gestão do cadastro de usuários, destinado ao uso interno da PUC Minas.  
-#### Recursos esperados:
-- **Inclusão de Usuários:**
-  Possibilitar o cadastro de usuários internos da PUC Minas, incluindo nome e e-mail com os domínios `@pucminas.br` e `@sga.pucminas.br`.
-
-#### API de Login:
-**Objetivo:** Realizar a autenticação e autorização de usuários do sistema.  
-#### Recursos esperados:
-- **Autenticação de Usuários:**
-  Verificar as credenciais de login (usuário/senha).
-- **Autorização de Acesso:**
-  Controlar o acesso a recursos específicos com base nas permissões atribuídas aos usuários (alunos, funcionários, professores e administradores).
-
-#### API de Infraestrutura do Evento:
-**Objetivo:** Fornecer funcionalidades para solicitação de infraestrutura necessária para eventos.  
-#### Recursos esperados:
-- **Solicitação de Infraestrutura:**
-  Inclusão de opções para solicitação de itens como café, água, forro, copos, mesas, cestos, estacionamento, entre outros.
-
-#### API de Setores:
-**Objetivo:** Fornecer funcionalidades para o cadastro do setor responsável pelo evento.  
-#### Recursos esperados:
-- **Cadastro de Setores:**
-  Inclusão de opções dos setores da PUC Minas Betim para a seleção do setor responsável pelo evento.
-
-#### API de Cursos:
-**Objetivo:** Fornecer funcionalidades para o cadastro do curso responsável pelo evento.  
-#### Recursos esperados:
-- **Cadastro de Cursos:**
-  Inclusão de opções dos cursos da PUC Minas Betim para a seleção do curso responsável pelo evento.
-
-#### API de Palestras:
-**Objetivo:** Fornecer funcionalidades para o cadastro de palestras em eventos.  
-#### Recursos esperados:
-- **Cadastro de Palestras:**
-  Inclusão de campos como título, horário, local e número de vagas disponíveis para a palestra.
+- **Cadastro de Eventos:**
+  Inclusão, alteração e exclusão de nome, descrição e demais informações do evento.
+- **Cadastro de usuário:**
+  Inclusão, alteração, exclusão e autenticação de usuários internos.
+- **Cadastro de cursos:**
+ Inclusão, alteração e exclusão de cursos relacionados ao evento. 
+- **Cadastro de setor:**
+  Inclusão, alteração e exclusão de setores responsáveis pelo evento.
+- **Cadastro de infraestrutura:**
+  Inclusão, alteração e exclusão de materiais e recursos solicitados para os eventos.
+- **Cadastro de palestra:**
+  Inclusão, alteração e exclusão de palestras, com informações como título, horário e local.
 
 ## Arquitetura
 
-<p align="justify"> A arquitetura de microsserviços do sistema de Gestão de Eventos da PUC Minas Betim permite que cada funcionalidade, como o cadastro de usuários, reserva de espaços, escolha de cursos responsáveis e solicitação de infraestrutura, seja implementada como um serviço independente. Esses serviços são escaláveis de forma autônoma e se comunicam entre si por meio de APIs REST, para que cada componente possa evoluir e ser mantido individualmente. Essa abordagem promove maior flexibilidade, facilidade de manutenção e escalabilidade do sistema, além de novos serviços possam ser integrados sem impacto significativo nos já existentes. </p>
+<p align="justify"> A A arquitetura monolítica do sistema de Gestão de Eventos da PUC Minas Betim centraliza todas as funcionalidades, como o cadastro de usuários, reserva de espaços, escolha de cursos, solicitação de infraestrutura e outros, em uma única aplicação. Todas as funcionalidades e componentes são integrados em um único bloco de código e compartilham o mesmo ambiente de execução. </p>
 
 <p align="center">
   <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/Arquitetura%20API.jpg" alt="Arquitetura da API">
