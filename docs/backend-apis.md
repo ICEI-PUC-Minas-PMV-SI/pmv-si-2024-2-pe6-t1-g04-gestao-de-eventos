@@ -70,6 +70,41 @@
 
 ## Requisitos Funcionais
 
+# Requisitos Funcionais do Setor de Eventos
+
+## 1. Autenticação de Usuário
+- Permitir que o usuário faça login utilizando um e-mail com domínio `@pucminas.br`.
+
+## 2. Cadastro de Usuário
+- Permitir que o usuário registre seus dados pessoais, incluindo:
+  - Nome
+  - Código de pessoa
+  - E-mail com domínio `@pucminas.br` ou `@sga.pucminas.br`
+  - Telefone com DDD
+
+## 3. Cadastro de Eventos Institucionais
+- Permitir que o usuário cadastre eventos institucionais, inserindo:
+  - Nome do evento
+  - Descrição do evento
+
+## 4. Cadastro de Eventos de Graduação
+- Permitir que o usuário cadastre eventos de graduação, inserindo:
+  - Nome do evento
+  - Descrição do evento
+
+## 5. Cadastro de Palestras
+- Permitir que o usuário registre palestras relacionadas aos eventos.
+
+## 6. Solicitação de Materiais de Infraestrutura
+- Permitir que o usuário solicite materiais e recursos de infraestrutura para os eventos.
+
+## 7. Edição de Dados do Evento
+- Permitir que o usuário edite as informações da solicitação do evento previamente cadastradas.
+
+## 8. Notificações de Eventos
+- Exibir notificações detalhadas sobre o status e atualizações do evento.
+
+
 [Liste os principais requisitos funcionais da aplicação.]
 
 ## Requisitos Não Funcionais
