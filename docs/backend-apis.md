@@ -1,23 +1,25 @@
 ## APIs e Web Services
 
-<p align="justify"> Este projeto visa desenvolver um sistema web para gerenciar eventos realizados na PUC Minas Betim, utilizando uma arquitetura monolítica e o banco de dados PostgreSQL. Cada funcionalidade do sistema como cadastro de usuários, reserva de espaços, escolha de cursos, solicitação de infraestrutura e outros será implementada como um serviço. </p>
+<p align="justify"> Este projeto visa desenvolver um sistema web para gerenciar eventos realizados na PUC Minas Betim, utilizando uma arquitetura monolítica e o banco de dados PostgreSQL. Cada funcionalidade do sistema, como cadastro de usuários, reserva de espaços, escolha de cursos, solicitação de infraestrutura e outros, será implementada como um serviço. </p>
 
 ## Objetivos da API
 
 #### API Gestão de Eventos:
-**Objetivo:** Prover funcionalidades para gerenciar eventos, voltado ao público interno da PUC Minas Betim. 
+**Objetivo:** Prover funcionalidades para gerenciar eventos, voltado ao público interno da PUC Minas Betim.
 
-- **Cadastro de Eventos:**
+**Recursos:** 
+
+- **API de Evento:**
   Inclusão, alteração e exclusão de nome, descrição e demais informações do evento.
-- **Cadastro de usuário:**
+- **API de usuário:**
   Inclusão, alteração, exclusão e autenticação de usuários internos.
-- **Cadastro de cursos:**
+- **API de curso:**
  Inclusão, alteração e exclusão de cursos relacionados ao evento. 
-- **Cadastro de setor:**
+- **API de setor:**
   Inclusão, alteração e exclusão de setores responsáveis pelo evento.
-- **Cadastro de infraestrutura:**
+- **API de infraestrutura:**
   Inclusão, alteração e exclusão de materiais e recursos solicitados para os eventos.
-- **Cadastro de palestra:**
+- **API de palestra:**
   Inclusão, alteração e exclusão de palestras, com informações como título, horário e local.
 
 ## Arquitetura
@@ -50,17 +52,13 @@
 
 | ID     | Descrição do Requisito                                                                                  | Prioridade |
 |--------|---------------------------------------------------------------------------------------------------------|------------|
-| RF-01  | Permitir que o usuário faça login utilizando um e-mail com domínio `@pucminas.br`.                       | Alta       |
-| RF-02  | Permitir que o usuário registre seus dados pessoais, incluindo: Nome, Código de pessoa, E-mail, Telefone. | Alta       |
+| RF-01  | Permitir que o usuário faça login utilizando um e-mail.                                                   | Alta       |
+| RF-02  | Permitir que o usuário registre seus dados pessoais, incluindo: Nome, E-mail, Telefone.                   | Alta       |
 | RF-03  | Permitir que o usuário cadastre eventos institucionais, inserindo: Nome do evento, Descrição do evento.   | Alta       |
 | RF-04  | Permitir que o usuário cadastre eventos de graduação, inserindo: Nome do evento, Descrição do evento.     | Alta       |
 | RF-05  | Permitir que o usuário registre palestras relacionadas aos eventos.                                       | Alta       |
 | RF-06  | Permitir que o usuário solicite materiais e recursos de infraestrutura para os eventos.                   | Alta       |
 | RF-07  | Permitir que o usuário edite as informações da solicitação do evento previamente cadastradas.             | Alta       |
-| RF-08  | Exibir notificações detalhadas sobre o status e atualizações do evento.                                   | Média      |
-
-
-[Liste os principais requisitos funcionais da aplicação.]
 
 ## Requisitos Não Funcionais
 
