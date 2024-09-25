@@ -120,7 +120,13 @@
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+A API utiliza tokens JWT (JSON Web Tokens) para autenticar e autorizar usuários. Cada token deve conter informações sobre o usuário e suas permissões. Também é utilizada a Proteção de Rotas por Tipo de Perfil de Usuário (RBAC), assim garantindo que apenas usuários com as permissões adequadas possam acessar determinadas rotas. Cada rota deve ser protegida de acordo com o perfil do usuário (aluno, professor, administrador).
+
+Com essas considerações de segurança implementadas, a API terá: 
+- Autenticação e Autorização Seguras: Apenas usuários autenticados e autorizados poderão acessar os recursos da API.
+- Integridade e Autenticidade dos Dados: Os tokens JWT assinados digitalmente garantem que os dados não foram alterados e que a identidade do usuário é verificada.
+- Proteção Contra Uso Indevido: A expiração dos tokens e a renovação segura ajudam a minimizar o risco de uso indevido em caso de comprometimento.
+- Acesso Controlado: A implementação de RBAC assegura que apenas usuários com as permissões adequadas possam acessar determinadas rotas, protegendo informações sensíveis.
 
 ## Implantação
 
