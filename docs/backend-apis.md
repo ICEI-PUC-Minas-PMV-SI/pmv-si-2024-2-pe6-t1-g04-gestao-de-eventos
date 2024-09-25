@@ -124,7 +124,7 @@
 
 Com essas considerações de segurança implementadas, a API terá: 
 <p align="justify"> - **Autenticação e Autorização Seguras: Apenas usuários autenticados e autorizados poderão acessar os recursos da API.</p>
-<p align="justify"> - **Integridade e Autenticidade dos Dados: Os tokens JWT assinados digitalmente garantem que os dados não foram alterados e que a identidade do usuário é verificada.</p>
+<p align="justify"> - **Integridade e Autenticidade dos Dados: Os tokens JWT assinados digitalmente garantem que os dados não foram alterados e que a identidade do usuário é verificada.**</p>
 <p align="justify"> - **Proteção Contra Uso Indevido: A expiração dos tokens e a renovação segura ajudam a minimizar o risco de uso indevido em caso de comprometimento.</p>
 <p align="justify"> - **Acesso Controlado: A implementação de RBAC assegura que apenas usuários com as permissões adequadas possam acessar determinadas rotas, protegendo informações sensíveis.</p>
 
