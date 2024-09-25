@@ -90,32 +90,56 @@
 
 [Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
 
-### Endpoint 1
-- Método: GET
-- URL: /endpoint1
+### API de usuários
+Endpoint 1:
+- Método: POST
+- URL: /api/usuarios/register
 - Parâmetros:
-  - param1: [descrição]
+  - param1: [não possui]
 - Resposta:
   - Sucesso (200 OK)
     ```
-    {
-      "message": "Success",
-      "data": {
-        ...
-      }
-    }
+   {
+    "$id": "1",
+    "nome": "Salomão",
+    "email": "salomao@hotmail.com",
+    "senha": "$2a$11$CY3ahpQwI/5lJMm5CB7vOeQRQQAUaQr1kaW1bj12aW9ukCz2u2oJi",
+    "perfil": 3,
+    "perfilDescricao": "Funcionario",
+    "id": 5
+  }
     ```
   - Erro (4XX, 5XX)
     ```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
+   {
+    "$id": "1",
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "errors": {
+        "$id": "2",
+        "Senha": [
+            "A senha deve ter pelo menos 8 caracteres."
+        ]
+    },
+    "traceId": "00-e571816b6ec2621e4185cffadd62f3d9-dba082aa772daa05-00"
+  }
     ```
 
-
+### API de login
+Endpoint 2:
+- Método: POST
+- URL: /api/usuarios/login
+- Parâmetros:
+  - param1: [não possui]
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+   {
+    "$id": "1",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI1IiwidW5pcXVlX25hbWUiOiJTYWxvbcOjbyIsImVtYWlsIjoic2Fsb21hb0Bob3RtYWlsLmNvbSIsInJvbGUiOiJGdW5jaW9uYXJpbyIsIm5iZiI6MTcyNzMwMjgwNCwiZXhwIjoxNzI3MzMxNjA0LCJpYXQiOjE3MjczMDI4MDR9.89BkrfOoH303rkfA-RzC9hZX2LXP5zSmmWDWuuyweqw"
+    }   
+    ```
 ## Considerações de Segurança
 
 <p align="justify"> A API utiliza tokens JWT (JSON Web Tokens) para autenticar e autorizar usuários. Cada token deve conter informações sobre o usuário e suas permissões. Também é utilizada a Proteção de Rotas por Tipo de Perfil de Usuário (RBAC), assim garantindo que apenas usuários com as permissões adequadas possam acessar determinadas rotas. Cada rota deve ser protegida de acordo com o perfil do usuário (aluno, professor, administrador). </p>
