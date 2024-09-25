@@ -82,67 +82,79 @@
 - **Documentação de API**: Swagger para documentação automática e interface de teste de APIs
 - **IDE de Desenvolvimento**: Visual Studio 2022
 - **Ferramentas de Versionamento**: Git, usando GitHub
-- **Deploy/ hospedagem da API**: AWS
+- **Deploy/ hospedagem da API**: Azure
 - **Ferramentas de Teste**: Postman
 
 
 ## API Endpoints
+### API de Usuários
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
+#### Endpoint 1: Cadastro de Usuário
+- **Método:** `POST`
+- **URL:** `/api/usuarios/register`
+- **Parâmetros:**
+  - Não possui parâmetros na URL.
 
-### API de usuários
-Endpoint 1:
-- Método: POST
-- URL: /api/usuarios/register
-- Parâmetros:
-  - param1: [não possui]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-   {
-    "$id": "1",
+- **Exemplo de Corpo da Requisição (JSON):**
+  ```json
+  {
     "nome": "Salomão",
     "email": "salomao@hotmail.com",
-    "senha": "$2a$11$CY3ahpQwI/5lJMm5CB7vOeQRQQAUaQr1kaW1bj12aW9ukCz2u2oJi",
-    "perfil": 3,
-    "perfilDescricao": "Funcionario",
-    "id": 5
+    "senha": "senhaSegura123",
+    "perfil": 3
   }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-   {
-    "$id": "1",
-    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
-    "title": "One or more validation errors occurred.",
-    "status": 400,
-    "errors": {
-        "$id": "2",
-        "Senha": [
-            "A senha deve ter pelo menos 8 caracteres."
-        ]
-    },
-    "traceId": "00-e571816b6ec2621e4185cffadd62f3d9-dba082aa772daa05-00"
-  }
-    ```
+  Resposta: Sucesso (200 OK)
+  {
+  "$id": "1",
+  "nome": "Salomão",
+  "email": "salomao@hotmail.com",
+  "senha": "$2a$11$CY3ahpQwI/5lJMm5CB7vOeQRQQAUaQr1kaW1bj12aW9ukCz2u2oJi",
+  "perfil": 3,
+  "perfilDescricao": "Funcionario",
+  "id": 5
+}
 
-### API de login
-Endpoint 2:
-- Método: POST
-- URL: /api/usuarios/login
-- Parâmetros:
-  - param1: [não possui]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-   {
-    "$id": "1",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI1IiwidW5pcXVlX25hbWUiOiJTYWxvbcOjbyIsImVtYWlsIjoic2Fsb21hb0Bob3RtYWlsLmNvbSIsInJvbGUiOiJGdW5jaW9uYXJpbyIsIm5iZiI6MTcyNzMwMjgwNCwiZXhwIjoxNzI3MzMxNjA0LCJpYXQiOjE3MjczMDI4MDR9.89BkrfOoH303rkfA-RzC9hZX2LXP5zSmmWDWuuyweqw"
-    }   
-    ```
+  - **Erro** (4XX, 5XX):
+
+{
+  "$id": "1",
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+  "title": "One or more validation errors occurred.",
+  "status": 400,
+  "errors": {
+      "$id": "2",
+      "Senha": [
+          "A senha deve ter pelo menos 8 caracteres."
+      ]
+  },
+  "traceId": "00-e571816b6ec2621e4185cffadd62f3d9-dba082aa772daa05-00"
+}
+
+
+### API de Login
+
+#### Endpoint 2: Login de Usuário
+- **Método:** `POST`
+- **URL:** `/api/usuarios/login`
+- **Parâmetros:**
+  - Não possui parâmetros na URL.
+
+- **Exemplo de Corpo da Requisição (JSON):**
+  ```json
+  {
+    "email": "salomao@hotmail.com",
+    "senha": "senhaSegura123"
+  }
+- **Resposta:** Sucesso (200 OK)
+
+{
+  "$id": "1",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI1IiwidW5pcXVlX25hbWUiOiJTYWxvbcOjbyIsImVtYWlsIjoic2Fsb21hb0Bob3RtYWlsLmNvbSIsInJvbGUiOiJGdW5jaW9uYXJpbyIsIm5iZiI6MTcyNzMwMjgwNCwiZXhwIjoxNzI3MzMxNjA0LCJpYXQiOjE3MjczMDI4MDR9.89BkrfOoH303rkfA-RzC9hZX2LXP5zSmmWDWuuyweqw"
+}
+
 ## Considerações de Segurança
 
-<p align="justify"> A API utiliza tokens JWT (JSON Web Tokens) para autenticar e autorizar usuários. Cada token deve conter informações sobre o usuário e suas permissões. Também é utilizada a Proteção de Rotas por Tipo de Perfil de Usuário (RBAC), assim garantindo que apenas usuários com as permissões adequadas possam acessar determinadas rotas. Cada rota deve ser protegida de acordo com o perfil do usuário (aluno, professor, administrador). </p>
+<p align="justify"> A API utiliza tokens JWT (JSON Web Tokens) para autenticar e autorizar usuários. Cada token deve conter informações sobre o usuário e suas permissões. Também é utilizada a Proteção de Rotas por Tipo de Perfil de Usuário (RBAC), assim garantindo que apenas usuários com as permissões adequadas possam acessar determinadas rotas. Cada rota deve ser protegida de acordo com o perfil do usuário (aluno, professor, funcionário e administrador). </p>
 
 Com essas considerações de segurança implementadas, a API terá: 
 - **Autenticação e Autorização Seguras:** Apenas usuários autenticados e autorizados poderão acessar os recursos da API.
@@ -152,17 +164,28 @@ Com essas considerações de segurança implementadas, a API terá:
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
 1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+ ### Requisitos de Software:
+- Servidor de banco de dados MySQL
+- Servidor web
+- Ambiente de execução: C# e .NET Core
+
+### Requisitos de Hardware:
+- CPU de alto desempenho
+- Memória RAM de pelo menos 16 GB
+- Armazenamento SSD de no mínimo 500 GB
+- Conexão de rede de alta velocidade
+  
+3. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
+   ### Plataforma de Hopedagem: 
+   - Azure
+4. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
+5. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
+6. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+Teste 01 Resgitro de usuário: (colocar a imagem)
 
 1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
 2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
