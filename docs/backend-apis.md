@@ -145,12 +145,12 @@
     "email": "salomao@hotmail.com",
     "senha": "senhaSegura123"
   }
-- **Resposta:** Sucesso (200 OK)
 
-{
+  Resposta: Sucesso (200 OK)
+  {
   "$id": "1",
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI1IiwidW5pcXVlX25hbWUiOiJTYWxvbcOjbyIsImVtYWlsIjoic2Fsb21hb0Bob3RtYWlsLmNvbSIsInJvbGUiOiJGdW5jaW9uYXJpbyIsIm5iZiI6MTcyNzMwMjgwNCwiZXhwIjoxNzI3MzMxNjA0LCJpYXQiOjE3MjczMDI4MDR9.89BkrfOoH303rkfA-RzC9hZX2LXP5zSmmWDWuuyweqw"
-}
+  }
 
 ## Considerações de Segurança
 
