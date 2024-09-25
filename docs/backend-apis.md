@@ -103,7 +103,7 @@
     "senha": "senhaSegura123",
     "perfil": 3
   }
-  - **Resposta:** Sucesso (200 OK)
+  Resposta: Sucesso (200 OK)
   {
   "$id": "1",
   "nome": "Salomão",
@@ -114,7 +114,7 @@
   "id": 5
   }
 
-  - **Erro** (4XX, 5XX):
+  - Erro (4XX, 5XX):
 
 {
   "$id": "1",
