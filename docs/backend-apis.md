@@ -114,7 +114,7 @@
   "id": 5
   }
 
-  - Erro (4XX, 5XX):
+  Erro (4XX, 5XX):
 
 {
   "$id": "1",
