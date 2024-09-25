@@ -115,8 +115,7 @@
   }
 
   Erro (4XX, 5XX):
-
-{
+  {
   "$id": "1",
   "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
   "title": "One or more validation errors occurred.",
@@ -128,7 +127,7 @@
       ]
   },
   "traceId": "00-e571816b6ec2621e4185cffadd62f3d9-dba082aa772daa05-00"
-}
+  }
 
 
 
