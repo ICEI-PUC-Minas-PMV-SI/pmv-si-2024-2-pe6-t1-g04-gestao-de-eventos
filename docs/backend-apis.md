@@ -166,7 +166,7 @@ Com essas considerações de segurança implementadas, a API terá:
 
 Abaixo listamos os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
  ### Requisitos de Software:
-- Servidor de banco de dados MySQL
+- Servidor de banco de dados PostgreSQL
 - Servidor web
 - Ambiente de execução: C# e .NET Core
 
