@@ -164,7 +164,7 @@ Com essas considerações de segurança implementadas, a API terá:
 
 ## Implantação
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
+Abaixo listamos os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
  ### Requisitos de Software:
 - Servidor de banco de dados MySQL
 - Servidor web
@@ -177,11 +177,11 @@ Com essas considerações de segurança implementadas, a API terá:
 - Conexão de rede de alta velocidade
   
 3. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-   ### Plataforma de Hopedagem: 
-   - Azure
-4. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-5. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-6. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+### Plataforma de Hopedagem:
+
+<p style="text-align: justify;">
+A aplicação será implementada no ambiente de nuvem da Microsoft Azure. Com o deploy na Azure, a aplicação estará pronta para oferecer uma solução moderna e eficaz para a gestão de eventos, preparada para escalar e se adaptar a diferentes cenários de uso, enquanto mantém os altos padrões de segurança e conformidade exigidos pelas melhores práticas do mercado.
+</p>
 
 ## Testes
 
