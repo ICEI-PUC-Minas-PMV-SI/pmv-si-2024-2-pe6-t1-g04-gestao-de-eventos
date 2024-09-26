@@ -169,6 +169,7 @@ Abaixo listamos os requisitos de hardware e software necessários para implantar
 - Servidor de banco de dados PostgreSQL
 - Servidor web
 - Ambiente de execução: C# e .NET Core
+- Linux
 
 ### Requisitos de Hardware:
 - CPU de alto desempenho
@@ -176,12 +177,25 @@ Abaixo listamos os requisitos de hardware e software necessários para implantar
 - Armazenamento SSD de no mínimo 500 GB
 - Conexão de rede de alta velocidade
   
-3. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
 ### Plataforma de Hopedagem:
 
 <p style="text-align: justify;">
-A aplicação será implementada no ambiente de nuvem da Microsoft Azure. Com o deploy na Azure, a aplicação estará pronta para oferecer uma solução moderna e eficaz para a gestão de eventos, preparada para escalar e se adaptar a diferentes cenários de uso, enquanto mantém os altos padrões de segurança e conformidade exigidos pelas melhores práticas do mercado.
+A aplicação será implementada no ambiente de nuvem da Microsoft Azure e estará pronta para oferecer uma solução para a gestão de eventos, preparada para escalar e se adaptar a diferentes cenários de uso, enquanto mantém segurança e conformidade exigidos pelas melhores práticas do mercado.
 </p>
+
+#### Servidor Web:
+![image](https://github.com/user-attachments/assets/52b3d6b4-c021-4df4-86e3-91d83a28a0cd)
+
+
+
+#### Servidor de Banco de Dados:
+![image](https://github.com/user-attachments/assets/7e573934-9ad3-43a1-8442-d9d447f21c31)
+
+
+
+#### Teste no Postman:
+![image](https://github.com/user-attachments/assets/91c789d1-8a81-455e-863e-a10b16a0b0db)
+
 
 ## Testes
 
