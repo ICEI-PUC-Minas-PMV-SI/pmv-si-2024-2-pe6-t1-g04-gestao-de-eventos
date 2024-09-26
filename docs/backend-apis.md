@@ -43,7 +43,7 @@
 ## Fluxo de Dados
 
 <p align="center">
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/ArquiteturaAPI.jpg" alt="Fluxo de dados da API">
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/FluxoAPI.jpg" alt="Fluxo de dados da API">
 </p>
 
 <p align="center">Figura 3 - Fluxo de dados da API </p>
