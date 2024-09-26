@@ -9,7 +9,7 @@
 
 **Recursos:** 
 
-- **API de Evento:**
+- **API de evento:**
   Inclusão, alteração e exclusão de nome, descrição e demais informações do evento.
 - **API de usuário:**
   Inclusão, alteração, exclusão e autenticação de usuários internos.
