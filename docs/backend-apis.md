@@ -27,7 +27,7 @@
 <p align="justify"> A arquitetura monolítica do sistema de Gestão de Eventos da PUC Minas Betim centraliza todas as funcionalidades, como o cadastro de usuários, reserva de espaços, escolha de cursos, solicitação de infraestrutura e outros, em uma única aplicação. Todas as funcionalidades e componentes são integrados em um único bloco de código e compartilham o mesmo ambiente de execução. </p>
 
 <p align="center">
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/ArquiteturaAPI.jpg" alt="Arquitetura da API">
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/FluxoAPI.jpg" alt="Arquitetura da API">
 </p>
 
 <p align="center">Figura 1 - Arquitetura da API </p>
@@ -43,7 +43,7 @@
 ## Fluxo de Dados
 
 <p align="center">
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/Fluxo%20API.jpg" alt="Fluxo de dados da API">
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/ArquiteturaAPI.jpg" alt="Fluxo de dados da API">
 </p>
 
 <p align="center">Figura 3 - Fluxo de dados da API </p>
