@@ -183,20 +183,24 @@ Abaixo listamos os requisitos de hardware e software necessários para implantar
 A aplicação será implementada no ambiente de nuvem da Microsoft Azure e estará pronta para oferecer uma solução para a gestão de eventos, preparada para escalar e se adaptar a diferentes cenários de uso, enquanto mantém segurança e conformidade exigidos pelas melhores práticas do mercado.
 </p>
 
-#### Servidor Web:
+
+###  Servidor Web:
+
 ![image](https://github.com/user-attachments/assets/2543a06d-c024-4096-8d65-bb7722a9a5a5)
 
 
 
 
 
-#### Servidor de Banco de Dados:
+### Servidor de Banco de Dados:
+
 ![image](https://github.com/user-attachments/assets/c2d99f29-acdf-48a3-a484-0c3f8f7f57af)
 
 
 
 
-#### Teste no Postman:
+### Teste no Postman:
+
 ![image](https://github.com/user-attachments/assets/dbfc3d11-7886-4d63-8779-74f351eb6932)
 
 
