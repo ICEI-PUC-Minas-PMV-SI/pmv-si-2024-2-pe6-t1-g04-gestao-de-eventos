@@ -207,14 +207,15 @@ A aplicação será implementada no ambiente de nuvem da Microsoft Azure e estar
 
 ## Testes
 
-Teste 01 Resgitro de usuário: (colocar a imagem)
+### Usuário:
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+#### Cadastro:
+![image](https://github.com/user-attachments/assets/997a8ce9-8141-4879-830d-b5e00085bcb1)
 
 # Referências
+
+[Tutorial Web API ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-8.0&tabs=visual-studio)
+[Quickstart guide Azure PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-connect-server-vnet)
+[Documentação Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
