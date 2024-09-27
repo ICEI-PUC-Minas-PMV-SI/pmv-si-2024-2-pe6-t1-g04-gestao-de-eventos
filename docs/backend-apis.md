@@ -35,7 +35,7 @@
 ### Modelagem da Aplicação
 
 <p align="center">
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/Gest%C3%A3o%20de%20eventos%20v2.jpg" alt="Diagrama de Entidade de Relacionamento">
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t1-g04-gestao-de-eventos/blob/main/docs/img/DiagramaER.jpeg" alt="Diagrama de Entidade de Relacionamento">
 </p>
 
 <p align="center">Figura 2 - Diagrama de Entidade de Relacionamento </p>
