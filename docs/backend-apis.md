@@ -215,7 +215,7 @@ A aplicação será implementada no ambiente de nuvem da Microsoft Azure e estar
 # Referências
 
 [Tutorial Web API ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-8.0&tabs=visual-studio)
-[Quickstart guide Azure PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-connect-server-vnet)
-[Documentação Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+[Quickstart guide Azure PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-connect-server-vnet)
+
+[Documentação Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
