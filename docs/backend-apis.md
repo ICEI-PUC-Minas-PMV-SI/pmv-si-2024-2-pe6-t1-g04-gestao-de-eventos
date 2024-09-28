@@ -186,7 +186,8 @@ A aplicação será implementada no ambiente de nuvem da Microsoft Azure e estar
 
 ###  Servidor Web:
 
-![image](https://github.com/user-attachments/assets/52b3d6b4-c021-4df4-86e3-91d83a28a0cd)
+![image](https://github.com/user-attachments/assets/9218de66-ad5b-415b-94d3-bab7ede2f75b)
+
 
 
 
@@ -194,7 +195,8 @@ A aplicação será implementada no ambiente de nuvem da Microsoft Azure e estar
 
 ### Servidor de Banco de Dados:
 
-![image](https://github.com/user-attachments/assets/7e573934-9ad3-43a1-8442-d9d447f21c31)
+![image](https://github.com/user-attachments/assets/c49f92b4-963d-4af6-a862-b2d7dc3ee88b)
+
 
 
 
