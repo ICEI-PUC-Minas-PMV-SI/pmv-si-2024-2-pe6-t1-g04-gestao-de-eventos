@@ -38,7 +38,7 @@
 
 **Na Primeira parte do projeto**, participou da discussão e documentação sobre o tema do projeto.
 
-**Na segunda parte do projeto**, criou o repositório inicial com a API de usuários. Criou a API de Infraestrutura, Curso e Setor. Com a equipe, participou da configuração da implementação da API para hospedagem e testes.
+**Na segunda parte do projeto**, criou o repositório inicial com a API de usuários e criou novos perfis de Usuários e implementou regras de autenticação. Criou a API de Infraestrutura, Curso e Setor. Com a equipe, participou da configuração da implementação da API para hospedagem e testes.
 
 **Na terceira parte do projeto**, 
 
