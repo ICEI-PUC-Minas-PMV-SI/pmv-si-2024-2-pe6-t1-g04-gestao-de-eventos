@@ -1,4 +1,4 @@
-## APIs e Web Services
+![image](https://github.com/user-attachments/assets/0a4cc8a0-89f9-410a-b8ad-1e037683da12)## APIs e Web Services
 
 <p align="justify"> Este projeto visa desenvolver um sistema web para gerenciar eventos realizados na PUC Minas Betim, utilizando uma arquitetura monolítica e o banco de dados PostgreSQL. Cada funcionalidade do sistema, como cadastro de usuários, reserva de espaços, escolha de cursos, solicitação de infraestrutura e outros, será implementada como um serviço. </p>
 
@@ -89,25 +89,26 @@
 ## API Endpoints
 ### API de Usuários
 
-#### Endpoint 1: Cadastro de Usuário
+#### Endpoint 1: Cadastro de Usuário (RF-02)
 - **Método:** `POST`
-- **URL:** `/api/usuarios/register`
+- **URL:** `/api/Usuarios/register`
 - **Parâmetros:**
   - Não possui parâmetros na URL.
 
 - **Exemplo de Corpo da Requisição (JSON):**
   ```json
   {
-    "nome": "Salomão",
-    "email": "salomao@hotmail.com",
-    "senha": "senhaSegura123",
+    "nome": "Salo",
+    "email": "salo@example.com",
+    "senha": "pucminas",
     "perfil": 3
   }
+  
   Resposta: Sucesso (200 OK)
   {
   "$id": "1",
-  "nome": "Salomão",
-  "email": "salomao@hotmail.com",
+  "nome": "Salo Lobato",
+  "email": "salo@example.com",
   "senha": "$2a$11$CY3ahpQwI/5lJMm5CB7vOeQRQQAUaQr1kaW1bj12aW9ukCz2u2oJi",
   "perfil": 3,
   "perfilDescricao": "Funcionario",
@@ -130,27 +131,284 @@
   }
 
 
-
 ### API de Login
 
-#### Endpoint 2: Login de Usuário
+#### Endpoint 2: Login de Usuário (RF-01)
 - **Método:** `POST`
-- **URL:** `/api/usuarios/login`
+- **URL:** `/api/Usuarios/login`
 - **Parâmetros:**
   - Não possui parâmetros na URL.
 
 - **Exemplo de Corpo da Requisição (JSON):**
   ```json
-  {
-    "email": "salomao@hotmail.com",
-    "senha": "senhaSegura123"
+    {
+      "email": "salo@example.com",
+      "senha": "pucminas"
+    }
+  ```
+
+- **Exemplo de Respostas da Requisição (JSON):**
+  ```json
+    Resposta: Sucesso (200 OK)
+    {
+    "$id": "1",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI1IiwidW5pcXVlX25hbWUiOiJTYWxvbcOjbyIsImVtYWlsIjoic2Fsb21hb0Bob3RtYWlsLmNvbSIsInJvbGUiOiJGdW5jaW9uYXJpbyIsIm5iZiI6MTcyNzMwMjgwNCwiZXhwIjoxNzI3MzMxNjA0LCJpYXQiOjE3MjczMDI4MDR9.89BkrfOoH303rkfA-RzC9hZX2LXP5zSmmWDWuuyweqw"
+    }
+    Resposta: Erro (401 Unauthorized)
+    E-mail e/ou Senha inválidos.
+  ```
+
+### API de Evento
+
+#### Endpoint 1: Cadastro de Evento (RF-03,RF-04,RF-05,RF-06)
+- **Método:** `POST`
+- **URL:** `/api/Eventos/register`
+- **Parâmetros:**
+  - Não possui parâmetros na URL.
+
+- **Exemplo de Corpo da Requisição (JSON):**
+  ```json
+    {
+    "solicitanteId": 1,
+    "titulo": "Evento 2024",
+    "tipoEvento": 1,
+    "localId": 1,
+    "descricao": "Lorem ipsum",
+    "dataInicio": "2024-09-30T01:01:56.539Z",
+    "dataFim": "2024-10-02T01:01:56.539Z",
+    "cursoId": 1,
+    "outrosCursosParticipantes": false,
+    "palestras": [
+      {
+        "horarioDeInicio": "2024-09-30T01:01:56.539Z",
+        "horarioDeFim": "2024-09-30T01:01:56.539Z",
+        "titulo": "Fluxos",
+        "palestrante": "José Almeida",
+        "vagas": 100
+      }
+    ],
+    "atividadePratica": "Não",
+    "materiais": "N/A",
+    "infraestrutura": {
+      "temAdaptadorHDMI": true,
+      "qtdSuporteBanner": 2,
+      "temAguaPalestrante": true,
+      "temCoffeBreak": true,
+      "qtdMesaPlastico": 3,
+      "qtdForro": 3,
+      "qtdCesto": 3,
+      "temEstacionamentoPalestrante": true,
+      "dadosPalestrante": "José Almeida, CPF 111.111.111-11. Placa do veículo XXX-9X99",
+      "outrosEquipamentos": "Não"
+    },
+    "emissaoCertificadoSGA": true
+    }
+  ```
+
+- **Exemplo de Respostas da Requisição (JSON):**
+``` json
+   Resposta: Sucesso (200 OK)
+    {
+      "$id": "1",
+      "solicitanteId": 1,
+      "solicitante": null,
+      "titulo": "Evento 2024",
+      "tipoEvento": 1,
+      "localId": 1,
+      "local": null,
+      "descricao": "Lorem ipsum",
+      "dataInicio": "2024-09-30T01:01:56.539Z",
+      "dataFim": "2024-10-02T01:01:56.539Z",
+      "setorId": null,
+      "setor": null,
+      "cursoId": 1,
+      "curso": null,
+      "outrosCursosParticipantes": false,
+      "outrosCursos": null,
+      "atividadePratica": "Não",
+      "materiais": "N/A",
+      "emissaoCertificadoSGA": true,
+      "id": 7
+    }
+  ```
+
+#### Endpoint 3: Evento por Usuário
+- **Método:** `GET`
+- **URL:** `/api/Eventos/Usuario/{usuario}`
+- **Parâmetros:**
+  - ID do Usuário.
+
+- **Exemplo de Respostas da Requisição (JSON):**
+  ```json
+    Resposta: Sucesso (200 OK) // URL: /api/Eventos/Usuario/1
+   {
+      "$id": "1",
+      "$values": [
+          {
+              "$id": "2",
+              "solicitanteId": 1,
+              "solicitante": {
+                  "$id": "3",
+                  "nome": "Administrator",
+                  "email": "admin@email.com.br",
+                  "senha": "$2a$11$VTD77/XVUCwFRPG55Nqfsu6tzC1pgPI0B4LrF.S3tD11y1/vqnt2O",
+                  "perfil": 0,
+                  "perfilDescricao": "Administrador",
+                  "id": 1
+              },
+              "titulo": "Evento 2024",
+              "tipoEvento": 1,
+              "localId": 1,
+              "local": {
+                  "$id": "4",
+                  "nome": "Auditório 1",
+                  "prazoMinimo": 15,
+                  "id": 1
+              },
+              "descricao": "Lorem ipsum",
+              "dataInicio": "2024-09-30T01:01:56.539Z",
+              "dataFim": "2024-10-02T01:01:56.539Z",
+              "setorId": 0,
+              "setor": null,
+              "cursoId": 1,
+              "curso": {
+                  "$id": "5",
+                  "nome": "Sistemas de Informação",
+                  "id": 1
+              },
+              "outrosCursosParticipantes": false,
+              "outrosCursos": null,
+              "atividadePratica": "Não",
+              "materiais": "N/A",
+              "emissaoCertificadoSGA": true,
+              "id": 4
+          },
+          {
+              "$id": "6",
+              "solicitanteId": 1,
+              "solicitante": {
+                  "$ref": "3"
+              },
+              "titulo": "Evento 2024",
+              "tipoEvento": 1,
+              "localId": 1,
+              "local": {
+                  "$ref": "4"
+              },
+              "descricao": "Lorem ipsum",
+              "dataInicio": "2024-09-30T01:01:56.539Z",
+              "dataFim": "2024-10-02T01:01:56.539Z",
+              "setorId": null,
+              "setor": null,
+              "cursoId": 1,
+              "curso": {
+                  "$ref": "5"
+              },
+              "outrosCursosParticipantes": false,
+              "outrosCursos": null,
+              "atividadePratica": "Não",
+              "materiais": "N/A",
+              "emissaoCertificadoSGA": true,
+              "id": 6
+          },
+          {
+              "$id": "7",
+              "solicitanteId": 1,
+              "solicitante": {
+                  "$ref": "3"
+              },
+              "titulo": "Evento 2024",
+              "tipoEvento": 1,
+              "localId": 1,
+              "local": {
+                  "$ref": "4"
+              },
+              "descricao": "Lorem ipsum",
+              "dataInicio": "2024-09-30T01:01:56.539Z",
+              "dataFim": "2024-10-02T01:01:56.539Z",
+              "setorId": null,
+              "setor": null,
+              "cursoId": 1,
+              "curso": {
+                  "$ref": "5"
+              },
+              "outrosCursosParticipantes": false,
+              "outrosCursos": null,
+              "atividadePratica": "Não",
+              "materiais": "N/A",
+              "emissaoCertificadoSGA": true,
+              "id": 7
+          }
+      ]
   }
 
-  Resposta: Sucesso (200 OK)
+  Resposta: Erro (400 Bad Request) // URL: /api/Eventos/Usuario/key
   {
-  "$id": "1",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI1IiwidW5pcXVlX25hbWUiOiJTYWxvbcOjbyIsImVtYWlsIjoic2Fsb21hb0Bob3RtYWlsLmNvbSIsInJvbGUiOiJGdW5jaW9uYXJpbyIsIm5iZiI6MTcyNzMwMjgwNCwiZXhwIjoxNzI3MzMxNjA0LCJpYXQiOjE3MjczMDI4MDR9.89BkrfOoH303rkfA-RzC9hZX2LXP5zSmmWDWuuyweqw"
+    "$id": "1",
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "errors": {
+        "$id": "2",
+        "usuario": [
+            "The value 'key' is not valid."
+        ]
+    },
+    "traceId": "00-9ca6839fb794effc67dc375c4026dd50-f943ed9ceb20a6ee-00"
   }
+  ```
+
+  #### Endpoint 2: Evento por ID
+- **Método:** `GET`
+- **URL:** `/api/Eventos/{evento}`
+- **Parâmetros:**
+  - ID do Evento.
+
+- **Exemplo de Respostas da Requisição (JSON):**
+  ```json
+    Resposta: Sucesso (200 OK)
+    {
+      "solicitanteId": 1,
+      "titulo": "Evento 2024",
+      "tipoEvento": 1,
+      "localId": 1,
+      "descricao": "Lorem ipsum",
+      "dataInicio": "2024-09-30T01:01:56.539Z",
+      "dataFim": "2024-10-02T01:01:56.539Z",
+      "cursoId": 1,
+      "outrosCursosParticipantes": false,
+      "palestras": [
+        {
+          "horarioDeInicio": "2024-09-30T01:01:56.539Z",
+          "horarioDeFim": "2024-09-30T01:01:56.539Z",
+          "titulo": "Fluxos",
+          "palestrante": "José Almeida",
+          "vagas": 100
+        }
+      ],
+      "atividadePratica": "Não",
+      "materiais": "N/A",
+      "infraestrutura": {
+        "temAdaptadorHDMI": true,
+        "qtdSuporteBanner": 2,
+        "temAguaPalestrante": true,
+        "temCoffeBreak": true,
+        "qtdMesaPlastico": 3,
+        "qtdForro": 3,
+        "qtdCesto": 3,
+        "temEstacionamentoPalestrante": true,
+        "dadosPalestrante": "José Almeida, CPF 111.111.111-11. Placa do veículo XXX-9X99",
+        "outrosEquipamentos": "Não"
+      },
+      "emissaoCertificadoSGA": true
+    }
+
+  Resposta: Erro (404 Not Found)
+  {
+    "$id": "1",
+    "message": "Entidade do tipo Evento com ID 2 não encontrada."
+  }
+  ```
 
 ## Considerações de Segurança
 
@@ -209,10 +467,32 @@ A aplicação será implementada no ambiente de nuvem da Microsoft Azure e estar
 
 ## Testes
 
+Para os testes da aplicação, utilizamos o software Postman para realizar requisições para as rotas configuradas. Abaixo, seguem exemplos de testes realizados para as principais rotas da aplicação, para o login e cadastro de usuários e para a solicitação de um novo evento:
+
 ### Usuário:
 
 #### Cadastro:
 ![image](https://github.com/user-attachments/assets/997a8ce9-8141-4879-830d-b5e00085bcb1)
+
+
+#### Login:
+![image](https://github.com/user-attachments/assets/d877ffca-c6cd-4541-8500-45f7ac5611f8)
+
+
+### Evento:
+
+#### Cadastro:
+![image](https://github.com/user-attachments/assets/daab2217-d68d-43f9-be14-586bd433cef9)
+
+
+#### Listar por ID:
+![image](https://github.com/user-attachments/assets/ee62c135-c2d3-413e-8ff4-3c85a77f902f)
+
+
+#### Listar por Usuário:
+![image](https://github.com/user-attachments/assets/cd1d1170-0f79-483d-9831-56facb138d1f)
+
+
 
 # Referências
 
