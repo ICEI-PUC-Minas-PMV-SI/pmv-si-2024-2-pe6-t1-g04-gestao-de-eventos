@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0a4cc8a0-89f9-410a-b8ad-1e037683da12)## APIs e Web Services
+## APIs e Web Services
 
 <p align="justify"> Este projeto visa desenvolver um sistema web para gerenciar eventos realizados na PUC Minas Betim, utilizando uma arquitetura monolítica e o banco de dados PostgreSQL. Cada funcionalidade do sistema, como cadastro de usuários, reserva de espaços, escolha de cursos, solicitação de infraestrutura e outros, será implementada como um serviço. </p>
 
