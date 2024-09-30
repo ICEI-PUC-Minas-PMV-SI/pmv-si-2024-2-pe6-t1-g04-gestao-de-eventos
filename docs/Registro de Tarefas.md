@@ -50,7 +50,7 @@
 
 **Na Primeira parte do projeto**, participou da discussão e documentação sobre o tema do projeto.
 
-**Na segunda parte do projeto**, trabalhou no desenvolvimento do back-end, criação de controles, banco de dados, entidade, repositório e serviços, além da configuração da API para hospedagem e testes. Atuou na API de Eventos e criou, junro com a equipe, a modelagem de dados do sistema.
+**Na segunda parte do projeto**, trabalhou no desenvolvimento do back-end, criação de controles, banco de dados, entidade, repositório e serviços, além da configuração da API para hospedagem e testes. Atuou na API de Eventos e criou, junto com a equipe, a modelagem de dados do sistema.
 
 **Na terceira parte do projeto**, 
 
