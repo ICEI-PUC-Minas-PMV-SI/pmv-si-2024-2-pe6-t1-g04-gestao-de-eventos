@@ -102,10 +102,10 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 </p>
 
 <p align="justify"> 
-  <strong>• Banco de Dados:</strong> Os dados da aplicação serão armazenados no MySQL, um sistema de gerenciamento de banco de dados relacional;</p>
+  <strong>• Banco de Dados:</strong> Os dados da aplicação serão armazenados no PostgreSQL, um sistema de gerenciamento de banco de dados relacional;</p>
 
 <p align="justify"> 
-  <strong>• Hospedagem:</strong> A aplicação estará hospedada na AWS (Amazon Web Services), que oferece uma infraestrutura escalável, segura e de alta disponibilidade.</p>
+  <strong>• Hospedagem:</strong> A aplicação estará hospedada na Azure (Microsoft Azure), que oferece uma infraestrutura escalável, segura e de alta disponibilidade.</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/df323da8-81b0-4b00-a5e1-43de1f36a07f" alt="Diagrama sem nome drawio">
@@ -115,5 +115,5 @@ A API se dará em estrutura monolítica, onde todos os componentes são integrad
 
 ## Hospedagem
 
-<p align="justify">  No que tange a hospedagem da aplicação, optamos por uma estratégia bem estruturada em ambiente de produção. A aplicação será hospedada em instâncias EC2 na AWS e utilizaremos para banco de dados o RDS, também oferecido pelo menos serviço de nuvem. </p>
+<p align="justify">  No que tange a hospedagem da aplicação, optamos por uma estratégia bem estruturada em ambiente de produção. A aplicação será hospedada em instâncias na Azure, que também hospedará o banco de dados. </p>
 
