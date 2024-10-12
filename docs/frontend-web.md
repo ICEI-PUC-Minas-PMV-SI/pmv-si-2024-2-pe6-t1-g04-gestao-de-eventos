@@ -1,9 +1,9 @@
 # Front-end Web
 
-Este projeto de front-end visa desenvolver uma plataforma de gestão de eventos para a PUC Minas Betim. O objetivo é criar uma interface de fácil visualização e eficiente para usuários com diferentes perfis (administradores, alunos e professores), utilizando JavaScript, HTML, CSS e React.
+<p align="justify"> Este projeto de front-end visa desenvolver uma plataforma de gestão de eventos para a PUC Minas Betim. O objetivo é criar uma interface de fácil visualização e eficiente para usuários com diferentes perfis (administradores, alunos e professores), utilizando JavaScript, HTML, CSS e React.</p>
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+<p align="justify"> Para o desenvolvimento do front-end deste projeto de gestão de eventos, foram utilizadas as seguintes tecnologias: React, HTML, CSS, JavaScript e os frameworks de CSS, Tailwind, Bootstrap. </p>
 
 ## Arquitetura
 
