@@ -10,23 +10,22 @@
   - *CSS;*
   - *JavaScript;*
   - *Next.js;*
-  - *Frameworks de CSS: Tailwind e Bootstrap;*
+  - *Frameworks de CSS: Tailwind.
  
 
 ## Arquitetura
 
 [Descrição da arquitetura das aplicação web, incluindo os componentes e suas interações.]
 
-<p align="justify"> A arquitetura frontend do sistema de gestão de eventos da PUC Minas é projetada para ser modular, reutilizável e escalável, utilizando os frameworks e bibliotecas modernas como React, Next.js, Tailwind e Bootstrap. A aplicação é dividida em diferentes camadas e componentes que interagem entre si para proporcionar uma experiência de usuário dinâmica e eficiente. </p>
+<p align="justify"> A arquitetura frontend do sistema de gestão de eventos da PUC Minas é projetada para ser modular, reutilizável e escalável, utilizando os frameworks e bibliotecas como React, Next.js e Tailwind. A aplicação é dividida em diferentes camadas e componentes que interagem entre si para proporcionar uma experiência de usuário dinâmica e eficiente. </p>
 
 ### Descrição da Arquitetura
 
 ### 1. Camada de Apresentação (UI Layer)
 - **HTML**: A estrutura das páginas é definida em HTML, que descreve os elementos visuais de cada página, como formulários, botões e tabelas.
 
-- **CSS (Tailwind e Bootstrap)**:
+- **CSS (Tailwind)**:
   - **Tailwind**: Um framework utilitário que permite um design rápido e customizável. É usado para estilização modular de componentes, aplicando classes diretamente nos elementos HTML.
-  - **Bootstrap**: Fornece um conjunto de componentes prontos, como grids, botões e formulários, para garantir uma interface responsiva e consistente em todos os dispositivos.
 
 A camada de apresentação é responsável por renderizar o conteúdo das páginas de forma que seja visualmente agradável e adaptável.
 
@@ -42,10 +41,6 @@ A aplicação é dividida em pequenos componentes reutilizáveis em React. Estes
 ### 4. Interações Dinâmicas (JavaScript)
 A interação entre os componentes da interface é controlada por JavaScript. Aqui são gerenciadas as ações, como a submissão de formulários, validação de dados, controle de modais, navegação condicional baseada em estados de autenticação, entre outras funcionalidades dinâmicas.
 
-### 5. Camada de SEO e Performance
-- O **Next.js** oferece funcionalidades de otimização automática para SEO(Search Engine Optimization), como a geração de páginas estáticas e carregamento otimizado de recursos. O SEO é o conjunto de práticas e estratégias usadas para melhorar a visibilidade e o posicionamento de um site nos resultados orgânicos dos motores de busca (como Google, Bing, etc.). O objetivo do SEO é aumentar o tráfego de visitantes para o site de forma natural, sem a necessidade de anúncios pagos.
-- **Imagens Otimizadas**: O Next.js tem suporte nativo para otimização de imagens, garantindo que o carregamento seja eficiente e rápido em todas as páginas.
-
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
@@ -54,6 +49,7 @@ A interação entre os componentes da interface é controlada por JavaScript. Aq
 2. **Header** controla a navegação para páginas internas, como a página de solicitação de evento.
 3. Após o login, o usuário é redirecionado para a **Página de Solicitação de Evento**, onde pode criar eventos. O formulário envia dados para o backend por meio de requisições HTTP.
 4. A resposta do backend é exibida dinamicamente no frontend, mostrando uma confirmação da solicitação ou erros no formulário.
+5. Após confirmação pelo sistema do evento criado, o usuários será direcionado para uma tela onde serão listados todos os eventos solicitado por ele.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/37fb9b7d-54dd-45be-b1b0-438283cad928" alt="image" />
@@ -85,12 +81,10 @@ Este design equilibrado entre o uso de cores claras e vibrantes não só represe
 ### Layout Responsivo
 [Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
 
-A interface da página web será projetada para se adaptar de forma eficiente a diferentes tamanhos de tela e dispositivos, garantindo uma experiência de usuário otimizada em desktops e smartphones. Isso será alcançado por meio de práticas de **layout responsivo** usando as tecnologias **CSS**, **Tailwind** e **Bootstrap**, que permitirão uma transição suave entre os diferentes formatos de dispositivos.
+A interface da página web será projetada para se adaptar de forma eficiente a diferentes tamanhos de tela e dispositivos, garantindo uma experiência de usuário otimizada em desktops e smartphones. Isso será alcançado por meio de práticas de **layout responsivo** usando as tecnologias **CSS** e **Tailwind**, que permitirão uma transição suave entre os diferentes formatos de dispositivos.
 
-#### Estrutura Responsiva com Tailwind e Bootstrap:
+#### Estrutura Responsiva com Tailwind:
 - **Tailwind CSS**: Utilizando classes utilitárias do Tailwind, os componentes da interface serão estilizados para se ajustar automaticamente ao tamanho da tela.
-- **Bootstrap**: O Bootstrap será usado para garantir uma estrutura de layout fluida e responsiva. Suas **grades** (grids) adaptáveis garantirão que os componentes se reorganizem corretamente em telas menores. Elementos como **botões**, **formulários** e **tabelas** serão dimensionados automaticamente para se ajustarem a qualquer dispositivo.
-
 #### Estratégias de Layout:
 1. **Desktops (Telas Grandes)**: Em telas grandes, como monitores de desktop, a interface será exibida com uma estrutura de **layout em colunas**. As seções de conteúdo e navegação serão organizadas em colunas lado a lado, aproveitando ao máximo o espaço disponível.
 2. **Smartphones (Telas Pequenas)**: Em dispositivos móveis, como smartphones, o layout será reestruturado para uma **estrutura em coluna única**. A navegação será simplificada, com menus em **hamburguer menus** ou botões de ação que se expandem, oferecendo uma navegação intuitiva em telas menores.
@@ -224,7 +218,7 @@ Essas medidas garantem que a aplicação não apenas forneça um acesso seguro a
 Abaixo estão listadas as etapas e os requisitos para implantar a aplicação frontend em um ambiente de produção.
 
 #### Requisitos de Software:
-- **Plataforma de Hospedagem**: AWS (Amazon Web Services)
+- **Plataforma de Hospedagem**: Vercel
 - **Ambiente de Desenvolvimento**: Node.js e npm para gerenciar dependências.
 - **Sistema Operacional**: Linux, macOS ou Windows (dependendo do servidor)
 
@@ -237,10 +231,10 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 #### Passos para Implantação:
 
 1. **Escolha da Plataforma de Hospedagem**:
-   - Selecionamos a plataforma de hospedagem AWS com base nas necessidades de escalabilidade e desempenho.
+   - Selecionamos a plataforma de hospedagem Vercel com base nas necessidades de escalabilidade e desempenho.
    
 2. **Configuração do Ambiente de Implantação**:
-   - Configuração do ambiente de implantação, que inclui a instalação do **Node.js**, **Next.js** e **npm**
+   - Configuração do ambiente de implantação, que inclui a instalação do **Node.js** e **npm**
    - Para uso do Next.js, instalação das dependências com o seguinte comando:
      ```bash
      npm install
@@ -250,7 +244,7 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
      ```bash
      npm run build
      ```
-   - Deploy da aplicação na plataforma **AWS**
+   - Deploy da aplicação na plataforma **Vercel**
 
 #### Considerações Finais:
 - Certifique-se de que a aplicação esteja otimizada e responsiva em diferentes dispositivos, como desktops e smartphones.
