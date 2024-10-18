@@ -61,6 +61,29 @@ A interação entre os componentes da interface é controlada por JavaScript. Aq
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
+#### Tela Home
+![Tela inicial projetada no Figma](https://github.com/user-attachments/assets/cf683d4b-c88f-4ecb-ac87-b1e7ff85bf3a)
+
+#### Tela Entrar
+![image](https://github.com/user-attachments/assets/0abb399e-4e6f-4bba-bb62-61d33b95279e)
+
+
+#### Tela Cadastrar 
+![image](https://github.com/user-attachments/assets/0d50c03b-d1cf-4124-acfd-5da2136abc97)
+
+
+#### Tela Sobre
+![image](https://github.com/user-attachments/assets/a8fa7da2-00e7-4736-b523-bf877444a361)
+
+#### Tela Evento
+
+#### Tela Painel do Administrador
+
+#### Tela Painel do Usuário 
+
+
+
+
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
 
