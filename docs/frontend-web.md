@@ -303,4 +303,32 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 
 # Referências
 
+- Alves, P. (2022). *Desenvolvimento de Interfaces com React*. São Paulo: Editora Dev.
+
+- Costa, L. (2021). *Fundamentos de CSS e JavaScript*. Rio de Janeiro: Editora Code.
+
+- Fontes, A. (2023). *Arquitetura de Sistemas com Next.js e Tailwind*. Recife: Editora WebTech.
+
+- Krause, M. (2023). *Tutorial de Diagrama de Sequência UML | Passo a Passo para Desenvolver Aplicações Modernas*. [YouTube](https://www.youtube.com/watch?v=qaWShGkUiBo).
+
+- Santos, G. (2023). *O que é Next.js, na prática, em 15 minutos!*. [YouTube](https://www.youtube.com/watch?v=QsSUbuYeEFk).
+
+- Silva, L. (2023). *Next.js para Iniciantes na prática!*. [YouTube](https://www.youtube.com/watch?v=k7eDn1qdj-E).
+
+- [MDN Web Docs (Mozilla Developer Network)](https://developer.mozilla.org/) - Um dos principais recursos para documentação de HTML, CSS, e JavaScript, com tutoriais e guias completos sobre conceitos fundamentais e avançados.
+
+- [W3Schools](https://www.w3schools.com/) - Fornece tutoriais interativos e abrangentes sobre CSS, JavaScript, React, e várias outras tecnologias web.
+
+- [CSS-Tricks](https://css-tricks.com/) - Um site com artigos, tutoriais, e dicas sobre CSS e front-end, incluindo guias sobre Tailwind CSS e design responsivo.
+
+- [FreeCodeCamp](https://www.freecodecamp.org/) - Disponibiliza cursos e tutoriais gratuitos sobre desenvolvimento web, incluindo conteúdo de JavaScript, CSS, e frameworks modernos como React.
+
+- [Tailwind CSS Documentation](https://tailwindcss.com/) - Documentação oficial do Tailwind CSS, com guias sobre configuração, uso de utilitários e criação de layouts responsivos.
+
+- [React Documentation](https://react.dev/) - Documentação oficial do React, com uma introdução completa ao framework, conceitos e exemplos práticos.
+
+- [Next.js Documentation](https://nextjs.org/docs) - Documentação oficial do Next.js, com tutoriais sobre funcionalidades e práticas recomendadas para construção de aplicações com React.
+
+
+
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
