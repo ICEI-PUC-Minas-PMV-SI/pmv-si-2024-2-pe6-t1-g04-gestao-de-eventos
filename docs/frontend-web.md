@@ -44,16 +44,15 @@ A interação entre os componentes da interface é controlada por JavaScript. Aq
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
+Abaixo demonstramos o Diagrama de Sequência do Cadastro de Usuário, Login, Alteração de Senha e solicitação de eventos. 
+
 ### Interações dos Componentes
-1. O usuário acessa a página inicial onde pode se cadastrar ou fazer login.
-2. **Header** controla a navegação para páginas internas, como a página de solicitação de evento.
-3. Após o login, o usuário é redirecionado para a **Página de Solicitação de Evento**, onde pode criar eventos. O formulário envia dados para o backend por meio de requisições HTTP.
-4. A resposta do backend é exibida dinamicamente no frontend, mostrando uma confirmação da solicitação ou erros no formulário.
-5. Após confirmação pelo sistema do evento criado, o usuários será direcionado para uma tela onde serão listados todos os eventos solicitado por ele.
+
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/37fb9b7d-54dd-45be-b1b0-438283cad928" alt="image" />
+  <img src="https://github.com/user-attachments/assets/efa9bd1c-bf0b-40e4-84ff-0d096d7e73c8" alt="image" />
 </p>
+
 
 ## Projeto da Interface Web
 [Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
@@ -156,6 +155,17 @@ Esse controle de acesso garante que apenas o **administrador** possa realizar a�
 ## Fluxo de Dados
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
+
+### Interações dos Componentes
+1. O usuário acessa a página inicial onde pode se cadastrar ou fazer login.
+2. **Header** controla a navegação para páginas internas, como a página de solicitação de evento.
+3. Após o login, o usuário é redirecionado para a **Página de Solicitação de Evento**, onde pode criar eventos e também alterar a senha. O formulário envia dados para o backend por meio de requisições HTTP.
+4. A resposta do backend é exibida dinamicamente no frontend, mostrando uma confirmação da solicitação ou erros no formulário.
+5. Após confirmação pelo sistema do evento criado, o usuários será direcionado para uma tela onde serão listados todos os eventos solicitado por ele.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/37fb9b7d-54dd-45be-b1b0-438283cad928" alt="image" />
+</p>
 
 #### Requisitos Funcionais
 
