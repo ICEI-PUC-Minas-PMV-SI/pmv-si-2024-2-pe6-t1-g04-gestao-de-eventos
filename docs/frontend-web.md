@@ -303,32 +303,28 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 
 # Referências
 
-- Alves, P. (2022). *Desenvolvimento de Interfaces com React*. São Paulo: Editora Dev.
+ALVES, P. *Desenvolvimento de Interfaces com React*. São Paulo: Editora Dev, 2022.
 
-- Costa, L. (2021). *Fundamentos de CSS e JavaScript*. Rio de Janeiro: Editora Code.
+COSTA, L. *Fundamentos de CSS e JavaScript*. Rio de Janeiro: Editora Code, 2021.
 
-- Fontes, A. (2023). *Arquitetura de Sistemas com Next.js e Tailwind*. Recife: Editora WebTech.
+FONTES, A. *Arquitetura de Sistemas com Next.js e Tailwind*. Recife: Editora WebTech, 2023.
 
-- Krause, M. (2023). *Tutorial de Diagrama de Sequência UML | Passo a Passo para Desenvolver Aplicações Modernas*. [YouTube](https://www.youtube.com/watch?v=qaWShGkUiBo).
+KRAUSE, M. *Tutorial de Diagrama de Sequência UML | Passo a Passo para Desenvolver Aplicações Modernas*. YouTube, 2023. Disponível em: [https://www.youtube.com/watch?v=qaWShGkUiBo](https://www.youtube.com/watch?v=qaWShGkUiBo). Acesso em: 1 nov. 2024.
 
-- Santos, G. (2023). *O que é Next.js, na prática, em 15 minutos!*. [YouTube](https://www.youtube.com/watch?v=QsSUbuYeEFk).
+SANTOS, G. *O que é Next.js, na prática, em 15 minutos!*. YouTube, 2023. Disponível em: [https://www.youtube.com/watch?v=QsSUbuYeEFk](https://www.youtube.com/watch?v=QsSUbuYeEFk). Acesso em: 1 nov. 2024.
 
-- Silva, L. (2023). *Next.js para Iniciantes na prática!*. [YouTube](https://www.youtube.com/watch?v=k7eDn1qdj-E).
+SILVA, L. *Next.js para Iniciantes na prática!*. YouTube, 2023. Disponível em: [https://www.youtube.com/watch?v=k7eDn1qdj-E](https://www.youtube.com/watch?v=k7eDn1qdj-E). Acesso em: 1 nov. 2024.
 
-- [MDN Web Docs (Mozilla Developer Network)](https://developer.mozilla.org/) - Um dos principais recursos para documentação de HTML, CSS, e JavaScript, com tutoriais e guias completos sobre conceitos fundamentais e avançados.
+MDN WEB DOCS (Mozilla Developer Network). Documentação de HTML, CSS e JavaScript. Disponível em: [https://developer.mozilla.org/](https://developer.mozilla.org/). Acesso em: 1 nov. 2024.
 
-- [W3Schools](https://www.w3schools.com/) - Fornece tutoriais interativos e abrangentes sobre CSS, JavaScript, React, e várias outras tecnologias web.
+W3SCHOOLS. CSS, JavaScript, React, e mais. Disponível em: [https://www.w3schools.com/](https://www.w3schools.com/). Acesso em: 1 nov. 2024.
 
-- [CSS-Tricks](https://css-tricks.com/) - Um site com artigos, tutoriais, e dicas sobre CSS e front-end, incluindo guias sobre Tailwind CSS e design responsivo.
+CSS-TRICKS. Artigos, tutoriais e dicas sobre CSS e front-end. Disponível em: [https://css-tricks.com/](https://css-tricks.com/). Acesso em: 1 nov. 2024.
 
-- [FreeCodeCamp](https://www.freecodecamp.org/) - Disponibiliza cursos e tutoriais gratuitos sobre desenvolvimento web, incluindo conteúdo de JavaScript, CSS, e frameworks modernos como React.
+TAILWIND CSS DOCUMENTATION. Guia oficial sobre Tailwind CSS. Disponível em: [https://tailwindcss.com/](https://tailwindcss.com/). Acesso em: 1 nov. 2024.
 
-- [Tailwind CSS Documentation](https://tailwindcss.com/) - Documentação oficial do Tailwind CSS, com guias sobre configuração, uso de utilitários e criação de layouts responsivos.
+REACT DOCUMENTATION. Introdução e guia oficial do React. Disponível em: [https://react.dev/](https://react.dev/). Acesso em: 1 nov. 2024.
 
-- [React Documentation](https://react.dev/) - Documentação oficial do React, com uma introdução completa ao framework, conceitos e exemplos práticos.
-
-- [Next.js Documentation](https://nextjs.org/docs) - Documentação oficial do Next.js, com tutoriais sobre funcionalidades e práticas recomendadas para construção de aplicações com React.
+NEXT.JS DOCUMENTATION. Documentação oficial do Next.js. Disponível em: [https://nextjs.org/docs](https://nextjs.org/docs). Acesso em: 1 nov. 2024.
 
 
-
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
