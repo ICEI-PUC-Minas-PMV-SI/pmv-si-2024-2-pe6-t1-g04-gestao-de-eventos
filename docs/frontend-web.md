@@ -276,11 +276,36 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 
 Para demontrar os testes feitos na plataforma, os mesmos foram separados por categorias e foi criado um vídeo explicativo para cada, demonstrando a eficácia das funcionalidades do sistema.
 
-**Teste Login com autenticaçõ utilizando token JWT e Logout**:
+- **Teste Login com autenticação utilizando token JWT e Logout**:
 
-**Teste Cadastro de usuário**:
 
-**Teste Alteração de Senha**:
+1) 
+
+https://github.com/user-attachments/assets/a61197c7-2448-4004-a848-af5d697197cf
+
+
+2) 
+
+https://github.com/user-attachments/assets/bfb563be-b8a0-473a-bc09-8d6b14717cf1
+
+
+
+- **Teste Cadastro de usuário**:
+
+
+
+https://github.com/user-attachments/assets/595c5573-5be7-4851-b99b-3feb37ed38cc
+
+
+
+- **Teste Alteração de Senha**:
+
+
+
+
+https://github.com/user-attachments/assets/9e4c13e8-c5db-474f-8b1c-e85ac25965e9
+
+
 
 [Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
 
