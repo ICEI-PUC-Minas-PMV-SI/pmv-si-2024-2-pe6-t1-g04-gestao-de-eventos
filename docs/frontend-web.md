@@ -15,8 +15,6 @@
 
 ## Arquitetura
 
-[Descrição da arquitetura das aplicação web, incluindo os componentes e suas interações.]
-
 <p align="justify"> A arquitetura frontend do sistema de gestão de eventos da PUC Minas é projetada para ser modular, reutilizável e escalável, utilizando os frameworks e bibliotecas como React, Next.js e Tailwind. A aplicação é dividida em diferentes camadas e componentes que interagem entre si para proporcionar uma experiência de usuário dinâmica e eficiente. </p>
 
 ### Descrição da Arquitetura
@@ -42,7 +40,6 @@ A aplicação é dividida em pequenos componentes reutilizáveis em React. Estes
 A interação entre os componentes da interface é controlada por JavaScript. Aqui são gerenciadas as ações, como a submissão de formulários, validação de dados, controle de modais, navegação condicional baseada em estados de autenticação, entre outras funcionalidades dinâmicas.
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 Abaixo demonstramos o Diagrama de Sequência do Cadastro de Usuário, Login, Alteração de Senha e solicitação de eventos. 
 
@@ -84,7 +81,6 @@ Abaixo demonstramos o Diagrama de Sequência do Cadastro de Usuário, Login, Alt
 
 
 ### Design Visual
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
 
 A identidade visual da página web será construída em torno das cores **branca** e **azul**, seguindo a paleta de cores do logo da **PUC Minas**, garantindo consistência com a imagem da universidade. O uso do **branco** proporcionará uma base limpa e minimalista, enquanto o **azul** será aplicado em elementos chave para transmitir seriedade, confiança e profissionalismo, alinhando-se ao padrão visual da instituição.
 
@@ -101,7 +97,6 @@ A identidade visual da página web será construída em torno das cores **branca
 Este design equilibrado entre o uso de cores claras e vibrantes não só representa a identidade visual da PUC Minas, mas também proporciona uma experiência de usuário intuitiva, clara e agradável, refletindo a seriedade e a qualidade da universidade.
 
 ### Layout Responsivo
-[Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
 
 A interface da página web será projetada para se adaptar de forma eficiente a diferentes tamanhos de tela e dispositivos, garantindo uma experiência de usuário otimizada em desktops e smartphones. Isso será alcançado por meio de práticas de **layout responsivo** usando as tecnologias **CSS** e **Tailwind**, que permitirão uma transição suave entre os diferentes formatos de dispositivos.
 
@@ -123,7 +118,6 @@ Dessa forma, o layout responsivo garantirá que a aplicação ofereça uma inter
 
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
 
 No sistema de gestão de eventos, existem **4 tipos de usuários**, cada um com diferentes níveis de acesso e permissões. Esses usuários são: **administrador**, **aluno**, **funcionário** e **professor**.
 
@@ -154,20 +148,18 @@ Esse controle de acesso garante que apenas o **administrador** possa realizar a�
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
-
 ### Interações dos Componentes
 1. O usuário acessa a página inicial onde pode se cadastrar ou fazer login.
-2. **Header** controla a navegação para páginas internas, como a página de solicitação de evento.
-3. Após o login, o usuário é redirecionado para a **Página de Solicitação de Evento**, onde pode criar eventos e também alterar a senha. O formulário envia dados para o backend por meio de requisições HTTP.
-4. A resposta do backend é exibida dinamicamente no frontend, mostrando uma confirmação da solicitação ou erros no formulário.
-5. Após confirmação pelo sistema do evento criado, o usuários será direcionado para uma tela onde serão listados todos os eventos solicitado por ele.
+2. **Header** controla a navegação para páginas internas, como a página de solicitação de evento, alteração de senha e cadastro de usuário.
+3. Após o login, o usuário é redirecionado para a **Página de Eventos**. Nesta página, inicialmente, são listados os eventos solicitados anteriormente, caso eles existam. Também são disponibilizados dois botões: o de **Solicitar novo evento** e de **Alterar Senha**.
+4. Ao clicar no botão de **Solicitar novo evento**, o usuário é direcionado para a página onde consta o formulário que deve ser preenchido para fazer a solicitação do evento. Ao clicar no botão de Encaminhar Solicitação, a resposta do backend é exibida dinamicamente no frontend, mostrando uma confirmação da solicitação ou erros no formulário. Logo após, o usuário é direcionado devolta para a **Página de Eventos**
+5. Ao clicar no botão de **Alterar Senha**, o usuário é direcionado para a tela de alterar senha e lá, são renderizados na tela o nome, e-mail e perfil do cliente logado, e também um campo onde o usuário deve digitar a nova senha. Ao clicar no botão de alterar senha, é mostrada uma confirmação de que a senha foi alterada com sucesso e o usuário é direcionado devolta para a **Página de Eventos**.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/37fb9b7d-54dd-45be-b1b0-438283cad928" alt="image" />
+  <img src="https://github.com/user-attachments/assets/a7c41fc0-1005-43ea-a10a-920cc71f8d3d" alt="image" />
 </p>
 
-#### Requisitos Funcionais
+## Requisitos Funcionais
 
 | ID     | Descrição do Requisito                                                                                         | Prioridade |
 |--------|---------------------------------------------------------------------------------------------------------------|------------|
@@ -186,7 +178,7 @@ Esse controle de acesso garante que apenas o **administrador** possa realizar a�
 | RF-13  | O sistema deve exibir mensagens de erro caso o formulário de cadastro seja preenchido de maneira inadequada. | Alta       |
 | RF-14  | O sistema deve exibir mensagens de sucesso quando o evento for cadastrado ou excluído com sucesso. | Alta       |
 
-#### Requisitos Não Funcionais
+## Requisitos Não Funcionais
 
 | Identificador | Requisitos                                                                | Classificação  | Prioridade |
 |---------------|---------------------------------------------------------------------------|----------------|------------|
@@ -203,8 +195,6 @@ Esse controle de acesso garante que apenas o **administrador** possa realizar a�
 | RNF11         | O sistema deve permitir a futura expansão para suportar diferentes idiomas, com textos e mensagens prontamente traduzíveis. | Internacionalização | Média      |
 
 ## Considerações de Segurança
-
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
 
 Para garantir a segurança da aplicação de gestão de eventos, utilizaremos o **JSON Web Token (JWT)** para autenticar a sessão dos usuários. O JWT é uma maneira segura de garantir que as informações de autenticação sejam transmitidas de forma confiável entre o cliente e o servidor, sem a necessidade de armazenar dados de sessão no servidor.
 
@@ -239,8 +229,6 @@ Essas medidas garantem que a aplicação não apenas forneça um acesso seguro a
 
 
 ## Implantação
-
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
 
 1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
 2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
