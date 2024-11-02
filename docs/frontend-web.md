@@ -276,7 +276,7 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 
 Para demontrar os testes feitos na plataforma, os mesmos foram separados por categorias e foi criado um vídeo explicativo para cada, demonstrando a eficácia das funcionalidades do sistema.
 
-- **Teste Login com autenticação utilizando token JWT e Logout**:
+- **Teste Login e Logout com autenticação utilizando token JWT**:
 
 
 1) 
