@@ -274,6 +274,14 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 
 ## Testes
 
+Para demontrar os testes feitos na plataforma, os mesmos foram separados por categorias e foi criado um vídeo explicativo para cada, demonstrando a eficácia das funcionalidades do sistema.
+
+**Teste Login com autenticaçõ utilizando token JWT e Logout**:
+
+**Teste Cadastro de usuário**:
+
+**Teste Alteração de Senha**:
+
 [Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
 
 1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
