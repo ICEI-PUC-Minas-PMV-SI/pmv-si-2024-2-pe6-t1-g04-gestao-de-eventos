@@ -319,21 +319,13 @@ https://github.com/user-attachments/assets/595c5573-5be7-4851-b99b-3feb37ed38cc
 https://github.com/user-attachments/assets/9e4c13e8-c5db-474f-8b1c-e85ac25965e9
 
 
+- **Teste de Solicitação de Evento**:
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
-**Testes Pós-Deploy**:
-   - Após o deploy na AWS, execute testes para garantir que a aplicação está funcionando corretamente no ambiente de produção:
-     - Verifique a navegação entre páginas.
-     - Teste a funcionalidade de cadastro, login e listagem de eventos.
-     - Realize testes de performance, simulando múltiplos acessos simultâneos.
-     - Certifique-se de que todas as variáveis de ambiente estão corretas e funcionando conforme esperado.
+https://github.com/user-attachments/assets/335adb91-918d-4dd4-80a6-563b22bdb0cf
+
+
 
 # Referências
 
