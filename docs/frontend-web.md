@@ -41,7 +41,15 @@ A interação entre os componentes da interface é controlada por JavaScript. Aq
 
 ## Modelagem da Aplicação
 
-Abaixo demonstramos o Diagrama de Sequência do Cadastro de Usuário, Login, Alteração de Senha e solicitação de eventos. 
+Abaixo apresentamos o Diagrama de Sequência para o Cadastro de Usuário, Login, Alteração de Senha e Solicitação de Eventos.
+
+Este diagrama ilustra as interações entre os usuários e o sistema durante esses processos. A sequência inicia com o cadastro do usuário, que insere e-mail e senha. Em seguida, o sistema verifica os dados e confirma o registro. Após o cadastro, o usuário realiza o login para acessar as funcionalidades do sistema.
+
+A alteração de senha é realizada quando o usuário solicita essa ação, e o sistema valida a identidade do usuário antes de permitir a alteração.
+
+No que se refere à solicitação de eventos, o usuário preenche um formulário com os detalhes do evento desejado. O Setor de Eventos verifica a disponibilidade do local e processa a solicitação.
+
+Esses fluxos de interação são fundamentais para garantir que os usuários tenham uma experiência organizada e eficiente ao utilizar o sistema. 
 
 ### Interações dos Componentes
 
