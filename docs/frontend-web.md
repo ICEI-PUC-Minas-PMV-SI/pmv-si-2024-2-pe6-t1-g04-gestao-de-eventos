@@ -1,6 +1,6 @@
 # Front-end Web
 
-<p align="justify"> Este projeto de front-end visa desenvolver uma plataforma para gerenciar eventos realizados na PUC Minas Betim. O objetivo é criar uma interface de fácil visualização e eficiente para usuários com diferentes perfis (administradores, alunos, professores e funcionários).</p>
+<p align="justify"> Este projeto de front-end visa desenvolver uma plataforma para gerenciar eventos realizados na PUC Minas Betim. O objetivo é criar uma interface de fácil visualização e eficiência para usuários com diferentes perfis (administradores, alunos, professores e funcionários).</p>
 
 ## Tecnologias Utilizadas
 <p align="justify"> Para o desenvolvimento do front-end deste projeto de gestão de eventos, foram utilizadas as seguintes tecnologias: 
@@ -15,7 +15,7 @@
 
 ## Arquitetura
 
-<p align="justify"> A arquitetura frontend do sistema de gestão de eventos da PUC Minas é projetada para ser modular, reutilizável e escalável, utilizando os frameworks e bibliotecas como React, Next.js e Tailwind. A aplicação é dividida em diferentes camadas e componentes que interagem entre si para proporcionar uma experiência de usuário dinâmica e eficiente. </p>
+<p align="justify"> A arquitetura frontend do sistema de gestão de eventos da PUC Minas foi projetada para ser modular, reutilizável e escalável, utilizando os frameworks e bibliotecas como React, Next.js e Tailwind. A aplicação é dividida em diferentes camadas e componentes que interagem entre si para proporcionar uma experiência de usuário dinâmica e eficiente. </p>
 
 ### Descrição da Arquitetura
 
@@ -37,19 +37,20 @@ A aplicação é dividida em pequenos componentes reutilizáveis em React. Estes
 - **Página de Solicitação de Evento**: Um formulário que permite aos usuários solicitarem a criação de novos eventos, preenchendo informações como nome do evento, data, local, infraestrutura, palestrante e descrição.
 
 ### 4. Interações Dinâmicas (JavaScript)
-A interação entre os componentes da interface é controlada por JavaScript. Aqui são gerenciadas as ações, como a submissão de formulários, validação de dados, controle de modais, navegação condicional baseada em estados de autenticação, entre outras funcionalidades dinâmicas.
+A interação entre os componentes da interface é controlada por JavaScript. Neste contexto, são gerenciadas ações como a submissão de formulários, validação de dados, controle de modais e navegação condicional baseada em estados de autenticação, entre outras funcionalidades dinâmicas.
 
 ## Modelagem da Aplicação
 
-Abaixo apresentamos o Diagrama de Sequência para o Cadastro de Usuário, Login, Alteração de Senha e Solicitação de Eventos.
+Abaixo, apresentamos o Diagrama de Sequência para Cadastro de Usuário, Login, Alteração de Senha e Solicitação de Eventos.
 
-Este diagrama ilustra as interações entre os usuários e o sistema durante esses processos. A sequência inicia com o cadastro do usuário, que insere e-mail e senha. Em seguida, o sistema verifica os dados e confirma o registro. Após o cadastro, o usuário realiza o login para acessar as funcionalidades do sistema.
+Este diagrama ilustra as interações entre os usuários e o sistema durante esses processos. A sequência inicia com o cadastro do usuário, que insere o e-mail e a senha. Em seguida, o sistema verifica os dados e confirma o registro. Após o cadastro, o usuário realiza o login para acessar as funcionalidades do sistema.
 
 A alteração de senha é realizada quando o usuário solicita essa ação, e o sistema valida a identidade do usuário antes de permitir a alteração.
 
-No que se refere à solicitação de eventos, o usuário preenche um formulário com os detalhes do evento desejado. O Setor de Eventos verifica a disponibilidade do local e processa a solicitação.
+Em relação à solicitação de eventos, o usuário preenche um formulário com os detalhes do evento desejado. O Setor de Eventos verifica a disponibilidade do local e processa a solicitação.
 
-Esses fluxos de interação são fundamentais para garantir que os usuários tenham uma experiência organizada e eficiente ao utilizar o sistema. 
+Esses fluxos de interação são fundamentais para garantir que os usuários tenham uma experiência organizada e eficiente ao utilizar o sistema.
+
 
 ### Interações dos Componentes
 
@@ -132,7 +133,7 @@ Dessa forma, o layout responsivo garantirá que a aplicação ofereça uma inter
 
 ### Interações do Usuário
 
-No sistema de gestão de eventos, existem **4 tipos de usuários**, cada um com diferentes níveis de acesso e permissões. Esses usuários são: **administrador**, **aluno**, **funcionário** e **professor**.
+No sistema de gestão de eventos, existem **quatro tipos de usuários**, cada um com diferentes níveis de acesso e permissões. Esses usuários são: **administrador**, **aluno**, **funcionário** e **professor**.
 
 #### 1. Administrador
 - **Permissões**: O administrador terá acesso total a todas as funcionalidades do sistema, incluindo:
@@ -166,7 +167,7 @@ Esse controle de acesso garante que apenas o **administrador** possa realizar a�
 2. **Header** controla a navegação para páginas internas, como a página de solicitação de evento, alteração de senha e cadastro de usuário.
 3. Após o login, o usuário é redirecionado para a **Página de Eventos**. Nesta página, inicialmente, são listados os eventos solicitados anteriormente, caso eles existam. Também são disponibilizados dois botões: o de **Solicitar novo evento** e de **Alterar Senha**.
 4. Ao clicar no botão de **Solicitar novo evento**, o usuário é direcionado para a página onde consta o formulário que deve ser preenchido para fazer a solicitação do evento. Ao clicar no botão de Encaminhar Solicitação, a resposta do backend é exibida dinamicamente no frontend, mostrando uma confirmação da solicitação ou erros no formulário. Logo após, o usuário é direcionado devolta para a **Página de Eventos**
-5. Ao clicar no botão de **Alterar Senha**, o usuário é direcionado para a tela de alterar senha e lá, são renderizados na tela o nome, e-mail e perfil do cliente logado, e também um campo onde o usuário deve digitar a nova senha. Ao clicar no botão de alterar senha, é mostrada uma confirmação de que a senha foi alterada com sucesso e o usuário é direcionado devolta para a **Página de Eventos**.
+5. Ao clicar no botão de **Alterar Senha**, o usuário é direcionado para a tela de alterar senha e lá, são renderizados na tela o nome, e-mail e perfil do cliente logado, e também um campo onde o usuário deve digitar a nova senha. Ao clicar no botão de alterar senha, é mostrada uma confirmação de que a senha foi alterada com sucesso e o usuário é direcionado de volta para a **Página de Eventos**.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a7c41fc0-1005-43ea-a10a-920cc71f8d3d" alt="image" />
