@@ -1,59 +1,34 @@
-## Integrante: Alexandre Guzmán Siácara:
+## Alexandre Guzmán Siácara
+- **Primeira Parte:** Participou da discussão e documentação do tema do projeto.
+- **Segunda Parte:** Organização e configuração da documentação, criação de imagens, ajustes no Markdown no GitHub e revisão de conteúdo.
+- **Terceira Parte:** Elaboração do Diagrama de Interações dos Componentes do sistema e desenvolvimento colaborativo da página de eventos, em parceria com Ana Paula Sena.
+- **Quarta Parte:** 
+- **Quinta Parte:** 
 
-**Na Primeira parte do projeto**, participou da discussão e documentação sobre o tema do projeto.
+## Ana Paula Sena
+- **Primeira Parte:** Criou a documentação inicial e participou da discussão sobre o tema do projeto.
+- **Segunda Parte:** Configuração e padronização da documentação, atuando como Product Owner (PO) e definindo as regras de negócio para a API.
+- **Terceira Parte:** Desenvolvimento do Diagrama de Interações dos Componentes e criação conjunta da página de eventos com Alexandre Guzmán Siácara.
+- **Quarta Parte:** 
+- **Quinta Parte:** 
 
-**Na segunda parte do projeto**, foi responsável pela organização e configuração da documentação do projeto, criação de imagens, ajustes no Markedown no GitHub e revisão de conteúdo para garantir a clareza e a consistência das informações.
+## Brayon Matheus da Silva Duarte
+- **Primeira Parte:** Contribuiu na discussão e documentação do tema do projeto.
+- **Segunda Parte:** Desenvolvimento do back-end, incluindo a criação de controles, banco de dados, entidades, repositórios e serviços, além da configuração da API de Palestra.
+- **Terceira Parte:** Envio da etapa de desenvolvimento e criação das wireframes para as interfaces planejadas.
+- **Quarta Parte:** 
+- **Quinta Parte:** 
 
-**Na terceira parte do projeto**, 
+## Gina Rocha
+- **Primeira Parte:** Participou da discussão e documentação do tema do projeto.
+- **Segunda Parte:** Criação do repositório inicial com a API de usuários, definição de perfis de usuário, autenticação, e implementação das APIs de Infraestrutura, Curso e Setor.
+- **Terceira Parte:** Documentação e testes, além do desenvolvimento das páginas de login, alteração de senha e mapeamento do fluxo de dados.
+- **Quarta Parte:** 
+- **Quinta Parte:** 
 
-**Na quarta parte do projeto**, 
-
-**Na quinta parte do projeto**,
-
-## Integrante: Ana Paula Sena:
-
-**Na primeira parte do projeto**, foi encarregada de criar a documentação e discutir o tema do projeto.
-
-**Na segunda parte do projeto**,  foi responsável pela configuração, organização e padronização dos documentos, garantindo que a documentação estivesse clara e bem estruturada. Atuou como PO, trazendo as regras de negócio que seriam posteriormente implementadas na API de Gestão de Eventos. 
-
-**Na terceira parte do projeto**, 
-
-**Na quarta parte do projeto**, 
-
-**Na quinta parte do projeto**,
-
-## Integrante: Brayon Matheus da Silva Duarte:
-
-**Na primeira parte do projeto**, contribuiu na discussão e documentação sobre o tema do projeto.
-
-**Na segunda parte do projeto**, ficou responsável, pelo desenvolvimento do back-end, criando controles, banco de dados, entidade, repositório e serviços, além da configuração da implementação da API para hospedagem e testes. Atuou na criação da API de Palestra.
-
-**Na terceira parte do projeto**, 
-
-**Na quarta parte do projeto**, 
-
-**Na quinta parte do projeto**,
-
-## Integrante: Gina Rocha:
-
-**Na Primeira parte do projeto**, participou da discussão e documentação sobre o tema do projeto.
-
-**Na segunda parte do projeto**, criou o repositório inicial com a API de usuários e criou novos perfis de Usuários e implementou regras de autenticação. Criou a API de Infraestrutura, Curso e Setor. Com a equipe, participou da configuração da implementação da API para hospedagem e testes.
-
-**Na terceira parte do projeto**, 
-
-**Na quarta parte do projeto**, 
-
-**Na quinta parte do projeto**,
-
-## Integrante: Salomão André Gomes Lobato:
-
-**Na Primeira parte do projeto**, participou da discussão e documentação sobre o tema do projeto.
-
-**Na segunda parte do projeto**, trabalhou no desenvolvimento do back-end, criação de controles, banco de dados, entidade, repositório e serviços, além da configuração da API para hospedagem e testes. Atuou na API de Eventos e criou, junto com a equipe, a modelagem de dados do sistema.
-
-**Na terceira parte do projeto**, 
-
-**Na quarta parte do projeto**, 
-
-**Na quinta parte do projeto**,
+## Salomão André Gomes Lobato
+- **Primeira Parte:** Participou da discussão e documentação do tema do projeto.
+- **Segunda Parte:** Desenvolvimento do back-end, criação de controles, banco de dados, entidades, repositórios e serviços. Atuou na API de Eventos e na modelagem de dados do sistema.
+- **Terceira Parte:** Correção de erros no back-end e desenvolvimento das páginas de eventos, solicitação de eventos e cadastro de usuários.
+- **Quarta Parte:** 
+- **Quinta Parte:** 
