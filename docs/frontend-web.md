@@ -60,30 +60,35 @@ Esses fluxos de interação são fundamentais para garantir que os usuários ten
 
 
 ## Projeto da Interface Web
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
 ### Wireframes
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+Uma visão preliminar das telas principais que compõem a plataforma de eventos da PUC Minas Betim, destacando o fluxo e as principais funcionalidades para os usuários.
 
 #### Tela Home
-![Tela inicial projetada no Figma](https://github.com/user-attachments/assets/cf683d4b-c88f-4ecb-ac87-b1e7ff85bf3a)
+A página inicial dá aos usuários o primeiro acesso à plataforma de eventos da PUC Minas Betim.
+![image](https://github.com/user-attachments/assets/6d55482e-d27f-4a01-acf0-baa183c87935)
 
 #### Tela Entrar
-![image](https://github.com/user-attachments/assets/0abb399e-4e6f-4bba-bb62-61d33b95279e)
+Aqui, os usuários podem inserir suas credenciais para acessar a plataforma. Em caso de esquecimento, é possível acessar a opção de recuperação de senha. Serve  tambem como tela de retorno após o logout (Sair).
+![image](https://github.com/user-attachments/assets/c47406e3-d879-49d1-8e80-b2f09b0f0c9b)
+
+#### Tela Cadastrar
+Para novos usuários registrarem suas credenciais e criarem uma conta.  
+![image](https://github.com/user-attachments/assets/a1e5108b-d399-4679-a6ff-340ae2b967c7)
+
+#### Tela Alterar Senha
+Uma tela dedicada para atualização de credenciais e redefinição de senha.  
+![image](https://github.com/user-attachments/assets/020e2a28-648f-4cd9-b448-49a381f9d7d6)
+
+#### Tela Solicitação de Eventos
+Nesta seção, o usuário pode solicitar a criação de novos eventos e palestras, fornecendo todas as informações relevantes.  
+![image](https://github.com/user-attachments/assets/818fe060-f195-40c3-a86e-ec902a1ee604)
 
 
-#### Tela Cadastrar 
-![image](https://github.com/user-attachments/assets/0d50c03b-d1cf-4124-acfd-5da2136abc97)
 
-
-#### Tela Sobre
-![image](https://github.com/user-attachments/assets/a8fa7da2-00e7-4736-b523-bf877444a361)
-
-#### Tela Evento
-
-#### Tela Painel do Administrador
-
-#### Tela Painel do Usuário 
+#### Tela Eventos
+Esta tela exibe a lista de eventos criados pelo usuário, com a opção de adicionar novos eventos por meio do botão "Novo Evento".  
+![image](https://github.com/user-attachments/assets/f74d349f-837d-4869-abf7-4ed48d3f4dd3)
 
 
 
