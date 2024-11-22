@@ -68,22 +68,39 @@ Uma visão preliminar das telas principais  em dispositivos móveis que compõem
 
 #### Tela Inicial
 A página inicial dá aos usuários o primeiro acesso à plataforma de eventos da PUC Minas Betim.
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/28ce7a19-ef3f-4add-a391-92a486b83c76" />
+</p>
 
 #### Tela Entrar
-Aqui, os usuários podem inserir suas credenciais para acessar a plataforma. Em caso de esquecimento, é possível acessar a opção de recuperação de senha. Serve  tambem como tela de retorno após o logout (Sair).
+Aqui, os usuários podem inserir suas credenciais para acessar a plataforma. Em caso de esquecimento, é possível acessar a opção de recuperação de senha. Serve também como tela de retorno após o logout (Sair).
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d912ba33-89bd-49f6-a793-1fd63617d3d4" />
+</p>
 
 #### Tela Cadastrar
 Para novos usuários registrarem suas credenciais e criarem uma conta.  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/86773829-af51-448e-b87e-9667405b48bc" />
+</p>
 
 #### Tela Alterar Senha
 Uma tela dedicada para atualização de credenciais e redefinição de senha.  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3a742361-f13c-430d-9e43-37e548ce678e" />
+</p>
 
 #### Tela Solicitação de Eventos
 Nesta seção, o usuário pode solicitar a criação de novos eventos e palestras, fornecendo todas as informações relevantes.  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/53b71ada-1bf7-4aab-a8c0-4101b1ce4a10" />
+</p>
 
 #### Tela Eventos
-Esta tela exibe a lista de eventos criados pelo usuário, com a opção de adicionar novos eventos por meio do botão "Novo Evento".  
+Esta tela exibe a lista de eventos criados pelo usuário, com a opção de adicionar novos eventos por meio do botão "Novo Evento". 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/feced6cb-a9ab-41eb-8a3b-7e38c822edee" />
+</p>
 
 
 ### Design Visual
