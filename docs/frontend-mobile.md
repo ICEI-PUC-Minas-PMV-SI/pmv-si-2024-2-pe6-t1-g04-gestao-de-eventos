@@ -104,7 +104,7 @@ Esta tela exibe a lista de eventos criados pelo usuário, com a opção de adici
 
 
 ### Design Visual
-A identidade visual da aplicação mobile será construída em torno das cores **branca** e **azul**, seguindo a paleta de cores do logo da **PUC Minas**, garantindo consistência com a imagem da universidade e também com a página web já criada anteriormente. Incluímos o uso da cor **laranja** nos botões de ação como **Cadastrar**, **Entrar** e **Alterar Senha**, **Solicitar Evento**. O uso do **branco** proporcionará uma base limpa e minimalista, enquanto o **azul** será aplicado em elementos chave para transmitir seriedade, confiança e profissionalismo, alinhando-se ao padrão visual da instituição. Já o uso do **laranja** transmite energia, criatividade, entusiasmo e dinamismo.
+A identidade visual da aplicação mobile será construída em torno das cores **branca** e **azul**, seguindo a paleta de cores do logo da **PUC Minas**, garantindo consistência com a imagem da universidade e também com a página web já criada anteriormente. Incluímos o uso da cor **laranja** nos botões de ação **Cadastrar**, **Entrar**, **Alterar Senha** e **Solicitar Evento**. O uso do **branco** proporcionará uma base limpa e minimalista, enquanto o **azul** será aplicado em elementos chave para transmitir seriedade, confiança e profissionalismo, alinhando-se ao padrão visual da instituição. Já o uso do **laranja** transmite energia, criatividade, entusiasmo e dinamismo.
 
 #### Estrutura e Paleta de Cores:
 - **Fundo Principal**: A cor **branca** será predominantemente utilizada no fundo, proporcionando uma aparência leve e moderna. Esse fundo claro facilitará a leitura e criará um contraste elegante com outros elementos da interface.
