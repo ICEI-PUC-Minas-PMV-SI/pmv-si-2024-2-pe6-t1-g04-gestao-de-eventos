@@ -275,14 +275,14 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
    
 2. **Configuração do Ambiente de Implantação**:
    - Configuração do ambiente de implantação, que inclui a instalação do **React Native** e **npm**
-   - Para uso do Next.js, instalação das dependências com o seguinte comando:
+   - Para uso do React Native e npm, instalação das dependências com o seguinte comando:
      ```bash
      npm install
      ```
 3. **Deploy da Aplicação**:
    - Realize o build de produção da aplicação com o comando:
      ```bash
-     npm run build
+      npx expo start
      ```
    - Deploy da aplicação na plataforma **Vercel**
 
