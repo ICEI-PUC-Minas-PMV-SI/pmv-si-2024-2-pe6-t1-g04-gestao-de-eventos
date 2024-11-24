@@ -104,15 +104,16 @@ Esta tela exibe a lista de eventos criados pelo usuário, com a opção de adici
 
 
 ### Design Visual
-A identidade visual da página web será construída em torno das cores **branca** e **azul**, seguindo a paleta de cores do logo da **PUC Minas**, garantindo consistência com a imagem da universidade. O uso do **branco** proporcionará uma base limpa e minimalista, enquanto o **azul** será aplicado em elementos chave para transmitir seriedade, confiança e profissionalismo, alinhando-se ao padrão visual da instituição.
+A identidade visual da aplicação mobile será construída em torno das cores **branca** e **azul**, seguindo a paleta de cores do logo da **PUC Minas**, garantindo consistência com a imagem da universidade e também com a página web já criada anteriormente. Incluímos o uso da cor **laranja** nos botões de ação como **Cadastrar**, **Entrar** e **Alterar Senha**, **Solicitar Evento**. O uso do **branco** proporcionará uma base limpa e minimalista, enquanto o **azul** será aplicado em elementos chave para transmitir seriedade, confiança e profissionalismo, alinhando-se ao padrão visual da instituição. Já o uso do **laranja** transmite energia, criatividade, entusiasmo e dinamismo.
 
 #### Estrutura e Paleta de Cores:
 - **Fundo Principal**: A cor **branca** será predominantemente utilizada no fundo, proporcionando uma aparência leve e moderna. Esse fundo claro facilitará a leitura e criará um contraste elegante com outros elementos da interface.
-- **Elementos em Azul**: O **azul** será aplicado nos componentes principais da interface, como cabeçalhos, botões de ação e links. Essa cor remete à confiabilidade e à excelência, além de reforçar a identidade visual da PUC Minas.
+- **Elementos em Azul**: O **azul** será aplicado nos componentes principais da interface, como cabeçalhos e links. Essa cor remete à confiabilidade e à excelência, além de reforçar a identidade visual da PUC Minas.
 - **Destaques em Vermelho**: Itens que exigem uma ação negativa ou "não" serão destacados em **vermelho**. Esta cor forte e vibrante chamará a atenção do usuário, indicando claramente opções ou respostas que devem ser evitadas. O vermelho será utilizado em botões de cancelamento, alertas e mensagens de erro.
+- **Botões em Laranja**: A cor laranja em layouts de aplicativos costuma transmitir energia, criatividade, entusiasmo e dinamismo. É uma cor quente e vibrante que pode estimular a ação e a interação. Será aplicado em botões de ação.
 
 #### Componentes de UI:
-- **Botões e Links**: Os botões de ação terão o azul como cor de fundo, com texto branco, garantindo contraste e legibilidade. Já os botões de cancelamento ou respostas negativas terão um fundo vermelho, para uma clara diferenciação visual.
+- **Botões e Links**: Os botões de ação terão o laranja como cor de fundo, com texto branco, garantindo contraste e legibilidade. Já os botões de cancelamento ou respostas negativas terão um fundo vermelho, para uma clara diferenciação visual.
 - **Textos e Títulos**: Os textos seguirão um estilo simples e direto, com títulos em azul para dar ênfase e hierarquia às informações, enquanto o corpo do texto será em cinza escuro ou preto para garantir uma boa legibilidade.
 - **Ícones e Formulários**: Ícones e campos de formulário seguirão a mesma paleta de cores. Ícones de ação importante terão destaque azul, enquanto mensagens de erro ou alertas usarão ícones vermelhos.
 
@@ -120,17 +121,17 @@ Este design equilibrado entre o uso de cores claras e vibrantes não só represe
 
 ### Layout Responsivo
 
-A interface da página web será projetada para se adaptar de forma eficiente a diferentes tamanhos de tela e dispositivos, garantindo uma experiência de usuário otimizada em desktops e smartphones. Isso será alcançado por meio de práticas de **layout responsivo** usando as tecnologias **CSS** e **Tailwind**, que permitirão uma transição suave entre os diferentes formatos de dispositivos.
+A interface do aplicatico mobile será projetada para se adaptar de forma eficiente a diferentes tamanhos de tela e dispositivos, garantindo uma experiência de usuário otimizada em desktops e smartphones. Isso será alcançado por meio de práticas de **layout responsivo** usando as tecnologias **CSS**, **React Native** e **Javascript**, que permitirão uma transição suave entre os diferentes formatos de dispositivos.
 
-#### Estrutura Responsiva com Tailwind:
-- **Tailwind CSS**: Utilizando classes utilitárias do Tailwind, os componentes da interface serão estilizados para se ajustar automaticamente ao tamanho da tela.
+#### Estrutura Responsiva:
+- **CSS para Responsividade**: A abordagem responsiva envolve o uso de unidades proporcionais, como `%` para tamanhos relativos e `vh/vw` para dimensões baseadas na altura ou largura da tela.
 #### Estratégias de Layout:
-1. **Desktops (Telas Grandes)**: Em telas grandes, como monitores de desktop, a interface será exibida com uma estrutura de **layout em colunas**. As seções de conteúdo e navegação serão organizadas em colunas lado a lado, aproveitando ao máximo o espaço disponível.
-2. **Smartphones (Telas Pequenas)**: Em dispositivos móveis, como smartphones, o layout será reestruturado para uma **estrutura em coluna única**. A navegação será simplificada, com menus em **hamburguer menus** ou botões de ação que se expandem, oferecendo uma navegação intuitiva em telas menores.
+- **Smartphones (Telas Pequenas)**: Em dispositivos móveis, como smartphones, o layout será reestruturado para uma **estrutura em coluna única**. A navegação será simplificada, com menus em **hamburguer menus** ou botões de ação que se expandem, oferecendo uma navegação intuitiva em telas menores.
 
-#### Imagens e Conteúdos Responsivos:
-- **Imagens Otimizadas**: O uso do **Next.js** garantirá que as imagens sejam automaticamente otimizadas para diferentes resoluções e tamanhos de tela. 
-- **Fontes e Tamanhos**: O tamanho das fontes será ajustado com as classes de responsividade do Tailwind e Bootstrap, garantindo que o texto permaneça legível em qualquer dispositivo, evitando textos muito pequenos em telas menores.
+#### Imagens e Conteúdos Responsivos
+- **Imagens Otimizadas**: Em React Native, as imagens foram ajustadas automaticamente com o estilo `resizeMode: "contain"` ou `resizeMode: "cover"`, garantindo que sejam exibidas corretamente em diferentes resoluções e tamanhos de tela.
+- **Fontes e Tamanhos**: O tamanho das fontes será ajustado dinamicamente usando JavaScript e estilos proporcionais, com base na densidade de pixels (DPI) ou no tamanho da tela. A API `PixelRatio` do React Native foi usada para escalonar os tamanhos de texto, garantindo legibilidade em dispositivos pequenos:
+
 
 #### Flexibilidade e Acessibilidade:
 - O layout será **flexível e adaptável**, ajustando-se automaticamente à orientação da tela (retrato ou paisagem).
