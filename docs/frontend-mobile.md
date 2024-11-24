@@ -260,7 +260,7 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 #### Requisitos de Software:
 - **Plataforma de Hospedagem**: Vercel
 - **Ambiente de Desenvolvimento**: React Native e npm para gerenciar dependências.
-- **Sistema Operacional Focado em**: Android, iOS. 
+- **Sistema Operacional Focado em**: Android. 
 
 #### Requisitos de Hardware:
 - **CPU**: CPU de alto desempenho
