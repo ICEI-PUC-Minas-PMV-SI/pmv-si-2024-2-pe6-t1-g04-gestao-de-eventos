@@ -4,13 +4,15 @@
 
 ## Tecnologias Utilizadas
 <p align="justify"> As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto: </p>
-  
-- **React Native;**
+
 - **HTML;**
 - **CSS;**
 - **JavaScript;**
+- **React Native;**
 - **React Navigation;**
 - **Axios;**
+- **TypeScript;**
+- **Expo;**
 
 
 
@@ -19,24 +21,27 @@
 <p align="justify"> A arquitetura do sistema de gestão de eventos da PUC Minas foi projetada para ser modular e escalável, reutilizando o código desenvolvido anteriormente no framework React e adaptando-o para o React Native, com integração à Web API implementada em C#. A aplicação segue uma estrutura em camadas fechadas e componentes bem definidos, que se comunicam de forma eficiente para proporcionar uma experiência de usuário dinâmica e otimizada para dispositivos móveis.</p>
 
 ### Descrição da Arquitetura
-### 1. Camada de Apresentação (UI Layer)
-- **HTML**: A estrutura das páginas é definida em HTML, que descreve os elementos visuais de cada página, como formulários, botões e tabelas
-- **CSS**: É usado para estilização modular de componentes, aplicando classes diretamente nos elementos HTML. A camada de apresentação é responsável por renderizar o conteúdo das páginas de forma que seja visualmente agradável e adaptável.
 
-### 2. Componente de Navegação e Rotas 
-- **Next.js**: É utilizado para gerenciar as rotas e a navegação do sistema. Com sua funcionalidade de roteamento baseado em páginas, o Next.js permite a renderização do lado do servidor.
+#### 1. Camada de Apresentação (UI Layer)
+- **React Native**: a interface do usuário é construída com componentes reutilizáveis ​​e projetada para dispositivos móveis.
+- **Expo**: Ferramenta para gerenciar a execução, testes e estilização adicional da aplicação.
+- **CSS-in-JS**: Para a estilização modular de componentes, garantindo consistência visual e adaptabilidade.
 
-### 3. Componentes da Interface (React Native)
+#### 2. Componente de Navegação e Rotas 
+- **React Navigation:** Utilizado para gerenciar a navegação dentro do aplicativo.
+- **Expo Router:** Simplifica a configuração de rotas, permitindo uma abordagem baseada em arquivos, similar ao Next.js, mas otimizada para React Native.
+
+#### 3. Componentes da Interface (React Native)
 A aplicação é dividida em pequenos componentes reutilizáveis em React Native. Estes são alguns exemplos:
 
-- **Header**: Um componente que contém a barra de navegação, com links para páginas principais como “Página Inicial”, “Login”, "Cadastro", “Solicitação de Evento”.
-- **Formulários de Cadastro e Login**: Componentes responsáveis pela autenticação dos usuários. O formulário de cadastro coleta dados básicos do usuário (nome, e-mail, senha), enquanto o de login valida as credenciais.
-- **Página de Solicitação de Evento:** Um formulário que permite aos usuários solicitarem a criação de novos eventos, preenchendo informações como nome do evento, data, local, infraestrutura, palestrante e descrição.
+- **Formulários de Cadastro e Login**:  Componentes que gerenciam autenticação e registro de usuários.
+- **Página de Solicitação de Evento:** : Um formulário interativo onde usuários podem registrar eventos com informações detalhadas, como nome, data, local, palestrantes e infraestrutura necessária.
 
 
-### 4. Interações Dinâmicas (JavaScript)
-A interação entre os componentes da interface é controlada por JavaScript. Neste contexto, são gerenciadas ações como a submissão de formulários, validação de dados, controle de modais e navegação condicional baseada em estados de autenticação, entre outras funcionalidades dinâmicas.
-
+#### 4. Interações Dinâmicas (JavaScript)
+- **JavaScript**: Gerencia ações dinâmicas, como validação de formulários, navegação condicional e controle de estados (por exemplo, autenticação).
+- **Axios:** Para comunicação com a API, enviando e recebendo dados de forma eficiente.
+- **React Hook Form e Zod:** Para a criação e validação de formulários.
 
 
 ## Modelagem da Aplicação
@@ -104,7 +109,7 @@ Esta tela exibe a lista de eventos criados pelo usuário, com a opção de adici
 
 
 ### Design Visual
-A identidade visual da aplicação mobile será construída em torno das cores **branca** e **azul**, seguindo a paleta de cores do logo da **PUC Minas**, garantindo consistência com a imagem da universidade e também com a página web já criada anteriormente. Incluímos o uso da cor **laranja** nos botões de ação **Cadastrar**, **Entrar**, **Alterar Senha** e **Solicitar Evento**. O uso do **branco** proporcionará uma base limpa e minimalista, enquanto o **azul** será aplicado em elementos chave para transmitir seriedade, confiança e profissionalismo, alinhando-se ao padrão visual da instituição. Já o uso do **laranja** transmite energia, criatividade, entusiasmo e dinamismo.
+A identidade visual da aplicação mobile será construída em torno das cores **branca** e **azul**, seguindo a paleta de cores do logo da **PUC Minas**, para garantir consistência com a identidade visual da universidade e a página web previamente criada. Incluímos o uso da cor **laranja** nos botões de ação **Cadastrar**, **Entrar**, **Alterar Senha** e **Solicitar Evento**. O uso do **branco** proporcionará uma base limpa e minimalista, enquanto o **azul** será aplicado em elementos chave para transmitir seriedade, confiança e profissionalismo, alinhando-se ao padrão visual da instituição. Já o uso do **laranja** transmite energia, criatividade, entusiasmo e dinamismo.
 
 #### Estrutura e Paleta de Cores:
 - **Fundo Principal**: A cor **branca** será predominantemente utilizada no fundo, proporcionando uma aparência leve e moderna. Esse fundo claro facilitará a leitura e criará um contraste elegante com outros elementos da interface.
@@ -246,27 +251,28 @@ Esse controle de acesso garante que apenas o **administrador** possa realizar a�
 
 Para garantir a segurança da aplicação de gestão de eventos, utilizaremos o **JSON Web Token (JWT)** para autenticar a sessão dos usuários. O JWT é uma maneira segura de garantir que as informações de autenticação sejam transmitidas de forma confiável entre o cliente e o servidor, sem a necessidade de armazenar dados de sessão no servidor.
 
-#### Autenticação com JWT
+#### Autenticação com JWT no React Native
 
 - O usuário se autentica utilizando seu e-mail e senha na aplicação.
 - Após a autenticação, o backend gera um **token JWT**, que é enviado para o cliente.
-- O **token JWT** contém informações relevantes como o ID do usuário e seu tipo (administrador, aluno, funcionário, professor) e tem uma data de expiração definida para aumentar a segurança.
-- Este token é armazenado no lado do cliente e é enviado em cada requisição subsequente, no **header Authorization**.
-- O backend valida o token em cada requisição para garantir que o usuário tenha permissão para acessar o recurso.
+- O **token JWT** contém informações relevantes, como o ID do usuário e seu tipo (administrador, aluno, funcionário, professor), além de uma data de expiração definida para aumentar a segurança.
+- O token é armazenado localmente no dispositivo do usuário, utilizando ferramentas como `AsyncStorage` (ou alternativas mais seguras, como `react-native-secure-storage`).
+- Em cada requisição subsequente, o token é enviado no **header Authorization**, permitindo que o backend valide a autenticidade do usuário.
+- O backend valida o token em cada requisição para garantir que o usuário tenha permissão para acessar o recurso solicitado.
 
 ## Implantação
 Abaixo estão listadas as etapas e os requisitos para implantar a aplicação frontend em um ambiente de produção.
 
 #### Requisitos de Software:
 - **Plataforma de Hospedagem**: Vercel
-- **Ambiente de Desenvolvimento**: React Native e npm para gerenciar dependências.
-- **Sistema Operacional Focado em**: Android. 
+- **Ambiente de Desenvolvimento**: React Native, `npm´ ou `yarn´ para gerenciar dependências.
+- **Sistema Operacional Focado em**: Inicialmente voltada para dispositivos Android, com a possibilidade de expansão para outras plataformas, como iOS.
 
 #### Requisitos de Hardware:
-- **CPU**: CPU de alto desempenho
-- **Memória RAM**: Pelo menos 16 GB para gerenciar o tráfego e garantir a performance da aplicação.
-- **Armazenamento**: SSD de no mínimo 500 GB, com base no tamanho do projeto e no tráfego esperado.
-- **Conexão de rede**: Conexão de rede de alta velocidade.
+- **CPU**: um processador de alto desempenho, de preferência com vários núcleos (pelo menos 4 núcleos), para garantir que o processamento de solicitações e as operações do aplicativo ocorram rapidamente.
+- **Memória RAM**:  Pelo menos 4 GB de memória RAM, o que garantirá que a aplicação consiga lidar com múltiplos processos simultâneos e o tráfego esperado de usuários.
+- **Armazenamento**:  Espaço de armazenamento Baseado em tecnologia SSD (ou equivalente) com capacidade mínima de 32 GB, suficiente para rodar a aplicação de forma eficiente em dispositivos móveis.
+- **Conexão de rede**: Conexões de alta velocidade, essenciais para o bom funcionamento da aplicação, evitando atrasos e garantindo que as interações API sejam realizadas de forma eficiente.
   
 #### Passos para Implantação:
 
