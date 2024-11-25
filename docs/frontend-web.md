@@ -281,31 +281,64 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 
 ## Testes
 
-Para demontrar os testes feitos na plataforma, os mesmos foram separados por categorias e foi criado um vídeo explicativo para cada, demonstrando a eficácia das funcionalidades do sistema.
+Para demonstrar os testes feitos na plataforma, os mesmos foram separados por categorias e foi criado um vídeo explicativo para cada, demonstrando a eficácia das funcionalidades do sistema.
 
-- **Teste Login e Logout com autenticação utilizando token JWT**:
+### **1.0-Teste Login e Logout com autenticação utilizando token JWT:**
+- | **Passo** | **Descrição**                          |
+  |-----------|----------------------------------------|
+  | 1         |                                        |
+  | 2         |                                        |
 
 
-1) 
+- | **Resultado Esperado**                              | **Resultado Alcançado**                          |
+  |-----------------------------------------------------|---------------------------------------------------|
+  |                                                     |                                                   |
+  |                                                     |                                                   |
 
 https://github.com/user-attachments/assets/a61197c7-2448-4004-a848-af5d697197cf
 
 
-2) 
+### **1.1-Teste de tentativa de login:**
+- | **Passo** | **Descrição**                          |
+  |-----------|----------------------------------------|
+  | 1         |                                        |
+  | 2         |                                        |
+
+
+- | **Resultado Esperado**                              | **Resultado Alcançado**                          |
+  |-----------------------------------------------------|---------------------------------------------------|
+  |                                                     |                                                   |
+  |                                                     |                                                   |
 
 https://github.com/user-attachments/assets/bfb563be-b8a0-473a-bc09-8d6b14717cf1
 
+### **2.0-Teste de Cadastro de usuários:**
+- | **Passo** | **Descrição**                          |
+  |-----------|----------------------------------------|
+  | 1         |                                        |
+  | 2         |                                        |
 
 
-- **Teste Cadastro de usuário**:
-
-
+- | **Resultado Esperado**                              | **Resultado Alcançado**                          |
+  |-----------------------------------------------------|---------------------------------------------------|
+  |                                                     |                                                   |
+  |                                                     |                                                   |
 
 https://github.com/user-attachments/assets/595c5573-5be7-4851-b99b-3feb37ed38cc
 
 
 
-- **Teste Alteração de Senha**:
+### **3.0-Teste de Alteração de Senha:**
+- | **Passo** | **Descrição**                          |
+  |-----------|----------------------------------------|
+  | 1         |                                        |
+  | 2         |                                        |
+
+
+- | **Resultado Esperado**                              | **Resultado Alcançado**                          |
+  |-----------------------------------------------------|---------------------------------------------------|
+  |                                                     |                                                   |
+  |                                                     |                                                   |
 
 
 
@@ -313,7 +346,18 @@ https://github.com/user-attachments/assets/595c5573-5be7-4851-b99b-3feb37ed38cc
 https://github.com/user-attachments/assets/9e4c13e8-c5db-474f-8b1c-e85ac25965e9
 
 
-- **Teste de Solicitação de Evento**:
+### **4.0-Teste de Solicitação de Evento:**
+- | **Passo** | **Descrição**                          |
+  |-----------|----------------------------------------|
+  | 1         |                                        |
+  | 2         |                                        |
+
+
+- | **Resultado Esperado**                              | **Resultado Alcançado**                          |
+  |-----------------------------------------------------|---------------------------------------------------|
+  |                                                     |                                                   |
+  |                                                     |                                                   |
+
 
 
 
