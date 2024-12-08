@@ -12,7 +12,7 @@
 - **React Navigation;**
 - **Axios;**
 - **TypeScript;**
-- **Expo;**
+- **Expo.dev;**
 
 
 
