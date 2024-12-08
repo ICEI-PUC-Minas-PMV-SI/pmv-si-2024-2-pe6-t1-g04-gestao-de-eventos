@@ -299,24 +299,28 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 ## Testes
 Para demonstrar os testes feitos na plataforma, os mesmos foram separados por categorias e foi criado um vídeo explicativo para cada, demonstrando a eficácia das funcionalidades do sistema resultados esperados e obtidos. 
 
-### **1.0 - Caso de Teste: Login e Logout com autenticação utilizando token JWT**
+### **1.0 - Caso de Teste: Login com autenticação utilizando token JWT**
 
 #### **Passos**
 | **Passo** | **Descrição**                                                                 |
 |-----------|-------------------------------------------------------------------------------|
 | 1         | Acessar a página de login.                                                   |
 | 2         | Inserir as credenciais (e-mail e senha) nos campos exibidos.                 |
-| 3         | Clicar no botão "Enviar" para autenticar. O usuário será redirecionado para a página de solicitações de evento. |
-| 4         | Clicar no botão "Sair". O usuário será redirecionado novamente para a página de login. |
+| 3         | Clicar no botão "Continuar" para autenticar. O usuário será redirecionado para a página de listagem de evento já solicitados. |
 
 #### **Resultados**
 | **Resultado Esperado**                                     | **Resultado Alcançado**                                                                      |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| Login bem-sucedido  **Request: 200 OK**                   | Usuário autenticado com sucesso. O token JWT foi gerado e armazenado no Local Storage.      |
-| Logout bem-sucedido **Request: 200 OK**                   | Usuário redirecionado para a página de login. O token JWT foi "removido/resetado" corretamente. |
+| Login bem-sucedido  **Request: 200 OK**                   | Usuário autenticado com sucesso. O token JWT foi gerado e armazenado no Async Storage.    |
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/da2abca2-cc7f-45c7-9d02-d426c84df222"    
+</p>
 
 
-video:
+<p align="center">
+<img src="https://github.com/user-attachments/assets/c681d86f-73d0-4897-a64b-a39e443174ea"    
+</p>
 
 
 ### **1.1 - Caso de Teste: Tentativa de Login**
@@ -325,22 +329,31 @@ video:
 | **Passo** | **Descrição**                                                                 |
 |-----------|-------------------------------------------------------------------------------|
 | 1         | Acessar a página de login.                                                   |
-| 2         | Inserir um e-mail válido e uma senha incorreta nos campos exibidos.          |
-| 3         | Clicar no botão "Enviar" para tentar autenticar.                             |
-| 4         | Caso a senha esteja incorreta, será exibido um pop-up com a mensagem "Senha incorreta". O usuário deve clicar no botão de fechar para tentar realizar o login novamente. |
-| 5         | Inserir as credenciais corretas e clicar no botão "Enviar". O usuário será redirecionado para a página de solicitações de evento. |
+| 2         | Inserir um e-mail e/ou senha incorreta nos campos exibidos.          |
+| 3         | Clicar no botão "Continuar" para tentar autenticar.                             |
+| 4         | Caso a senha esteja incorreta, será exibido um pop-up com a mensagem "Usuário e/ou senha incorretos!". O usuário deve clicar no botão de fechar para tentar realizar o login novamente. |
+| 5         | Inserir as credenciais corretas e clicar no botão "Continuar". O usuário será redirecionado para a página de listagem de evento já solicitados. |
 
 
 #### **Resultados**
 | **Cenário**                                              | **Resultado Esperado**                              | **Resultado Alcançado**                          |
 |----------------------------------------------------------|----------------------------------------------------|-------------------------------------------------|
-| Login com senha correta                                  | **Request: 200 OK** - Login bem-sucedido.          | Usuário autenticado com sucesso. O token JWT foi gerado e armazenado no Local Storage. O usuário foi redirecionado para a página de solicitações de evento. |
-| Login com senha incorreta                                | **Request: 401 Unauthorized** - Login não-sucedido. | Um pop-up exibiu a mensagem "Senha incorreta". O usuário não foi autenticado, e o token JWT não foi gerado. O usuário permaneceu na página de login. |
+| Login com senha correta                                  | **Request: 200 OK** - Login bem-sucedido.          | Usuário autenticado com sucesso. O token JWT foi gerado e armazenado no Async Storage. O usuário foi redirecionado para a página de listagem de evento já solicitados. |
+| Login com senha incorreta                                | **Request: 401 Unauthorized** - Login não-sucedido. | Um pop-up exibiu a mensagem "Usuário e/ou senha incorretos!". O usuário não foi autenticado, e o token JWT não foi gerado. O usuário permaneceu na página de login. |
 
 
 Essa organização facilita a visualização do que é esperado e o que foi realmente alcançado durante o teste.
 
-video: 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/0422d037-9fbc-4fa7-97d8-0922cdf88b5d"    
+</p>
+  
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/9d269ffe-a763-4b22-9e31-b0ed80f33ffd"    
+</p>
+
+
 
 ### **2.0 -Caso de teste de Cadastro de Usuários**
 
@@ -352,7 +365,7 @@ video:
 | 3         | O campo `e-mail` possui validação, sendo obrigatório inserir um e-mail institucional. |
 | 4         | No campo `tipo de usuário`, o usuário deve selecionar entre as opções: aluno, professor ou funcionário. |
 | 5         | Clicar no botão "Cadastrar" para concluir o cadastro.                        |
-| 6         | Um modal será exibido com a mensagem "Cadastro realizado com sucesso!". Logo abaixo, haverá um botão "Entrar", que redireciona o usuário para a página de login. |
+| 6         | Um modal será exibido com a mensagem "Cadastro realizado com sucesso!" e o usuário será redirecionado para a página de login. |
 
 #### **Resultados**
 | **Cenário**                                              | **Resultado Esperado**                              | **Resultado Alcançado**                          |
@@ -360,66 +373,19 @@ video:
 | Cadastro com e-mail válido                               | **Request: 200 OK**                                | Cadastro realizado com sucesso. Modal exibido com a mensagem "Cadastro realizado com sucesso!" e botão para redirecionamento à página de login. |
 | Cadastro com e-mail inválido (não institucional)         | **Mensagem de alerta**                             | Exibição de mensagem indicando que o e-mail deve ser institucional e impedindo o cadastro. |
 
-
-video:
-
-
-
-### **3.0 - Teste de Alteração de Senha**
-
-#### **Passos**
-| **Passo** | **Descrição**                                                                 |
-|-----------|-------------------------------------------------------------------------------|
-| 1         | Acessar a página de login.                                                    |
-| 2         | Inserir as credenciais (e-mail e senha) nos campos apropriados.               |
-| 3         | Clicar no botão "Enviar" para autenticar. O usuário será redirecionado para a página de solicitações de evento. |
-| 4         | Na página de solicitações de evento, clicar no botão "Alterar senha". O usuário será redirecionado para a página de alteração de senha. |
-| 5         | Na página de alteração de senha, os campos de nome, e-mail e perfil já estarão preenchidos. O usuário deverá inserir sua nova senha e confirmá-la. |
-| 6         | Após inserir a nova senha corretamente, clicar no botão "Alterar senha" para confirmar a alteração. Um pop-up será exibido com a mensagem "Senha alterada com sucesso!". |
-| 7         | O usuário será desconectado e precisará realizar o login novamente com a nova senha. |
+<p align="center">
+<img src="https://github.com/user-attachments/assets/e77ecef9-3146-4e1d-8587-1f20523148d3"    
+</p>
+  
+<p align="center">
+<img src="https://github.com/user-attachments/assets/5b2a9b93-449b-4d4f-b811-ef4f383bcd63"    
+</p>
 
 
-#### **Resultados**
-| **Cenário**                                             | **Resultado Esperado**                                | **Resultado Alcançado**                              |
-|---------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------|
-| Alteração de senha bem-sucedida                         | Senha alterada com sucesso. O usuário é desconectado e deverá realizar o login com a nova senha. | A senha foi alterada com sucesso. O usuário foi desconectado e conseguiu realizar o login com a nova senha corretamente. |
+<p align="center">
+<img src="https://github.com/user-attachments/assets/d3bea4c7-508b-4776-ae46-db1160a67201"    
+</p>
 
-video:
-
-
-### **4.0 - Teste de Solicitação de Evento:**
-
-#### **Passos**
-| **Passo** | **Descrição**                                                                 |
-|-----------|-------------------------------------------------------------------------------|
-| 1         | Após o login, o usuário será redirecionado para a tela de solicitação de eventos. |
-| 2         | No primeiro acesso, será exibida a mensagem: "Você ainda não possui nenhuma solicitação de Evento!". |
-| 3         | Caso queira alterar a senha, o usuário pode clicar no botão "Alterar senha" e seguir os passos descritos anteriormente. |
-| 4         | Para solicitar um novo evento, o usuário deve clicar no botão "Solicitar novo evento". |
-| 5         | O usuário será redirecionado para a página de solicitação de evento, onde encontrará o formulário de solicitação. |
-| 6         | O formulário será dividido em três partes:                                                           |
-| 6.1       | **Primeira Parte:** Inputs: título, descrição do evento, data de início, data de fim, tipo de evento (Graduação ou Institucional), curso e outros cursos/unidades participantes. A primeira parte do formulário exige que o usuário selecione um **tipo de evento**. Caso o tipo de evento seja **Graduação**, o campo "Curso realizado" será habilitado para preenchimento. Caso o tipo de evento seja **Institucional**, o campo "Setor" será habilitado, permitindo que o usuário selecione entre "Atendimento" ou "Ouvidoria".   |
-| 6.2       | **Segunda Parte:** Inputs: palestra (campo de texto), palestrante, local da palestra, quantidade de vagas no local, horário de início e horário de fim. O usuário poderá adicionar mais de uma palestra. |
-| 6.3       | **Terceira Parte:** Infraestrutura do evento. Campos de checkbox: necessita adaptador HDMI? Água para palestra? Quantidade de suportes/banners, coffee break? Quantidade de mesas plásticas, forro de mesa, cestos, uso de estacionamento para palestrantes, e informe os dados do(s) palestrantes (campo de texto). |
-| 7         | O usuário clica no botão "Encaminhar a solicitação". Um pop-up será exibido com a mensagem "Solicitação de evento realizada com sucesso!", e o usuário será redirecionado para a página de eventos. |
-| 8        | A página de eventos exibirá todos os eventos, incluindo o título, tipo de evento, data e ações disponíveis. |
-
-
-#### **Resultados**
-| **Cenário**                                              | **Resultado Esperado**                                  | **Resultado Alcançado**                              |
-|----------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------|
-| Esquecimento de título                                   | Mensagem de alerta indicando que o título é obrigatório. | A mensagem de alerta foi exibida corretamente. |
-| Falta da descrição do evento                             | Mensagem de alerta indicando que a descrição do evento é obrigatória. | A mensagem de alerta foi exibida corretamente. |
-| Data de término menor que a data de início               | Mensagem de alerta indicando que a data de fim deve ser maior que a data de início. | A mensagem de alerta foi exibida corretamente. |
-| Tipo de evento selecionado como Graduação e campo "Curso realizado" não preenchido | Mensagem de alerta indicando que o campo "Curso realizado" é obrigatório para eventos de graduação. | A mensagem de alerta foi exibida corretamente. |
-| Tipo de evento selecionado como Institucional e campo "Setor" não preenchido | Mensagem de alerta indicando que o campo "Setor" é obrigatório para eventos institucionais. | A mensagem de alerta foi exibida corretamente. |
-| Campos de seleção "Outros cursos/unidades" e "Certificados" | Exibição de novos campos ao selecionar as opções correspondentes. | Campos extras foram exibidos corretamente ao selecionar as opções. |
-| Falta de preenchimento do formulário de infraestrutura   | Mensagem de alerta informando que todos os campos de infraestrutura são obrigatórios. | A mensagem de alerta foi exibida corretamente. |
-| Falta de preenchimento de palestras e horários           | Mensagem de alerta indicando que todos os campos de palestra e horários são obrigatórios. | A mensagem de alerta foi exibida corretamente. |
-| Campos de infraestrutura e palestras preenchidos corretamente | A solicitação é enviada com sucesso e o pop-up de confirmação é exibido. | A solicitação foi enviada corretamente, e o pop-up foi exibido conforme esperado. |
-
-
-Video:
 
 
 
