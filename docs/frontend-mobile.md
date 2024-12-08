@@ -297,7 +297,7 @@ Abaixo estão listadas as etapas e os requisitos para implantar a aplicação fr
 - Verifique se as boas práticas de segurança estão implementadas, como HTTPS (SSL/TLS).
 
 ## Testes
-Para demonstrar os testes feitos na plataforma, os mesmos foram separados por categorias e foi criado um vídeo explicativo para cada, demonstrando a eficácia das funcionalidades do sistema resultados esperados e obtidos. 
+Para demonstrar os testes feitos na plataforma, os mesmos foram separados por categorias explicativo para cada, demonstrando a eficácia das funcionalidades do sistema resultados esperados e obtidos. 
 
 ### **1.0 - Caso de Teste: Login com autenticação utilizando token JWT**
 
@@ -370,7 +370,7 @@ Essa organização facilita a visualização do que é esperado e o que foi real
 #### **Resultados**
 | **Cenário**                                              | **Resultado Esperado**                              | **Resultado Alcançado**                          |
 |----------------------------------------------------------|----------------------------------------------------|-------------------------------------------------|
-| Cadastro com e-mail válido                               | **Request: 200 OK**                                | Cadastro realizado com sucesso. Modal exibido com a mensagem "Cadastro realizado com sucesso!" e botão para redirecionamento à página de login. |
+| Cadastro com e-mail válido                               | **Request: 200 OK**                                | Cadastro realizado com sucesso. Modal exibido com a mensagem "Cadastro realizado com sucesso!" e o usuário será redirecionado para a página de login. |
 | Cadastro com e-mail inválido (não institucional)         | **Mensagem de alerta**                             | Exibição de mensagem indicando que o e-mail deve ser institucional e impedindo o cadastro. |
 
 <p align="center">
