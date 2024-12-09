@@ -1,11 +1,13 @@
-# Instruções de utilização
+## Repositórios da aplicação
 
-## Instalação do Site
+### Repositório Aplicação Backend
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+[GestaoEventos-main (1).zip](https://github.com/user-attachments/files/18068732/GestaoEventos-main.1.zip)
 
-## Histórico de versões
+### Repositório Aplicação Frontend
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado
-- Adicionado ...
+[GestaoEventos---Menu-02-main.zip](https://github.com/user-attachments/files/18068740/GestaoEventos---Menu-02-main.zip)
+
+### Repositório Aplicação Mobile
+
+[GestaoEventosApp-main.zip](https://github.com/user-attachments/files/18068749/GestaoEventosApp-main.zip)
